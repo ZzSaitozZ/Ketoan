@@ -32,8 +32,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,8 +59,58 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Banhangphaithu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Banhangphaithu.Designer.cs">
+      <DependentUpon>Banhangphaithu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Chiphigiathanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Chiphigiathanh.Designer.cs">
+      <DependentUpon>Chiphigiathanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho.Designer.cs">
+      <DependentUpon>Hangtonkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hethong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hethong.Designer.cs">
+      <DependentUpon>Hethong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ketoantonghop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Ketoantonghop.Designer.cs">
+      <DependentUpon>Ketoantonghop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Muahangphaitra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Muahangphaitra.Designer.cs">
+      <DependentUpon>Muahangphaitra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Quanlytaisan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Quanlytaisan.Designer.cs">
+      <DependentUpon>Quanlytaisan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Vonbangtien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Vonbangtien.Designer.cs">
+      <DependentUpon>Vonbangtien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,12 +119,45 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R50NAMKIMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R50NAMKIMDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StartForm.Designer.cs">
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\Banhangphaithu.resx">
+      <DependentUpon>Banhangphaithu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Chiphigiathanh.resx">
+      <DependentUpon>Chiphigiathanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho.resx">
+      <DependentUpon>Hangtonkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hethong.resx">
+      <DependentUpon>Hethong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Ketoantonghop.resx">
+      <DependentUpon>Ketoantonghop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Muahangphaitra.resx">
+      <DependentUpon>Muahangphaitra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Quanlytaisan.resx">
+      <DependentUpon>Quanlytaisan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Vonbangtien.resx">
+      <DependentUpon>Vonbangtien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -80,12 +179,129 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="R50NAMKIMDataSet.xsc">
+      <DependentUpon>R50NAMKIMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="R50NAMKIMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>R50NAMKIMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="R50NAMKIMDataSet.xss">
+      <DependentUpon>R50NAMKIMDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Content Include="Resources\Analytics.png" />
+    <Content Include="Resources\ArrowLeft.png" />
+    <Content Include="Resources\ArrowRight.png" />
+    <Content Include="Resources\BandedReports.png" />
+    <Content Include="Resources\BO_Task.png" />
+    <Content Include="Resources\BO_Task_Large.png" />
+    <Content Include="Resources\ByState_32x32.png" />
+    <Content Include="Resources\Card_32x32.png" />
+    <Content Include="Resources\Close_16x16.png" />
+    <Content Include="Resources\Close_32x32.png" />
+    <Content Include="Resources\Code_Central.png" />
+    <Content Include="Resources\ColorMixer_32x32.png" />
+    <Content Include="Resources\Completed_16x16.png" />
+    <Content Include="Resources\Completed_32x32.png" />
+    <Content Include="Resources\Contact_16x16.png" />
+    <Content Include="Resources\Contact_32x32.png" />
+    <Content Include="Resources\Contact_Us.png" />
+    <Content Include="Resources\Custom_Flag.png" />
+    <Content Include="Resources\Deferred_32x32.png" />
+    <Content Include="Resources\Delete_16x16.png" />
+    <Content Include="Resources\Delete_32x32.png" />
+    <Content Include="Resources\Doctor.png" />
+    <Content Include="Resources\EditContact_16x16.png" />
+    <Content Include="Resources\EditContact_32x32.png" />
+    <Content Include="Resources\EditTask_16x16.png" />
+    <Content Include="Resources\EditTask_32x32.png" />
+    <Content Include="Resources\ExportToCSV_32x32.png" />
+    <Content Include="Resources\ExportToHTML_32x32.png" />
+    <Content Include="Resources\ExportToImage_32x32.png" />
+    <Content Include="Resources\ExportToMHT_32x32.png" />
+    <Content Include="Resources\ExportToPDF_32x32.png" />
+    <Content Include="Resources\ExportToRTF_32x32.png" />
+    <Content Include="Resources\ExportToText_32x32.png" />
+    <Content Include="Resources\ExportToXLSX_32x32.png" />
+    <Content Include="Resources\ExportToXLS_32x32.png" />
+    <Content Include="Resources\GridContacts.png" />
+    <Content Include="Resources\GridTasks.png" />
+    <Content Include="Resources\High16x16.png" />
+    <Content Include="Resources\Important_16x16.png" />
+    <Content Include="Resources\LayoutFlip_16x16.png" />
+    <Content Include="Resources\LayoutFlip_32x32.png" />
+    <Content Include="Resources\ListByDate_32x32.png" />
+    <Content Include="Resources\List_32x32.png" />
+    <Content Include="Resources\Low16x16.png" />
+    <Content Include="Resources\MemoStyle.png" />
+    <Content Include="Resources\Miss.png" />
+    <Content Include="Resources\Mr.png" />
+    <Content Include="Resources\Mrs.png" />
+    <Content Include="Resources\Ms.png" />
+    <Content Include="Resources\MultiplePagesLarge.png" />
+    <Content Include="Resources\NavigationBar_16x16.png" />
+    <Content Include="Resources\NavigationBar_32x32.png" />
+    <Content Include="Resources\NewContact_16x16.png" />
+    <Content Include="Resources\NewContact_32x32.png" />
+    <Content Include="Resources\NewTask_16x16.png" />
+    <Content Include="Resources\NewTask_32x32.png" />
+    <Content Include="Resources\NextWeek_Flag.png" />
+    <Content Include="Resources\NoDate_Flag.png" />
+    <Content Include="Resources\normal.png" />
+    <Content Include="Resources\Online_Help.png" />
+    <Content Include="Resources\OpenClendar_64x64.png" />
+    <Content Include="Resources\Overdue_32x32.png" />
+    <Content Include="Resources\Owner.png" />
+    <Content Include="Resources\PageMarginsModerate.png" />
+    <Content Include="Resources\PageMarginsNarrow.png" />
+    <Content Include="Resources\PageMarginsNormal.png" />
+    <Content Include="Resources\PageMarginsWide.png" />
+    <Content Include="Resources\PageOrientationLandscape.png" />
+    <Content Include="Resources\PageOrientationPortrait.png" />
+    <Content Include="Resources\PaperKind_A3.png" />
+    <Content Include="Resources\PaperKind_A4.png" />
+    <Content Include="Resources\PaperKind_A5.png" />
+    <Content Include="Resources\PaperKind_A6.png" />
+    <Content Include="Resources\PaperKind_Executive.png" />
+    <Content Include="Resources\PaperKind_Legal.png" />
+    <Content Include="Resources\PaperKind_Letter.png" />
+    <Content Include="Resources\PaperKind_Tabloid.png" />
+    <Content Include="Resources\PDFViewer.png" />
+    <Content Include="Resources\Pivot.png" />
+    <Content Include="Resources\PrintDirectLarge.png" />
+    <Content Include="Resources\Prioritized_32x32.png" />
+    <Content Include="Resources\Priority_16x16.png" />
+    <Content Include="Resources\Professor.png" />
+    <Content Include="Resources\reading.png" />
+    <Content Include="Resources\Refresh_16x16.png" />
+    <Content Include="Resources\Refresh_32x32.png" />
+    <Content Include="Resources\reminder.png" />
+    <Content Include="Resources\SaveAll_32x32.png" />
+    <Content Include="Resources\Save_16x16.png" />
+    <Content Include="Resources\Save_32x32.png" />
+    <Content Include="Resources\Scheduler.png" />
+    <Content Include="Resources\Search.png" />
+    <Content Include="Resources\SortAsc_32x32.png" />
+    <Content Include="Resources\SplashScreen.png" />
+    <Content Include="Resources\Spreadsheet.png" />
+    <Content Include="Resources\TableStyle.png" />
+    <Content Include="Resources\ThisWeek_Flag.png" />
+    <Content Include="Resources\Today_16x16.png" />
+    <Content Include="Resources\Today_32x32.png" />
+    <Content Include="Resources\Today_Flag.png" />
+    <Content Include="Resources\ToDoList_32x32.png" />
+    <Content Include="Resources\Tomorrow_Flag.png" />
+    <Content Include="Resources\Unknown-user.png" />
+    <Content Include="Resources\WeatherMap.png" />
+    <Content Include="Resources\WordProcessing.png" />
+    <Content Include="Resources\WYSIWYGReports.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
