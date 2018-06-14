@@ -130,6 +130,18 @@
     <Compile Include="StartForm.Designer.cs">
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table\R81DMBP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMBP.Designer.cs">
+      <DependentUpon>R81DMBP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMDT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMDT.Designer.cs">
+      <DependentUpon>R81DMDT.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Controls\Banhangphaithu.resx">
       <DependentUpon>Banhangphaithu.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +181,12 @@
     </Compile>
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMBP.resx">
+      <DependentUpon>R81DMBP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMDT.resx">
+      <DependentUpon>R81DMDT.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

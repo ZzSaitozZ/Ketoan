@@ -16,7 +16,9 @@ namespace Ketoan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+            StartForm s = new StartForm();
+            s.Tag = 0;
+            Application.Run(s);
         }
     }
 }
