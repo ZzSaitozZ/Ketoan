@@ -11,9 +11,7 @@ using System.Windows.Forms;
 namespace Ketoan
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
-    {
-        Ketoan.Table.R81DMBP DMBP = new Ketoan.Table.R81DMBP();
-        Ketoan.Table.R81DMDT DMDT = new Ketoan.Table.R81DMDT();
+    {              
         public Form1(string a)
         {
             InitializeComponent();
@@ -21,32 +19,29 @@ namespace Ketoan
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Form frm = Application.OpenForms["Form1"];
             Form frm1 = Application.OpenForms["StartForm"];
             StartForm s = frm1 as StartForm;
             s.k--;
             if(s.k ==0)
             {
                 frm1.Show();
-            }
-       
+            }       
         }
-
         private void load_table(string table)
         {
             if(table == "DMBP")
             {
+                Ketoan.Table.R81DMBP DMBP = new Ketoan.Table.R81DMBP();
                 DMBP.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMBP);
             }
             else if(table == "DMDT")
             {
-                Tablearea.Controls.Clear();
+                Ketoan.Table.R81DMDT DMDT = new Ketoan.Table.R81DMDT();
                 DMDT.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMDT);
             }
         }
-
        
     }
 }

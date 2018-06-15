@@ -130,6 +130,60 @@
     <Compile Include="StartForm.Designer.cs">
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table\R00MEMBER.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R00MEMBER.Designer.cs">
+      <DependentUpon>R00MEMBER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R00MENU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R00MENU.Designer.cs">
+      <DependentUpon>R00MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R00MODULE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R00MODULE.Designer.cs">
+      <DependentUpon>R00MODULE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R00OBJECT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R00OBJECT.Designer.cs">
+      <DependentUpon>R00OBJECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R00REPORT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R00REPORT.Designer.cs">
+      <DependentUpon>R00REPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R00ZONE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R00ZONE.Designer.cs">
+      <DependentUpon>R00ZONE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R06CTTS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R06CTTS.Designer.cs">
+      <DependentUpon>R06CTTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R07DMYT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R07DMYT.Designer.cs">
+      <DependentUpon>R07DMYT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R10DMTN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R10DMTN.Designer.cs">
+      <DependentUpon>R10DMTN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Table\R81DMBP.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,6 +195,78 @@
     </Compile>
     <Compile Include="Table\R81DMDT.Designer.cs">
       <DependentUpon>R81DMDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMHD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMHD.Designer.cs">
+      <DependentUpon>R81DMHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMJOB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMJOB.Designer.cs">
+      <DependentUpon>R81DMJOB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMKHO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMKHO.Designer.cs">
+      <DependentUpon>R81DMKHO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMKM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMKM.Designer.cs">
+      <DependentUpon>R81DMKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMKV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMKV.Designer.cs">
+      <DependentUpon>R81DMKV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMNHDT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMNHDT.Designer.cs">
+      <DependentUpon>R81DMNHDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMNHHD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMNHHD.Designer.cs">
+      <DependentUpon>R81DMNHHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMNHVT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMNHVT.Designer.cs">
+      <DependentUpon>R81DMNHVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMNVU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMNVU.Designer.cs">
+      <DependentUpon>R81DMNVU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMTHUE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMTHUE.Designer.cs">
+      <DependentUpon>R81DMTHUE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMTK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMTK.Designer.cs">
+      <DependentUpon>R81DMTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\R81DMVT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMVT.Designer.cs">
+      <DependentUpon>R81DMVT.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Controls\Banhangphaithu.resx">
       <DependentUpon>Banhangphaithu.cs</DependentUpon>
@@ -182,11 +308,74 @@
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Table\R00MEMBER.resx">
+      <DependentUpon>R00MEMBER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R00MENU.resx">
+      <DependentUpon>R00MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R00MODULE.resx">
+      <DependentUpon>R00MODULE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R00OBJECT.resx">
+      <DependentUpon>R00OBJECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R00REPORT.resx">
+      <DependentUpon>R00REPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R00ZONE.resx">
+      <DependentUpon>R00ZONE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R06CTTS.resx">
+      <DependentUpon>R06CTTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R07DMYT.resx">
+      <DependentUpon>R07DMYT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R10DMTN.resx">
+      <DependentUpon>R10DMTN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Table\R81DMBP.resx">
       <DependentUpon>R81DMBP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Table\R81DMDT.resx">
       <DependentUpon>R81DMDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMHD.resx">
+      <DependentUpon>R81DMHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMJOB.resx">
+      <DependentUpon>R81DMJOB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMKHO.resx">
+      <DependentUpon>R81DMKHO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMKM.resx">
+      <DependentUpon>R81DMKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMKV.resx">
+      <DependentUpon>R81DMKV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMNHDT.resx">
+      <DependentUpon>R81DMNHDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMNHHD.resx">
+      <DependentUpon>R81DMNHHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMNHVT.resx">
+      <DependentUpon>R81DMNHVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMNVU.resx">
+      <DependentUpon>R81DMNVU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMTHUE.resx">
+      <DependentUpon>R81DMTHUE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMTK.resx">
+      <DependentUpon>R81DMTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMVT.resx">
+      <DependentUpon>R81DMVT.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

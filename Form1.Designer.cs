@@ -98,7 +98,7 @@
             this.quanlytaisan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.quanlytaisan.Location = new System.Drawing.Point(0, 0);
             this.quanlytaisan.Name = "quanlytaisan";
-            this.quanlytaisan.Size = new System.Drawing.Size(59, 327);
+            this.quanlytaisan.Size = new System.Drawing.Size(51, 327);
             this.quanlytaisan.TabIndex = 0;
             // 
             // muahangphaitra
@@ -106,7 +106,7 @@
             this.muahangphaitra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.muahangphaitra.Location = new System.Drawing.Point(0, 0);
             this.muahangphaitra.Name = "muahangphaitra";
-            this.muahangphaitra.Size = new System.Drawing.Size(59, 327);
+            this.muahangphaitra.Size = new System.Drawing.Size(51, 327);
             this.muahangphaitra.TabIndex = 0;
             // 
             // ketoantonghop
@@ -114,7 +114,7 @@
             this.ketoantonghop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ketoantonghop.Location = new System.Drawing.Point(0, 0);
             this.ketoantonghop.Name = "ketoantonghop";
-            this.ketoantonghop.Size = new System.Drawing.Size(59, 327);
+            this.ketoantonghop.Size = new System.Drawing.Size(51, 327);
             this.ketoantonghop.TabIndex = 0;
             // 
             // hethong
@@ -130,7 +130,7 @@
             this.hangtonkho.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hangtonkho.Location = new System.Drawing.Point(0, 0);
             this.hangtonkho.Name = "hangtonkho";
-            this.hangtonkho.Size = new System.Drawing.Size(59, 327);
+            this.hangtonkho.Size = new System.Drawing.Size(51, 327);
             this.hangtonkho.TabIndex = 0;
             // 
             // chiphigiathanh
@@ -138,7 +138,7 @@
             this.chiphigiathanh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chiphigiathanh.Location = new System.Drawing.Point(0, 0);
             this.chiphigiathanh.Name = "chiphigiathanh";
-            this.chiphigiathanh.Size = new System.Drawing.Size(59, 327);
+            this.chiphigiathanh.Size = new System.Drawing.Size(51, 327);
             this.chiphigiathanh.TabIndex = 0;
             // 
             // banhangphaithu
@@ -146,7 +146,7 @@
             this.banhangphaithu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.banhangphaithu.Location = new System.Drawing.Point(0, 0);
             this.banhangphaithu.Name = "banhangphaithu";
-            this.banhangphaithu.Size = new System.Drawing.Size(59, 327);
+            this.banhangphaithu.Size = new System.Drawing.Size(51, 327);
             this.banhangphaithu.TabIndex = 0;
             // 
             // ribbonControl1
@@ -192,12 +192,12 @@
             this.backstageViewControl1.Items.Add(this.backstageViewTabItem7);
             this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator1);
             this.backstageViewControl1.Items.Add(this.backstageViewTabItem8);
-            this.backstageViewControl1.Location = new System.Drawing.Point(822, 153);
+            this.backstageViewControl1.Location = new System.Drawing.Point(586, 73);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Office2013StyleOptions.HeaderBackColor = System.Drawing.Color.White;
             this.backstageViewControl1.OwnerControl = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem8;
-            this.backstageViewControl1.SelectedTabIndex = 8;
+            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem1;
+            this.backstageViewControl1.SelectedTabIndex = 0;
             this.backstageViewControl1.Size = new System.Drawing.Size(225, 391);
             this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
             this.backstageViewControl1.TabIndex = 2;
@@ -221,49 +221,49 @@
             // backstageViewClientControl2
             // 
             this.backstageViewClientControl2.Controls.Add(this.muahangphaitra);
-            this.backstageViewClientControl2.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(156, 63);
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            this.backstageViewClientControl2.Size = new System.Drawing.Size(59, 327);
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(51, 327);
             this.backstageViewClientControl2.TabIndex = 2;
             // 
             // backstageViewClientControl3
             // 
             this.backstageViewClientControl3.Controls.Add(this.banhangphaithu);
-            this.backstageViewClientControl3.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl3.Location = new System.Drawing.Point(156, 63);
             this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            this.backstageViewClientControl3.Size = new System.Drawing.Size(59, 327);
+            this.backstageViewClientControl3.Size = new System.Drawing.Size(51, 327);
             this.backstageViewClientControl3.TabIndex = 3;
             // 
             // backstageViewClientControl4
             // 
             this.backstageViewClientControl4.Controls.Add(this.hangtonkho);
-            this.backstageViewClientControl4.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl4.Location = new System.Drawing.Point(156, 63);
             this.backstageViewClientControl4.Name = "backstageViewClientControl4";
-            this.backstageViewClientControl4.Size = new System.Drawing.Size(59, 327);
+            this.backstageViewClientControl4.Size = new System.Drawing.Size(51, 327);
             this.backstageViewClientControl4.TabIndex = 4;
             // 
             // backstageViewClientControl5
             // 
             this.backstageViewClientControl5.Controls.Add(this.quanlytaisan);
-            this.backstageViewClientControl5.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl5.Location = new System.Drawing.Point(156, 63);
             this.backstageViewClientControl5.Name = "backstageViewClientControl5";
-            this.backstageViewClientControl5.Size = new System.Drawing.Size(59, 327);
+            this.backstageViewClientControl5.Size = new System.Drawing.Size(51, 327);
             this.backstageViewClientControl5.TabIndex = 5;
             // 
             // backstageViewClientControl6
             // 
             this.backstageViewClientControl6.Controls.Add(this.chiphigiathanh);
-            this.backstageViewClientControl6.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl6.Location = new System.Drawing.Point(156, 63);
             this.backstageViewClientControl6.Name = "backstageViewClientControl6";
-            this.backstageViewClientControl6.Size = new System.Drawing.Size(59, 327);
+            this.backstageViewClientControl6.Size = new System.Drawing.Size(51, 327);
             this.backstageViewClientControl6.TabIndex = 6;
             // 
             // backstageViewClientControl7
             // 
             this.backstageViewClientControl7.Controls.Add(this.ketoantonghop);
-            this.backstageViewClientControl7.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl7.Location = new System.Drawing.Point(156, 63);
             this.backstageViewClientControl7.Name = "backstageViewClientControl7";
-            this.backstageViewClientControl7.Size = new System.Drawing.Size(59, 327);
+            this.backstageViewClientControl7.Size = new System.Drawing.Size(51, 327);
             this.backstageViewClientControl7.TabIndex = 7;
             // 
             // backstageViewTabItem1
@@ -271,6 +271,7 @@
             this.backstageViewTabItem1.Caption = "Vốn bằng tiền";
             this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
             this.backstageViewTabItem1.Name = "backstageViewTabItem1";
+            this.backstageViewTabItem1.Selected = true;
             // 
             // backstageViewTabItem2
             // 
@@ -317,7 +318,6 @@
             this.backstageViewTabItem8.Caption = "Hệ thống";
             this.backstageViewTabItem8.ContentControl = this.backstageViewClientControl8;
             this.backstageViewTabItem8.Name = "backstageViewTabItem8";
-            this.backstageViewTabItem8.Selected = true;
             // 
             // barButtonItem1
             // 
