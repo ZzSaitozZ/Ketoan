@@ -107,22 +107,30 @@
             galleryItemGroup3.Caption = "DANH MỤC";
             galleryItem9.Caption = "Danh mục nghiệp vụ";
             galleryItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            galleryItem9.Tag = "DMNVU";
             galleryItem9.Value = 8;
             galleryItem10.Caption = "Danh muc tài khoản";
             galleryItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
+            galleryItem10.Tag = "DMTK";
             galleryItem10.Value = 9;
             galleryItem11.Caption = "Danh mục bộ phận";
             galleryItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            galleryItem11.Tag = "DMBP";
             galleryItem11.Value = 12;
             galleryItem12.Caption = "Danh mục nhóm sản phẩm";
             galleryItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            galleryItem12.Tag = "DMNHSP";
             galleryItem13.Caption = "Các phân đoạn giá thành";
             galleryItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            galleryItem13.Tag = "CPDGT";
             galleryItem13.Value = 13;
             galleryItem14.Caption = "Phương pháp phân bổ chi phí";
+            galleryItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            galleryItem14.Tag = "PPPBCP";
             galleryItem14.Value = 15;
             galleryItem15.Caption = "Danh mục yếu tố chi phí";
-            galleryItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            galleryItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            galleryItem15.Tag = "DMYTCP";
             galleryItem15.Value = 16;
             galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem9,

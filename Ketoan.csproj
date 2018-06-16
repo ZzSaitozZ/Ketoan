@@ -226,6 +226,12 @@
     <Compile Include="Table\R81DMKV.Designer.cs">
       <DependentUpon>R81DMKV.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table\R81DMLO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table\R81DMLO.Designer.cs">
+      <DependentUpon>R81DMLO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Table\R81DMNHDT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -355,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Table\R81DMKV.resx">
       <DependentUpon>R81DMKV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\R81DMLO.resx">
+      <DependentUpon>R81DMLO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Table\R81DMNHDT.resx">
       <DependentUpon>R81DMNHDT.cs</DependentUpon>

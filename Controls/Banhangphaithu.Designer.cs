@@ -115,32 +115,42 @@
             galleryItemGroup3.Caption = "DANH MỤC";
             galleryItem10.Caption = "Danh mục nghiệp vụ";
             galleryItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            galleryItem10.Tag = "DMNVU";
             galleryItem10.Value = 8;
             galleryItem11.Caption = "Danh muc tài khoản";
             galleryItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
+            galleryItem11.Tag = "DMTK";
             galleryItem11.Value = 9;
             galleryItem12.Caption = "Danh mục nhóm đối tượng";
             galleryItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            galleryItem12.Tag = "DMNHDT";
             galleryItem12.Value = 10;
             galleryItem13.Caption = "Danh mục nhóm hợp đồng";
             galleryItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            galleryItem13.Tag = "DMNHHD";
             galleryItem13.Value = 11;
             galleryItem14.Caption = "Danh mục bộ phận";
             galleryItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            galleryItem14.Tag = "DMBP";
             galleryItem14.Value = 12;
             galleryItem15.Caption = "Danh mục nhóm nhân viên";
             galleryItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            galleryItem15.Tag = "DMNHNV";
             galleryItem16.Caption = "Danh mục kho";
             galleryItem16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            galleryItem16.Tag = "DMKHO";
             galleryItem16.Value = 13;
             galleryItem17.Caption = "Danh mục khu vực";
             galleryItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            galleryItem17.Tag = "DMKV";
             galleryItem17.Value = 15;
             galleryItem18.Caption = "Danh mục thuế";
             galleryItem18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            galleryItem18.Tag = "DMTHUE";
             galleryItem18.Value = 16;
             galleryItem19.Caption = "Danh mục vật tư";
             galleryItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            galleryItem19.Tag = "DMVT";
             galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem10,
             galleryItem11,
