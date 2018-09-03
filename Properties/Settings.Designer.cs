@@ -26,10 +26,10 @@ namespace Ketoan.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PHUC-PC\\PHUCSQL;Initial Catalog=R50NAMKIM;Integrated Security=True")]
-        public string R50NAMKIMConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=Ha;Initial Catalog=EWON;Integrated Security=True")]
+        public string EWONConnectionString {
             get {
-                return ((string)(this["R50NAMKIMConnectionString"]));
+                return ((string)(this["EWONConnectionString"]));
             }
         }
     }

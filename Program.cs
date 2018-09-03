@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ketoan.Controls.BanHangPhaiThu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Ketoan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            StartForm s = new StartForm();
+            FThemHoaDon s = new FThemHoaDon();
             s.Tag = 0;
             Application.Run(s);
         }

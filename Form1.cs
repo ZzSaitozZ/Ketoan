@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.LookAndFeel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,10 @@ namespace Ketoan
         public Form1(string a)
         {
             InitializeComponent();
-            load_table(a);
+            DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(rbiGallery, true);
+            UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
+
+           load_table(a);
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -31,125 +35,100 @@ namespace Ketoan
         {
             if (table == "DMBP")
             {
-                Ketoan.Table.R81DMBP DMBP = new Ketoan.Table.R81DMBP();
+                Ketoan.Table.EDMBP DMBP = new Ketoan.Table.EDMBP();
                 DMBP.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMBP);
             }
             else if (table == "DMKHO")
             {
-                Ketoan.Table.R81DMKHO DMKHO = new Ketoan.Table.R81DMKHO();
+                Ketoan.Table.EDMKHO DMKHO = new Ketoan.Table.EDMKHO();
                 DMKHO.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMKHO);
             }
             else if (table == "DMKM")
             {
-                Ketoan.Table.R81DMKM DMKM = new Ketoan.Table.R81DMKM();
+                Ketoan.Table.EDMKM DMKM = new Ketoan.Table.EDMKM();
                 DMKM.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMKM);
             }
-            else if (table == "DMKTHU")
-            {
-                Ketoan.Table.R81DMKM DMKM = new Ketoan.Table.R81DMKM();
-                DMKM.Dock = DockStyle.Fill;
-                Tablearea.Controls.Add(DMKM);
-            }
+
             else if (table == "DMKV")
             {
-                Ketoan.Table.R81DMKV DMKV = new Ketoan.Table.R81DMKV();
+                Ketoan.Table.EDMKV DMKV = new Ketoan.Table.EDMKV();
                 DMKV.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMKV);
             }
             else if (table == "DMLO")
             {
-                Ketoan.Table.R81DMLO DMLO = new Ketoan.Table.R81DMLO();
+                Ketoan.Table.EDMLO DMLO = new Ketoan.Table.EDMLO();
                 DMLO.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMLO);
             }
             else if (table == "DMNVU")
             {
-                Ketoan.Table.R81DMNVU DMNVU = new Ketoan.Table.R81DMNVU();
+                Ketoan.Table.EDMNVU DMNVU = new Ketoan.Table.EDMNVU();
                 DMNVU.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMNVU);
             }
-            else if (table == "DMNVON")
-            {
-                //Ketoan.Table.R81DMNVON DMNVON = new Ketoan.Table.R81DMNVON();
-                //DMNVON.Dock = DockStyle.Fill;
-                //Tablearea.Controls.Add(DMNVON);
-            }
-            else if (table == "DMNHTP")
-            {
-                //Ketoan.Table.R81DMNVU DMNVU = new Ketoan.Table.R81DMNVU();
-                //DMNVU.Dock = DockStyle.Fill;
-                //Tablearea.Controls.Add(DMNVU);
-            }
-            else if (table == "DMNHCCDC")
-            {
-                //Ketoan.Table.R81DMNVU DMNVU = new Ketoan.Table.R81DMNVU();
-                //DMNVU.Dock = DockStyle.Fill;
-                //Tablearea.Controls.Add(DMNVU);
-            }
+
+
             else if (table == "DMNHDT")
             {
-                Ketoan.Table.R81DMNHDT DMNHDT = new Ketoan.Table.R81DMNHDT();
+                Ketoan.Table.EDMNHDT DMNHDT = new Ketoan.Table.EDMNHDT();
                 DMNHDT.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMNHDT);
             }
             else if (table == "DMNHHD")
             {
-                Ketoan.Table.R81DMNHHD DMNHHD = new Ketoan.Table.R81DMNHHD();
+                Ketoan.Table.EDMNHHD DMNHHD = new Ketoan.Table.EDMNHHD();
                 DMNHHD.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMNHHD);
             }
-            else if (table == "DMNHNV")
+
+            else if (table == "DMNHNHAN")
             {
-                //Ketoan.Table.R81DMNVU DMNVU = new Ketoan.Table.R81DMNVU();
-                //DMNVU.Dock = DockStyle.Fill;
-                //Tablearea.Controls.Add(DMNVU);
+                Ketoan.Table.EDMNHNHAN EDMNHNHAN = new Ketoan.Table.EDMNHNHAN();
+                EDMNHNHAN.Dock = DockStyle.Fill;
+                Tablearea.Controls.Add(EDMNHNHAN);
             }
-            else if (table == "DMNHSP")
-            {
-                //Ketoan.Table.R81DMNVU DMNVU = new Ketoan.Table.R81DMNVU();
-                //DMNVU.Dock = DockStyle.Fill;
-                //Tablearea.Controls.Add(DMNVU);
-            }
-            else if (table == "DMNHTS")
-            {
-                //Ketoan.Table.R81DMNVU DMNVU = new Ketoan.Table.R81DMNVU();
-                //DMNVU.Dock = DockStyle.Fill;
-                //Tablearea.Controls.Add(DMNVU);
-            }
+          
             else if (table == "DMNHVT")
             {
-                Ketoan.Table.R81DMNHVT DMNHVT = new Ketoan.Table.R81DMNHVT();
+                Ketoan.Table.EDMNHVT DMNHVT = new Ketoan.Table.EDMNHVT();
                 DMNHVT.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMNHVT);
             }
-            else if (table == "DMPL")
+            else if (table == "DMPLHD")
             {
-                //Ketoan.Table.R81DMNVU DMNVU = new Ketoan.Table.R81DMNVU();
-                //DMNVU.Dock = DockStyle.Fill;
-                //Tablearea.Controls.Add(DMNVU);
+                Ketoan.Table.EDMPLHD DMPLHD = new Ketoan.Table.EDMPLHD();
+                DMPLHD.Dock = DockStyle.Fill;
+                Tablearea.Controls.Add(DMPLHD);
             }
             else if (table == "DMTK")
             {
-                Ketoan.Table.R81DMTK DMTK = new Ketoan.Table.R81DMTK();
+                Ketoan.Table.EDMTK DMTK = new Ketoan.Table.EDMTK();
                 DMTK.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMTK);
             }
             else if (table == "DMTHUE")
             {
-                Ketoan.Table.R81DMTHUE DMTHUE = new Ketoan.Table.R81DMTHUE();
+                Ketoan.Table.EDMTHUE DMTHUE = new Ketoan.Table.EDMTHUE();
                 DMTHUE.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMTHUE);
             }
+            else if (table == "DMKV")
+            {
+                Ketoan.Table.EDMKV DMKV = new Ketoan.Table.EDMKV();
+                DMKV.Dock = DockStyle.Fill;
+                Tablearea.Controls.Add(DMKV);
+            }
             else if (table == "DMYTCP")
             {
-                Ketoan.Table.R07DMYT DMYT = new Ketoan.Table.R07DMYT();
+                Ketoan.Table.EDMYT DMYT = new Ketoan.Table.EDMYT();
                 DMYT.Dock = DockStyle.Fill;
                 Tablearea.Controls.Add(DMYT);
             }
         }
-       
+
     }
 }

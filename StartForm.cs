@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.LookAndFeel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,13 +19,15 @@ namespace Ketoan
         Ketoan.Controls.Chiphigiathanh chiphigiathanh = new Ketoan.Controls.Chiphigiathanh();
         Ketoan.Controls.Hangtonkho hangtonkho = new Ketoan.Controls.Hangtonkho();
         Ketoan.Controls.Hethong hethong = new Ketoan.Controls.Hethong();
-        Ketoan.Controls.Ketoantonghop ketoantonghop = new Ketoan.Controls.Ketoantonghop();
+        Ketoan.Controls.Menuchinh.Ketoantonghop ketoantonghop = new Ketoan.Controls.Menuchinh.Ketoantonghop();
         Ketoan.Controls.Muahangphaitra muahangphaitra = new Ketoan.Controls.Muahangphaitra();
         Ketoan.Controls.Quanlytaisan quanlytaisan = new Ketoan.Controls.Quanlytaisan();
         public int k =0;        
         public StartForm()
         {
+          
             InitializeComponent();
+
             this.FormBorderStyle = FormBorderStyle.None;
             this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.ResizeRedraw, true);
@@ -132,6 +135,16 @@ namespace Ketoan
             DetailPanel.Controls.Clear();
             hethong.Dock = DockStyle.Fill;
             DetailPanel.Controls.Add(hethong);
+        }
+
+        private void DetailPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void StartForm_Load(object sender, EventArgs e)
+        {
+
         }
         #endregion
         //Moveable panel
