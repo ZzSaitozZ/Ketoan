@@ -22,7 +22,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            EDCHoaDon frm = new EDCHoaDon();
+            FThemHoaDon frm = new FThemHoaDon();
             frm.Show();
 
         }

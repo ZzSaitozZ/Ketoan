@@ -16,6 +16,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
         public ChiTietChungTuHoaDonBanHang()
         {
             InitializeComponent();
+            
         }
     }
 }
