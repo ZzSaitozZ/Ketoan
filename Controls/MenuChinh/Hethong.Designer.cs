@@ -65,7 +65,7 @@
             this.galleryControl2.Gallery.AllowFilter = false;
             this.galleryControl2.Gallery.AutoFitColumns = false;
             this.galleryControl2.Gallery.AutoSize = DevExpress.XtraBars.Ribbon.GallerySizeMode.None;
-            this.galleryControl2.Gallery.BackColor = System.Drawing.Color.Transparent;
+            this.galleryControl2.Gallery.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.galleryControl2.Gallery.CheckDrawMode = DevExpress.XtraBars.Ribbon.Gallery.CheckDrawMode.OnlyImage;
             this.galleryControl2.Gallery.ColumnCount = 10;
             this.galleryControl2.Gallery.FixedImageSize = false;
@@ -79,17 +79,27 @@
             galleryItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
             galleryItem2.Value = 1;
             galleryItem3.Caption = "Khai báo tham số chứng từ";
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem3.Value = 2;
             galleryItem4.Caption = "Chuyển số dư sang năm sau";
+            galleryItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             galleryItem4.Value = 3;
             galleryItem5.Caption = "Khoá dữ liệu";
+            galleryItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             galleryItem6.Caption = "Quản lý người dùng";
+            galleryItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             galleryItem7.Caption = "Bảo trì hệ thống";
+            galleryItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             galleryItem8.Caption = "Lập kế hoạch doanh thu";
+            galleryItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             galleryItem9.Caption = "Kiểm tra dữ liệu";
+            galleryItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             galleryItem10.Caption = "Kết xuất dữ liệu sang HTKK";
+            galleryItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             galleryItem11.Caption = "Nhật ký dữ liệu";
+            galleryItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             galleryItem12.Caption = "Active client";
+            galleryItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,

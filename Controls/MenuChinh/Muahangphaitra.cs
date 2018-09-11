@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ketoan.Controls.BanHangPhaiThu;
 
 namespace Ketoan.Controls
 {
@@ -183,6 +184,7 @@ namespace Ketoan.Controls
                 frm.Show();
                 frm1.Hide();
             }
+           
             #endregion
         }
     }

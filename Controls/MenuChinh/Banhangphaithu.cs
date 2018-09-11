@@ -193,6 +193,15 @@ namespace Ketoan.Controls
                 frm.Show();
                 frm1.Hide();
             }
+            else if (MenuBtn.Contains("bcmh"))
+            {
+                string a = "bcmh";
+                FBaocaomuahang frm = new FBaocaomuahang(a);
+                frm.Text = "Báo cáo mua hàng";
+                frm.Show();
+                frm1.Hide();
+            }
+        
             #endregion
         }
 

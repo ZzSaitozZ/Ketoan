@@ -67,11 +67,6 @@
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDenThang = new DevExpress.XtraEditors.TextEdit();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtTuThang = new DevExpress.XtraEditors.TextEdit();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit4)).BeginInit();
@@ -88,8 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit3.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDenThang.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTuThang.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -434,59 +427,11 @@
             this.barDockControl4.Manager = this.barManager2;
             this.barDockControl4.Size = new System.Drawing.Size(0, 448);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(459, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 17);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Chi phí SXKD dở dang  ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtDenThang
-            // 
-            this.txtDenThang.Location = new System.Drawing.Point(311, 83);
-            this.txtDenThang.MenuManager = this.barManager1;
-            this.txtDenThang.Name = "txtDenThang";
-            this.txtDenThang.Size = new System.Drawing.Size(122, 20);
-            this.txtDenThang.TabIndex = 13;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(233, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 17);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Đến tháng";
-            // 
-            // txtTuThang
-            // 
-            this.txtTuThang.Location = new System.Drawing.Point(105, 83);
-            this.txtTuThang.MenuManager = this.barManager1;
-            this.txtTuThang.Name = "txtTuThang";
-            this.txtTuThang.Size = new System.Drawing.Size(122, 20);
-            this.txtTuThang.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Từ tháng";
-            // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(0, 109);
+            this.panel1.Location = new System.Drawing.Point(0, 86);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(823, 376);
+            this.panel1.Size = new System.Drawing.Size(823, 399);
             this.panel1.TabIndex = 33;
             // 
             // EDCMenu
@@ -495,11 +440,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDenThang);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtTuThang);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -526,8 +466,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit3.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDenThang.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTuThang.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,11 +510,6 @@
         private DevExpress.XtraBars.BarEditItem barEditItem9;
         private DevExpress.XtraEditors.Repository.RepositoryItemSearchControl repositoryItemSearchControl1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private System.Windows.Forms.Label label3;
-        private DevExpress.XtraEditors.TextEdit txtDenThang;
-        private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.TextEdit txtTuThang;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
     }
 }

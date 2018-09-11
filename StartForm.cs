@@ -17,7 +17,7 @@ namespace Ketoan
         Ketoan.Controls.Vonbangtien vonbangtien = new Ketoan.Controls.Vonbangtien();
         Ketoan.Controls.Banhangphaithu banhangphaithu = new Ketoan.Controls.Banhangphaithu();
         Ketoan.Controls.Chiphigiathanh chiphigiathanh = new Ketoan.Controls.Chiphigiathanh();
-        Ketoan.Controls.Hangtonkho hangtonkho = new Ketoan.Controls.Hangtonkho();
+        Ketoan.Controls.Menuchinh.Hangtonkho hangtonkho = new Ketoan.Controls.Menuchinh.Hangtonkho();
         Ketoan.Controls.Hethong hethong = new Ketoan.Controls.Hethong();
         Ketoan.Controls.Menuchinh.Ketoantonghop ketoantonghop = new Ketoan.Controls.Menuchinh.Ketoantonghop();
         Ketoan.Controls.Muahangphaitra muahangphaitra = new Ketoan.Controls.Muahangphaitra();

@@ -1,4 +1,5 @@
 ﻿using Ketoan.Controls.BanHangPhaiThu;
+using Ketoan.Controls.PhanQuyen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Ketoan
             Application.SetCompatibleTextRenderingDefault(false);
             FThemHoaDon s = new FThemHoaDon();
             s.Tag = 0;
+            Login login = new Login();
             Application.Run(s);
         }
     }

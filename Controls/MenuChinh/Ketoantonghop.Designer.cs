@@ -30,8 +30,8 @@
         {
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ketoantonghop));
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem5 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -85,15 +85,16 @@
             this.galleryControl2.Gallery.AllowFilter = false;
             this.galleryControl2.Gallery.AutoFitColumns = false;
             this.galleryControl2.Gallery.AutoSize = DevExpress.XtraBars.Ribbon.GallerySizeMode.None;
-            this.galleryControl2.Gallery.BackColor = System.Drawing.Color.Transparent;
+            this.galleryControl2.Gallery.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.galleryControl2.Gallery.CheckDrawMode = DevExpress.XtraBars.Ribbon.Gallery.CheckDrawMode.OnlyImage;
             this.galleryControl2.Gallery.ColumnCount = 10;
             this.galleryControl2.Gallery.FixedImageSize = false;
             galleryItemGroup1.Caption = "DỮ LIỆU";
             galleryItem1.Caption = "Phiếu mua dịch vụ";
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem1.Value = 1;
             galleryItem2.Caption = "Phiếu bù trừ công nợ";
-            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             galleryItem2.Value = 2;
             galleryItem3.Caption = "Phiếu tự động";
             galleryItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
@@ -104,15 +105,22 @@
             galleryItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
             galleryItem4.Value = 0;
             galleryItem5.Caption = "Thanh toán cho các chứng từ";
+            galleryItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             galleryItem6.Caption = "Đánh giá chênh lệch tỉ giá cuối kỳ";
+            galleryItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             galleryItem7.Caption = "Tính chênh lệch tỉ giá bình quân";
+            galleryItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             galleryItem8.Caption = "Bút toán kết chuyển cuối kỳ";
-            galleryItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            galleryItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             galleryItem8.Tag = "ktth.btkc";
             galleryItem9.Caption = "Lập kế hoạch doanh thu";
+            galleryItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             galleryItem10.Caption = "Lập kế hoạch chi phí";
+            galleryItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             galleryItem11.Caption = "Số dư hạn thanh toán";
+            galleryItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             galleryItem12.Caption = "Số dư đầu kỳ kế toán";
+            galleryItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,
@@ -128,12 +136,18 @@
             galleryItem12});
             galleryItemGroup2.Caption = "BÁO CÁO";
             galleryItem13.Caption = "Sổ sách kế toán";
+            galleryItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
             galleryItem13.Value = 6;
             galleryItem14.Caption = "Báo cáo thuế";
+            galleryItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
             galleryItem15.Caption = "Báo cáo chi phí";
+            galleryItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
             galleryItem16.Caption = "Báo cáo công nợ";
+            galleryItem16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
             galleryItem17.Caption = "Báo cáo hợp đồng";
+            galleryItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
             galleryItem18.Caption = "Báo cáo tài chính";
+            galleryItem18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image15")));
             galleryItemGroup2.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem13,
             galleryItem14,
@@ -143,7 +157,7 @@
             galleryItem18});
             galleryItemGroup3.Caption = "DANH MỤC";
             galleryItem19.Caption = "Danh mục nghiệp vụ";
-            galleryItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            galleryItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image16")));
             galleryItem19.Tag = "DMNVU";
             galleryItem19.Value = 8;
             galleryItem20.Caption = "Danh muc tài khoản";
@@ -151,32 +165,32 @@
             galleryItem20.Tag = "DMTK";
             galleryItem20.Value = 9;
             galleryItem21.Caption = "Danh mục nhóm đối tượng";
-            galleryItem21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            galleryItem21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image17")));
             galleryItem21.Tag = "DMNHDT";
             galleryItem21.Value = 12;
             galleryItem22.Caption = "Danh mục nhóm hợp đồng";
-            galleryItem22.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            galleryItem22.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image18")));
             galleryItem22.Tag = "DMNHHD";
             galleryItem23.Caption = "Danh mục bộ phận";
-            galleryItem23.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            galleryItem23.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image19")));
             galleryItem23.Tag = "DMBP";
             galleryItem23.Value = 13;
             galleryItem24.Caption = "Danh mục nhóm nhân viên";
-            galleryItem24.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            galleryItem24.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image20")));
             galleryItem24.Tag = "DMNHNV";
             galleryItem24.Value = 15;
             galleryItem25.Caption = "Danh mục khoản mục";
-            galleryItem25.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            galleryItem25.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image21")));
             galleryItem25.Tag = "DMKM";
             galleryItem25.Value = 16;
             galleryItem26.Caption = "Danh mục thuế";
-            galleryItem26.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            galleryItem26.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image22")));
             galleryItem26.Tag = "DMTHUE";
             galleryItem27.Caption = "Danh mục nhóm sản phẩm";
-            galleryItem27.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            galleryItem27.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image23")));
             galleryItem27.Tag = "DMNHSP";
             galleryItem28.Caption = "Danh mục phân loại";
-            galleryItem28.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            galleryItem28.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image24")));
             galleryItem28.Tag = "DMPL";
             galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem19,

@@ -34,18 +34,29 @@
   <ItemGroup>
     <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -80,6 +91,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BanHangPhaiThu\baocaodoanhthu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\baocaodoanhthu.Designer.cs">
+      <DependentUpon>baocaodoanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\baocao\Bangke\FBangkebanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\baocao\Bangke\FBangkebanhang.Designer.cs">
+      <DependentUpon>FBangkebanhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\baocao\FBaocaomuahang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\baocao\FBaocaomuahang.designer.cs">
+      <DependentUpon>FBaocaomuahang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\baocao\MenuBaocao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\baocao\MenuBaocao.Designer.cs">
+      <DependentUpon>MenuBaocao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\BanHangPhaiThu\ChiTietChungTuHoaDonBanHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,6 +132,12 @@
     </Compile>
     <Compile Include="Controls\BanHangPhaiThu\EDCChiTietNghiepVu.Designer.cs">
       <DependentUpon>EDCChiTietNghiepVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\FBaocaomuahang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BanHangPhaiThu\FBaocaomuahang.Designer.cs">
+      <DependentUpon>FBaocaomuahang.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\BanHangPhaiThu\FThemHoaDon.cs">
       <SubType>Form</SubType>
@@ -146,6 +187,12 @@
     <Compile Include="Controls\BanHangPhaiThu\UTable.Designer.cs">
       <DependentUpon>UTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Dungchung\Menu\EDCM2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dungchung\Menu\EDCM2.designer.cs">
+      <DependentUpon>EDCM2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Dungchung\Menu\EDCMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,6 +204,78 @@
     </Compile>
     <Compile Include="Controls\BanHangPhaiThu\EDCHoaDon.Designer.cs">
       <DependentUpon>EDCHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dungchung\Menu\FBaocaotonkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dungchung\Menu\FBaocaotonkho.designer.cs">
+      <DependentUpon>FBaocaotonkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Bangke\bangkexuatban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Bangke\bangkexuatban.Designer.cs">
+      <DependentUpon>bangkexuatban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Bangke\FBangkexuatban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Bangke\FBangkexuatban.Designer.cs">
+      <DependentUpon>FBangkexuatban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Baocao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Baocao.Designer.cs">
+      <DependentUpon>Baocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\FMenubaocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\FMenubaocao.Designer.cs">
+      <DependentUpon>FMenubaocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Report\baocaoR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Baocao\Report\baocaoR.Designer.cs">
+      <DependentUpon>baocaoR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieunhapthanhpham\FPhieunhapthanhpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieunhapthanhpham\FPhieunhapthanhpham.Designer.cs">
+      <DependentUpon>FPhieunhapthanhpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieunhapthanhpham\Phieunhapthanhpham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieunhapthanhpham\Phieunhapthanhpham.Designer.cs">
+      <DependentUpon>Phieunhapthanhpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatban\FPhieuxuatban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatban\FPhieuxuatban.Designer.cs">
+      <DependentUpon>FPhieuxuatban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatban\Phieuxuatban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatban\Phieuxuatban.Designer.cs">
+      <DependentUpon>Phieuxuatban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatkhothanhpham\FPhieuxuatkhotp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatkhothanhpham\FPhieuxuatkhotp.Designer.cs">
+      <DependentUpon>FPhieuxuatkhotp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatkhothanhpham\Phieuxuatkhotp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Hangtonkho\Phieuxuatkhothanhpham\Phieuxuatkhotp.Designer.cs">
+      <DependentUpon>Phieuxuatkhotp.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Ketoantonghop\buttoanketchuyen.cs">
       <SubType>UserControl</SubType>
@@ -229,6 +348,12 @@
     </Compile>
     <Compile Include="Controls\MenuChinh\Vonbangtien.Designer.cs">
       <DependentUpon>Vonbangtien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PhanQuyen\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\PhanQuyen\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="EWONDATASET.cs">
       <DependentUpon>EWONDATASET.xsd</DependentUpon>
@@ -354,6 +479,18 @@
     <Compile Include="Controls\Cpgiathanh\ETHYT.Designer.cs">
       <DependentUpon>ETHYT.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\BanHangPhaiThu\baocaodoanhthu.resx">
+      <DependentUpon>baocaodoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BanHangPhaiThu\baocao\Bangke\FBangkebanhang.resx">
+      <DependentUpon>FBangkebanhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BanHangPhaiThu\baocao\FBaocaomuahang.resx">
+      <DependentUpon>FBaocaomuahang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BanHangPhaiThu\baocao\MenuBaocao.resx">
+      <DependentUpon>MenuBaocao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\BanHangPhaiThu\ChiTietChungTuHoaDonBanHang.resx">
       <DependentUpon>ChiTietChungTuHoaDonBanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -362,6 +499,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\BanHangPhaiThu\EDCChiTietNghiepVu.resx">
       <DependentUpon>EDCChiTietNghiepVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BanHangPhaiThu\FBaocaomuahang.resx">
+      <DependentUpon>FBaocaomuahang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\BanHangPhaiThu\FThemHoaDon.resx">
       <DependentUpon>FThemHoaDon.cs</DependentUpon>
@@ -387,11 +527,51 @@
     <EmbeddedResource Include="Controls\BanHangPhaiThu\UTable.resx">
       <DependentUpon>UTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dungchung\Menu\EDCM2.resx">
+      <DependentUpon>EDCM2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Dungchung\Menu\EDCMenu.resx">
       <DependentUpon>EDCMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\BanHangPhaiThu\EDCHoaDon.resx">
       <DependentUpon>EDCHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dungchung\Menu\FBaocaotonkho.resx">
+      <DependentUpon>FBaocaotonkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Baocao\Bangke\bangkexuatban.resx">
+      <DependentUpon>bangkexuatban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Baocao\Bangke\FBangkexuatban.resx">
+      <DependentUpon>FBangkexuatban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Baocao\Baocao.resx">
+      <DependentUpon>Baocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Baocao\FMenubaocao.resx">
+      <DependentUpon>FMenubaocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Baocao\Report\Bangkephieuxuat.resx" />
+    <EmbeddedResource Include="Controls\Hangtonkho\Baocao\Report\baocaoR.resx">
+      <DependentUpon>baocaoR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Phieunhapthanhpham\FPhieunhapthanhpham.resx">
+      <DependentUpon>FPhieunhapthanhpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Phieunhapthanhpham\Phieunhapthanhpham.resx">
+      <DependentUpon>Phieunhapthanhpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Phieuxuatban\FPhieuxuatban.resx">
+      <DependentUpon>FPhieuxuatban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Phieuxuatban\Phieuxuatban.resx">
+      <DependentUpon>Phieuxuatban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Phieuxuatkhothanhpham\FPhieuxuatkhotp.resx">
+      <DependentUpon>FPhieuxuatkhotp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Hangtonkho\Phieuxuatkhothanhpham\Phieuxuatkhotp.resx">
+      <DependentUpon>Phieuxuatkhotp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Ketoantonghop\buttoanketchuyen.resx">
       <DependentUpon>buttoanketchuyen.cs</DependentUpon>
@@ -431,6 +611,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MenuChinh\Vonbangtien.resx">
       <DependentUpon>Vonbangtien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PhanQuyen\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -636,7 +819,7 @@
     <Folder Include="Controls\Dungchung\ThemSua\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Model\Model.csproj">
+    <ProjectReference Include="..\Model\Model.csproj">
       <Project>{2c7bf728-e3a1-48bc-84da-c82b31ccc0d9}</Project>
       <Name>Model</Name>
     </ProjectReference>

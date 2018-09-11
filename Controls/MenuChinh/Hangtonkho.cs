@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ketoan.Controls
+namespace Ketoan.Controls.Menuchinh
 {
     public partial class Hangtonkho : UserControl
     {

@@ -74,7 +74,7 @@
             this.galleryControl2.Gallery.AllowFilter = false;
             this.galleryControl2.Gallery.AutoFitColumns = false;
             this.galleryControl2.Gallery.AutoSize = DevExpress.XtraBars.Ribbon.GallerySizeMode.None;
-            this.galleryControl2.Gallery.BackColor = System.Drawing.Color.Transparent;
+            this.galleryControl2.Gallery.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.galleryControl2.Gallery.CheckDrawMode = DevExpress.XtraBars.Ribbon.Gallery.CheckDrawMode.OnlyImage;
             this.galleryControl2.Gallery.ColumnCount = 10;
             this.galleryControl2.Gallery.FixedImageSize = false;
@@ -105,6 +105,7 @@
             galleryItemGroup2.Caption = "BÁO CÁO";
             galleryItem6.Caption = "Báo cáo mua hàng";
             galleryItem6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
+            galleryItem6.Tag = "bcmh";
             galleryItem6.Value = 6;
             galleryItem7.Caption = "Báo cáo hàng tồn kho";
             galleryItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage4")));
