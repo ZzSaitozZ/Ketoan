@@ -21,7 +21,7 @@ namespace Ketoan
             FThemHoaDon s = new FThemHoaDon();
             s.Tag = 0;
             Login login = new Login();
-            Application.Run(s);
+            Application.Run(login);
         }
     }
 }

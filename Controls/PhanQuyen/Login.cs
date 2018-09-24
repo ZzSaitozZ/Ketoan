@@ -28,22 +28,29 @@ namespace Ketoan.Controls.PhanQuyen
             for(int i=0;i<dt.Rows.Count;i++)
             {
                 DataRow dr = dt.Rows[i];
-                string user = dr[0].ToString();
+                string user = dr[1].ToString();
                 if(User==user)
                 {
                     flagUser = true;
+                    break;
                 }
-                string password = dr[1].ToString();
-
-                if (Password==password)
-                {
-                    flagPass = true;
-
-                }
-
+                
 
             }
-            if(flagUser==true&&flagPass==true)
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataRow dr = dt.Rows[i];
+
+                string password = dr[2].ToString();
+
+                if (Password == password)
+                {
+                    flagPass = true;
+                    break;
+                }
+
+            }
+            if (flagUser==true&&flagPass==true)
             {
                 StartForm s = new StartForm();
                 s.Show();

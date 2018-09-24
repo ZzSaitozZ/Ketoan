@@ -22,6 +22,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
             LoadCategory();
             txtTien.Text = "VND";
             txtChonTien.Text = "VND";
+            //txtNgayct.Text=
         }
 
         
@@ -197,6 +198,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
             private float price;
             private float totalPrice;
             private float giamGia;
+
             public string FoodName { get => foodName; set => foodName = value; }
             public int Count { get => count; set => count = value; }
             public float Price { get => price; set => price = value; }
@@ -206,13 +208,11 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
         public List<ThucDon> GetListMonByTable(int id)
         {
-            string query = "SELECT vt.Ten_Vt,ct.So_Luong,ct.Thanh_Tien_GB,ct.Tien_Giam_Gia,(ct.So_Luong*ct.Thanh_Tien_GB)-ct.Tien_Giam_Gia AS TT " +
-                "FROM dbo.E02CTHD AS ct,dbo.E00DMVT AS vt,dbo.E02HOADON AS hd " +
-                "WHERE ct.Ma_Vt = vt.Ma_Vt AND ct.Ma_HD = hd.Ma_HD AND hd.status = 0 and hd.Ma_Ban = " + id;
+            string query = "EXEC ESP_GetListMonBan @idBan";
 
             List<ThucDon> listMon = new List<ThucDon>();
 
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { id });
 
             foreach (DataRow item in data.Rows)
             {
@@ -257,7 +257,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
             int tableID = ((sender as Button).Tag as Table).Id;
             lsvBill.Tag = (sender as Button).Tag;
             
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.E02HOADON WHERE Ma_Ban = " + tableID + " AND status = 0");
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC ESP_BanChuaTT @idBan", new object[] { tableID });
             if (data.Rows.Count > 0)
             {
                 txtMaHD.Text = data.Rows[0].ItemArray[1].ToString();
@@ -473,15 +473,20 @@ namespace Ketoan.Controls.BanHangPhaiThu
                 DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_InsertHOADON @ma_HD , @ma_Ban ", new object[] { maHoaDon, table.Id });
 
                 DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_InsertCTHD @ma_HD , @ma_VT , @soLuong , @idBan , @giaBan , @giamGia", new object[] { maHoaDon, mon, count, table.Id, giaBan, giamGia });
+                LoadTable();
             }
             else
             {
-               
                 DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_InsertCTHD @ma_HD , @ma_VT , @soLuong , @idBan , @giaBan , @giamGia", new object[] { txtMaHD.Text, mon, count, table.Id, giaBan, giamGia });
+                DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.E02CTHD WHERE Ma_HD=N'"+ txtMaHD.Text + "'");
+                if (data.Rows.Count == 1 || data.Rows.Count <= 0)
+                {
+                    LoadTable();
+                }
             }
 
             ShowBill(table.Id);
-            LoadTable();
+            
 
             //string[] row = { cbMon.Text, soluongNUD.Value.ToString(), "90000", (90000 * soluongNUD.Value).ToString(), "" };
             //ListViewItem newitem = new ListViewItem(row);
@@ -493,6 +498,58 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             
             txtTien.Text = txtChonTien.Text;
+        }
+
+        private void btnGiamGiaMon_Click(object sender, EventArgs e)
+        {
+            Table table = lsvBill.Tag as Table;
+            int giamGia = Convert.ToInt32(txtGiamGia.Text);
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT Ma_Vt FROM dbo.E00DMVT WHERE Ten_Vt=N'" + cbMon.Text + "'");
+            string mon = data.Rows[0].ItemArray[0].ToString();
+
+            DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_UpdateGiamGiaMon @ma_HD , @ma_VT , @giamGia", new object[] { txtMaHD.Text, mon, giamGia });
+
+            ShowBill(table.Id);
+            //LoadTable();
+        }
+
+        private void lsvBill_MouseClick(object sender, MouseEventArgs e)
+        {
+            string tenMon = lsvBill.SelectedItems[0].SubItems[0].Text;
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT mon.name FROM dbo.E00DMVT AS vt,dbo.E00DMMON AS mon WHERE vt.DMMon_id = mon.id AND Ten_Vt=N'"+ tenMon + "'");
+            cbDMMon.Text = data.Rows[0].ItemArray[0].ToString();
+            cbMon.Text = tenMon;
+        }
+
+        private void FThemHoaDon_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'eWONDATASET1.E00DMDT_NV' table. You can move, or remove it, as needed.
+            this.e00DMDT_NVTableAdapter.FillByNV(this.eWONDATASET1.E00DMDT_NV);
+            // TODO: This line of code loads data into the 'eWONDATASET.E00DMDT' table. You can move, or remove it, as needed.
+            this.e00DMDTTableAdapter.FillByKH(this.eWONDATASET.E00DMDT);
+
+        }
+
+        private void txtMaKH_EditValueChanged(object sender, EventArgs e)
+        {
+            DataRowView s = (DataRowView)txtMaKH.GetSelectedDataRow();
+            if (s != null)
+            {
+                txtTenKH.Text = s["Ten_Dt"].ToString();
+                txtDiaChi.Text = s["Dia_Chi"].ToString();
+                lbTenCT.Text = s["Cong_Ty"].ToString();
+            }
+        }
+
+        private void txtMa_NVien_EditValueChanged(object sender, EventArgs e)
+        {
+            DataRowView s = (DataRowView)txtMa_NVien.GetSelectedDataRow();
+            if (s != null)
+            {
+                lbTenNV.Text = s["Ten_Dt"].ToString();
+                
+            }
         }
     }
 }
