@@ -187,6 +187,48 @@
     <Compile Include="Controls\BanHangPhaiThu\UTable.Designer.cs">
       <DependentUpon>UTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Danhmuc\AddEditFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\AddEditFrame.Designer.cs">
+      <DependentUpon>AddEditFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMBANGGIA\AddEditDMBANGGIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMBANGGIA\AddEditDMBANGGIA.Designer.cs">
+      <DependentUpon>AddEditDMBANGGIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMBANGGIA\DMBANGGIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMBANGGIA\DMBANGGIA.Designer.cs">
+      <DependentUpon>DMBANGGIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMBANGGIA\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMBANGGIA\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMNV\HienThiDMNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMNV\HienThiDMNV.Designer.cs">
+      <DependentUpon>HienThiDMNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMNV\ThemDMNV\ThemDMNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMNV\ThemDMNV\ThemDMNV.Designer.cs">
+      <DependentUpon>ThemDMNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\Frame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\Frame.Designer.cs">
+      <DependentUpon>Frame.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Dungchung\Menu\EDCM2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -277,6 +319,7 @@
     <Compile Include="Controls\Hangtonkho\Phieuxuatkhothanhpham\Phieuxuatkhotp.Designer.cs">
       <DependentUpon>Phieuxuatkhotp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Ketnoi\Ketnoi.cs" />
     <Compile Include="Controls\Ketoantonghop\buttoanketchuyen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -526,6 +569,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\BanHangPhaiThu\UTable.resx">
       <DependentUpon>UTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\AddEditFrame.resx">
+      <DependentUpon>AddEditFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\DMBANGGIA\AddEditDMBANGGIA.resx">
+      <DependentUpon>AddEditDMBANGGIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\DMBANGGIA\DMBANGGIA.resx">
+      <DependentUpon>DMBANGGIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\DMNV\HienThiDMNV.resx">
+      <DependentUpon>HienThiDMNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\DMNV\ThemDMNV\ThemDMNV.resx">
+      <DependentUpon>ThemDMNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\Frame.resx">
+      <DependentUpon>Frame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Dungchung\Menu\EDCM2.resx">
       <DependentUpon>EDCM2.cs</DependentUpon>
