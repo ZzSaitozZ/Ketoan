@@ -29,7 +29,7 @@
             private void InitializeComponent()
             {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame));
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.vonbangtien = new Ketoan.Controls.Vonbangtien();
             this.quanlytaisan = new Ketoan.Controls.Quanlytaisan();
             this.muahangphaitra = new Ketoan.Controls.Muahangphaitra();
@@ -90,7 +90,7 @@
             this.vonbangtien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.vonbangtien.Location = new System.Drawing.Point(0, 0);
             this.vonbangtien.Name = "vonbangtien";
-            this.vonbangtien.Size = new System.Drawing.Size(51, 327);
+            this.vonbangtien.Size = new System.Drawing.Size(39, 325);
             this.vonbangtien.TabIndex = 0;
             // 
             // quanlytaisan
@@ -98,7 +98,7 @@
             this.quanlytaisan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.quanlytaisan.Location = new System.Drawing.Point(0, 0);
             this.quanlytaisan.Name = "quanlytaisan";
-            this.quanlytaisan.Size = new System.Drawing.Size(51, 327);
+            this.quanlytaisan.Size = new System.Drawing.Size(39, 325);
             this.quanlytaisan.TabIndex = 0;
             // 
             // muahangphaitra
@@ -106,7 +106,7 @@
             this.muahangphaitra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.muahangphaitra.Location = new System.Drawing.Point(0, 0);
             this.muahangphaitra.Name = "muahangphaitra";
-            this.muahangphaitra.Size = new System.Drawing.Size(51, 327);
+            this.muahangphaitra.Size = new System.Drawing.Size(39, 325);
             this.muahangphaitra.TabIndex = 0;
             // 
             // ketoantonghop
@@ -114,7 +114,7 @@
             this.ketoantonghop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ketoantonghop.Location = new System.Drawing.Point(0, 0);
             this.ketoantonghop.Name = "ketoantonghop";
-            this.ketoantonghop.Size = new System.Drawing.Size(51, 327);
+            this.ketoantonghop.Size = new System.Drawing.Size(39, 325);
             this.ketoantonghop.TabIndex = 0;
             // 
             // hethong
@@ -122,7 +122,7 @@
             this.hethong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hethong.Location = new System.Drawing.Point(0, 0);
             this.hethong.Name = "hethong";
-            this.hethong.Size = new System.Drawing.Size(51, 327);
+            this.hethong.Size = new System.Drawing.Size(39, 325);
             this.hethong.TabIndex = 0;
             // 
             // hangtonkho
@@ -130,7 +130,7 @@
             this.hangtonkho.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hangtonkho.Location = new System.Drawing.Point(0, 0);
             this.hangtonkho.Name = "hangtonkho";
-            this.hangtonkho.Size = new System.Drawing.Size(51, 327);
+            this.hangtonkho.Size = new System.Drawing.Size(39, 325);
             this.hangtonkho.TabIndex = 0;
             // 
             // chiphigiathanh
@@ -138,7 +138,7 @@
             this.chiphigiathanh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chiphigiathanh.Location = new System.Drawing.Point(0, 0);
             this.chiphigiathanh.Name = "chiphigiathanh";
-            this.chiphigiathanh.Size = new System.Drawing.Size(51, 327);
+            this.chiphigiathanh.Size = new System.Drawing.Size(39, 325);
             this.chiphigiathanh.TabIndex = 0;
             // 
             // banhangphaithu
@@ -146,7 +146,7 @@
             this.banhangphaithu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.banhangphaithu.Location = new System.Drawing.Point(0, 0);
             this.banhangphaithu.Name = "banhangphaithu";
-            this.banhangphaithu.Size = new System.Drawing.Size(51, 327);
+            this.banhangphaithu.Size = new System.Drawing.Size(39, 325);
             this.banhangphaithu.TabIndex = 0;
             // 
             // ribbonControl1
@@ -171,8 +171,11 @@
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl1.Size = new System.Drawing.Size(923, 143);
+            this.ribbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl1.ShowToolbarCustomizeItem = false;
+            this.ribbonControl1.Size = new System.Drawing.Size(923, 144);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
+            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // backstageViewControl1
             // 
@@ -206,65 +209,65 @@
             // backstageViewClientControl1
             // 
             this.backstageViewClientControl1.Controls.Add(this.vonbangtien);
-            this.backstageViewClientControl1.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl1.TabIndex = 1;
             // 
             // backstageViewClientControl2
             // 
             this.backstageViewClientControl2.Controls.Add(this.muahangphaitra);
-            this.backstageViewClientControl2.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            this.backstageViewClientControl2.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl2.TabIndex = 2;
             // 
             // backstageViewClientControl3
             // 
             this.backstageViewClientControl3.Controls.Add(this.banhangphaithu);
-            this.backstageViewClientControl3.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl3.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            this.backstageViewClientControl3.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl3.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl3.TabIndex = 3;
             // 
             // backstageViewClientControl4
             // 
             this.backstageViewClientControl4.Controls.Add(this.hangtonkho);
-            this.backstageViewClientControl4.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl4.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl4.Name = "backstageViewClientControl4";
-            this.backstageViewClientControl4.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl4.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl4.TabIndex = 4;
             // 
             // backstageViewClientControl5
             // 
             this.backstageViewClientControl5.Controls.Add(this.quanlytaisan);
-            this.backstageViewClientControl5.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl5.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl5.Name = "backstageViewClientControl5";
-            this.backstageViewClientControl5.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl5.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl5.TabIndex = 5;
             // 
             // backstageViewClientControl6
             // 
             this.backstageViewClientControl6.Controls.Add(this.chiphigiathanh);
-            this.backstageViewClientControl6.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl6.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl6.Name = "backstageViewClientControl6";
-            this.backstageViewClientControl6.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl6.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl6.TabIndex = 6;
             // 
             // backstageViewClientControl7
             // 
             this.backstageViewClientControl7.Controls.Add(this.ketoantonghop);
-            this.backstageViewClientControl7.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl7.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl7.Name = "backstageViewClientControl7";
-            this.backstageViewClientControl7.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl7.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl7.TabIndex = 7;
             // 
             // backstageViewClientControl8
             // 
             this.backstageViewClientControl8.Controls.Add(this.hethong);
-            this.backstageViewClientControl8.Location = new System.Drawing.Point(156, 63);
+            this.backstageViewClientControl8.Location = new System.Drawing.Point(168, 65);
             this.backstageViewClientControl8.Name = "backstageViewClientControl8";
-            this.backstageViewClientControl8.Size = new System.Drawing.Size(51, 327);
+            this.backstageViewClientControl8.Size = new System.Drawing.Size(39, 325);
             this.backstageViewClientControl8.TabIndex = 8;
             // 
             // backstageViewTabItem1
@@ -380,9 +383,9 @@
             // 
             // 
             // 
-            galleryItemGroup3.Caption = "Group1";
+            galleryItemGroup1.Caption = "Group1";
             this.rbiGallery.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup3});
+            galleryItemGroup1});
             this.rbiGallery.Id = 1;
             this.rbiGallery.Name = "rbiGallery";
             // 
@@ -418,10 +421,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 433);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 432);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(923, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(923, 32);
             // 
             // ribbonPage2
             // 
@@ -430,13 +433,11 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel2.Location = new System.Drawing.Point(0, 216);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 144);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(923, 219);
+            this.panel2.Size = new System.Drawing.Size(923, 288);
             this.panel2.TabIndex = 4;
             // 
             // Frame

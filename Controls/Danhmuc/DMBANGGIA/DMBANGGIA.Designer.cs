@@ -83,16 +83,14 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.Controls.Add(this.gridControl1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 143);
-            this.panel2.Size = new System.Drawing.Size(718, 198);
+            this.panel2.Size = new System.Drawing.Size(765, 275);
             // 
             // ribbonControl1
             // 
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Size = new System.Drawing.Size(718, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(765, 144);
+            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // gridControl1
             // 
@@ -102,7 +100,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(718, 198);
+            this.gridControl1.Size = new System.Drawing.Size(765, 275);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -166,9 +164,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 372);
+            this.ClientSize = new System.Drawing.Size(765, 451);
             this.Name = "DMBANGGIA";
-            this.Text = "DMBANGGIA";
+            this.Text = "Danh Mục Bảng Giá";
             this.Load += new System.EventHandler(this.DMBANGGIA_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();

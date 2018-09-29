@@ -12,20 +12,23 @@ using DevExpress.XtraGrid.Views.Grid;
 
 namespace Ketoan.Controls.Danhmuc
 {
-    public partial class AddEditFrame : Form
+    public partial class AddEditFrame : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         protected GridView Gridview;
         protected bool isAdd;      
         protected EWONErrorProvider ewErrorProvider1 = new EWONErrorProvider();
         public AddEditFrame()
         {
-            InitializeComponent();
+            InitializeComponent();     
+            
             //Bind acceptButton's property to ewErrorProvider1's HasErrors
             Binding buttonToErrorProvider = new Binding("Enabled", ewErrorProvider1, "HasErrors");
             buttonToErrorProvider.Format += SwitchBool;
             buttonToErrorProvider.Parse += SwitchBool;
             acceptBtn.DataBindings.Add(buttonToErrorProvider);
         }
+
+   
 
 
         //Class and method for binding Button's Enabled property to ewErrorProvider'HasError property
@@ -52,9 +55,9 @@ namespace Ketoan.Controls.Danhmuc
             }
 
             //New SetError method with updating HasErrors property
-            new public void SetError(Control control, string errorText)
+            new public void SetError(Control control, string errorText,ErrorType errorType)
             {
-                base.SetError(control, errorText);
+                base.SetError(control, errorText, errorType);
                 if (this.HasErrors) ;
             }
 
@@ -82,5 +85,7 @@ namespace Ketoan.Controls.Danhmuc
         {
             invisibleLB.Focus();
         }
+
+
     }
 }

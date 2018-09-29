@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.LookAndFeel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Ketoan.Controls.Danhmuc
         public Frame()
         {
             InitializeComponent();
+            DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(rbiGallery, true);
+            UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
         }
        
     }
