@@ -186,9 +186,9 @@
             // 
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 40);
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 42);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(823, 40);
+            this.barDockControlTop.Size = new System.Drawing.Size(823, 42);
             // 
             // barDockControlBottom
             // 
@@ -202,17 +202,17 @@
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 80);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 84);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 431);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 427);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(823, 80);
+            this.barDockControlRight.Location = new System.Drawing.Point(823, 84);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 431);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 427);
             // 
             // barButtonItem1
             // 
@@ -401,7 +401,7 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.barManager2;
-            this.barDockControl1.Size = new System.Drawing.Size(823, 40);
+            this.barDockControl1.Size = new System.Drawing.Size(823, 42);
             // 
             // barDockControl2
             // 
@@ -415,17 +415,17 @@
             // 
             this.barDockControl3.CausesValidation = false;
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 40);
+            this.barDockControl3.Location = new System.Drawing.Point(0, 42);
             this.barDockControl3.Manager = this.barManager2;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 471);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 469);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(823, 40);
+            this.barDockControl4.Location = new System.Drawing.Point(823, 42);
             this.barDockControl4.Manager = this.barManager2;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 471);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 469);
             // 
             // panel
             // 

@@ -91,7 +91,6 @@
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.esP_GetCTCTHDTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.ESP_GetCTCTHDTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -778,7 +777,6 @@
             // 
             // esP_GetCTCTHDTableAdapter1
             // 
-            this.esP_GetCTCTHDTableAdapter1.ClearBeforeFill = true;
             // 
             // EDCHoaDon
             // 
@@ -915,6 +913,5 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
-        private EWONDATASETTableAdapters.ESP_GetCTCTHDTableAdapter esP_GetCTCTHDTableAdapter1;
     }
 }

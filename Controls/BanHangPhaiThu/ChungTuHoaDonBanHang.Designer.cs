@@ -49,7 +49,6 @@
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.esP_GetCTCTHDTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.ESP_GetCTCTHDTableAdapter();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -247,7 +246,6 @@
             // 
             // esP_GetCTCTHDTableAdapter1
             // 
-            this.esP_GetCTCTHDTableAdapter1.ClearBeforeFill = true;
             // 
             // ChungTuHoaDonBanHang
             // 
@@ -287,6 +285,5 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private EWONDATASETTableAdapters.ESP_GetCTCTHDTableAdapter esP_GetCTCTHDTableAdapter1;
-    }
+     }
 }

@@ -95,8 +95,10 @@
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "Login";
             this.Text = "Login";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

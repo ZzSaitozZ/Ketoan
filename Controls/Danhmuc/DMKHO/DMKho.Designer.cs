@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMKho
+﻿namespace Ketoan.Controls.Danhmuc.DMKHO
 {
-    partial class DMKho
+    partial class DMKHO
     {
         /// <summary>
         /// Required designer variable.
@@ -29,136 +29,112 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.eWONDATASET = new Ketoan.EWONDATASET();
-            this.e00DMKHOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.e00DMKHOTableAdapter = new Ketoan.EWONDATASETTableAdapters.E00DMKHOTableAdapter();
-            this.tableAdapterManager = new Ketoan.EWONDATASETTableAdapters.TableAdapterManager();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DMKHO));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.e00DMKHOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eWONDATASET = new Ketoan.EWONDATASET();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMa_Kho = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTen_Kho = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNgay_Begin = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNgay_End = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMa_Data = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCreate_Log = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colLastModify_Log = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStt = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIdent00 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e00DMKHOBindingSource)).BeginInit();
+            this.e00DMKHOTableAdapter = new Ketoan.EWONDATASETTableAdapters.E00DMKHOTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e00DMKHOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // addBtn
             // 
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            this.addBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addBtn.ImageOptions.Image")));
+            this.addBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("addBtn.ImageOptions.LargeImage")));
+            this.addBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addBtn_ItemClick);
             // 
             // editBtn
             // 
-            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
+            this.editBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("editBtn.ImageOptions.Image")));
+            this.editBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("editBtn.ImageOptions.LargeImage")));
+            this.editBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.editBtn_ItemClick);
             // 
-            // delBtn
+            // deleteBtn
             // 
-            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
+            this.deleteBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.ImageOptions.Image")));
+            this.deleteBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("deleteBtn.ImageOptions.LargeImage")));
+            this.deleteBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.deleteBtn_ItemClick);
             // 
-            // panel2
+            // printBtn
             // 
-            this.panel2.Controls.Add(this.gridControl1);
+            this.printBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("printBtn.ImageOptions.Image")));
+            this.printBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("printBtn.ImageOptions.LargeImage")));
             // 
-            // eWONDATASET
+            // helpBtn
             // 
-            this.eWONDATASET.DataSetName = "EWONDATASET";
-            this.eWONDATASET.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.helpBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("helpBtn.ImageOptions.Image")));
+            this.helpBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("helpBtn.ImageOptions.LargeImage")));
+            // 
+            // settingBtn
+            // 
+            this.settingBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.ImageOptions.Image")));
+            this.settingBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("settingBtn.ImageOptions.LargeImage")));
+            // 
+            // panel1
+            // 
+            this.panel1.Size = new System.Drawing.Size(812, 274);
+            // 
+            // ribbonControl1
+            // 
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Size = new System.Drawing.Size(812, 144);
+            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.DataSource = this.e00DMKHOBindingSource;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 144);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(812, 274);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
             // e00DMKHOBindingSource
             // 
             this.e00DMKHOBindingSource.DataMember = "E00DMKHO";
             this.e00DMKHOBindingSource.DataSource = this.eWONDATASET;
             // 
-            // e00DMKHOTableAdapter
+            // eWONDATASET
             // 
-            this.e00DMKHOTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.E001PNXTableAdapter = null;
-            this.tableAdapterManager.E003KHOTableAdapter = null;
-            this.tableAdapterManager.E00DMBANGGIATableAdapter = null;
-            this.tableAdapterManager.E00DMBPTableAdapter = null;
-            this.tableAdapterManager.E00DMDTTableAdapter = null;
-            this.tableAdapterManager.E00DMHDTableAdapter = null;
-            this.tableAdapterManager.E00DMJOBTableAdapter = null;
-            this.tableAdapterManager.E00DMKHOTableAdapter = this.e00DMKHOTableAdapter;
-            this.tableAdapterManager.E00DMKMTableAdapter = null;
-            this.tableAdapterManager.E00DMKVTableAdapter = null;
-            this.tableAdapterManager.E00DMLOTableAdapter = null;
-            this.tableAdapterManager.E00DMNHANTableAdapter = null;
-            this.tableAdapterManager.E00DMNHDTTableAdapter = null;
-            this.tableAdapterManager.E00DMNHHDTableAdapter = null;
-            this.tableAdapterManager.E00DMNHVTTableAdapter = null;
-            this.tableAdapterManager.E00DMNVTableAdapter = null;
-            this.tableAdapterManager.E00DMNVUTableAdapter = null;
-            this.tableAdapterManager.E00DMPLHDTableAdapter = null;
-            this.tableAdapterManager.E00DMTHUETableAdapter = null;
-            this.tableAdapterManager.E00DMTKTableAdapter = null;
-            this.tableAdapterManager.E00DMTNTableAdapter = null;
-            this.tableAdapterManager.E00DMTYPETableAdapter = null;
-            this.tableAdapterManager.E00DMVTTableAdapter = null;
-            this.tableAdapterManager.E00DMYTTableAdapter = null;
-            this.tableAdapterManager.E01CTNMTableAdapter = null;
-            this.tableAdapterManager.E01CTNXTableAdapter = null;
-            this.tableAdapterManager.E02CTHDTableAdapter = null;
-            this.tableAdapterManager.E02CTTPTableAdapter = null;
-            this.tableAdapterManager.E02CTXBTableAdapter = null;
-            this.tableAdapterManager.E02CTXKNLTableAdapter = null;
-            this.tableAdapterManager.E02HOADONTableAdapter = null;
-            this.tableAdapterManager.E03DINHMUCTableAdapter = null;
-            this.tableAdapterManager.EBARCODETableAdapter = null;
-            this.tableAdapterManager.ECTTSTableAdapter = null;
-            this.tableAdapterManager.EMEMBERTableAdapter = null;
-            this.tableAdapterManager.EMENUTableAdapter = null;
-            this.tableAdapterManager.EMODULETableAdapter = null;
-            this.tableAdapterManager.EOBJECTTableAdapter = null;
-            this.tableAdapterManager.EREPORTTableAdapter = null;
-            this.tableAdapterManager.EZONETableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Ketoan.EWONDATASETTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.DataMember = "E00DMKHO";
-            this.gridControl1.DataSource = this.eWONDATASET;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(664, 213);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.eWONDATASET.DataSetName = "EWONDATASET";
+            this.eWONDATASET.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colMa_Kho,
             this.colTen_Kho,
-            this.colNgay_Begin,
-            this.colNgay_End,
-            this.colMa_Data,
-            this.colCreate_Log,
-            this.colLastModify_Log,
-            this.colStt,
-            this.colIdent00});
+            this.colStt});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
+            this.gridView1.OptionsEditForm.EditFormColumnCount = 2;
+            this.gridView1.OptionsEditForm.ShowOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsEditForm.ShowOnEnterKey = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsEditForm.ShowOnF2Key = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsEditForm.ShowUpdateCancelPanel = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
+            this.gridView1.EditFormShowing += new DevExpress.XtraGrid.Views.Grid.EditFormShowingEventHandler(this.gridView1_EditFormShowing);
+            this.gridView1.RowUpdated += new DevExpress.XtraGrid.Views.Base.RowObjectEventHandler(this.gridView1_RowUpdated);
+            this.gridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridView1_KeyDown);
             // 
             // colMa_Kho
             // 
             this.colMa_Kho.Caption = "Mã kho";
             this.colMa_Kho.FieldName = "Ma_Kho";
             this.colMa_Kho.Name = "colMa_Kho";
+            this.colMa_Kho.OptionsEditForm.VisibleIndex = 1;
             this.colMa_Kho.Visible = true;
             this.colMa_Kho.VisibleIndex = 0;
             // 
@@ -167,82 +143,58 @@
             this.colTen_Kho.Caption = "Tên kho";
             this.colTen_Kho.FieldName = "Ten_Kho";
             this.colTen_Kho.Name = "colTen_Kho";
+            this.colTen_Kho.OptionsEditForm.ColumnSpan = 2;
+            this.colTen_Kho.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTen_Kho.OptionsEditForm.VisibleIndex = 3;
             this.colTen_Kho.Visible = true;
             this.colTen_Kho.VisibleIndex = 1;
-            // 
-            // colNgay_Begin
-            // 
-            this.colNgay_Begin.FieldName = "Ngay_Begin";
-            this.colNgay_Begin.Name = "colNgay_Begin";
-            // 
-            // colNgay_End
-            // 
-            this.colNgay_End.FieldName = "Ngay_End";
-            this.colNgay_End.Name = "colNgay_End";
-            // 
-            // colMa_Data
-            // 
-            this.colMa_Data.Caption = "Mã data";
-            this.colMa_Data.FieldName = "Ma_Data";
-            this.colMa_Data.Name = "colMa_Data";
-            this.colMa_Data.Visible = true;
-            this.colMa_Data.VisibleIndex = 2;
-            // 
-            // colCreate_Log
-            // 
-            this.colCreate_Log.FieldName = "Create_Log";
-            this.colCreate_Log.Name = "colCreate_Log";
-            // 
-            // colLastModify_Log
-            // 
-            this.colLastModify_Log.FieldName = "LastModify_Log";
-            this.colLastModify_Log.Name = "colLastModify_Log";
+            this.colTen_Kho.Width = 269;
             // 
             // colStt
             // 
             this.colStt.Caption = "STT";
             this.colStt.FieldName = "Stt";
             this.colStt.Name = "colStt";
+            this.colStt.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colStt.OptionsEditForm.VisibleIndex = 2;
             this.colStt.Visible = true;
-            this.colStt.VisibleIndex = 3;
+            this.colStt.VisibleIndex = 2;
             // 
-            // colIdent00
+            // e00DMKHOTableAdapter
             // 
-            this.colIdent00.FieldName = "Ident00";
-            this.colIdent00.Name = "colIdent00";
+            this.e00DMKHOTableAdapter.ClearBeforeFill = true;
             // 
-            // DMKho
+            // DMKHO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 262);
-            this.Name = "DMKho";
+            this.ClientSize = new System.Drawing.Size(812, 450);
+            this.Controls.Add(this.gridControl1);
+            this.Name = "DMKHO";
             this.Text = "DMKho";
             this.Load += new System.EventHandler(this.DMKho_Load);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e00DMKHOBindingSource)).EndInit();
+            this.Controls.SetChildIndex(this.ribbonControl1, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.gridControl1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e00DMKHOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private EWONDATASET eWONDATASET;
         private System.Windows.Forms.BindingSource e00DMKHOBindingSource;
         private EWONDATASETTableAdapters.E00DMKHOTableAdapter e00DMKHOTableAdapter;
-        private EWONDATASETTableAdapters.TableAdapterManager tableAdapterManager;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colMa_Kho;
         private DevExpress.XtraGrid.Columns.GridColumn colTen_Kho;
-        private DevExpress.XtraGrid.Columns.GridColumn colNgay_Begin;
-        private DevExpress.XtraGrid.Columns.GridColumn colNgay_End;
-        private DevExpress.XtraGrid.Columns.GridColumn colMa_Data;
-        private DevExpress.XtraGrid.Columns.GridColumn colCreate_Log;
-        private DevExpress.XtraGrid.Columns.GridColumn colLastModify_Log;
         private DevExpress.XtraGrid.Columns.GridColumn colStt;
-        private DevExpress.XtraGrid.Columns.GridColumn colIdent00;
     }
 }

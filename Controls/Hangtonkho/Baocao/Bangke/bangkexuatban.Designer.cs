@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bangkexuatban));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.btnPrint = new DevExpress.XtraEditors.SimpleButton();
             this.colNgay_HD = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMa_Vt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTen_Vt = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -44,6 +42,7 @@
             this.colTien_Giam_Gia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTien_VAT_Giam_Gia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTongtien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnPrint = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
@@ -76,16 +75,6 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsMenu.EnableFooterMenu = false;
             this.gridView1.OptionsView.ShowFooter = true;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.ImageOptions.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(440, 334);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(82, 38);
-            this.btnPrint.TabIndex = 1;
-            this.btnPrint.Text = "In ";
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // colNgay_HD
             // 
@@ -163,6 +152,16 @@
             this.colTongtien.Name = "colTongtien";
             this.colTongtien.Visible = true;
             this.colTongtien.VisibleIndex = 10;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.ImageOptions.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(440, 334);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(82, 38);
+            this.btnPrint.TabIndex = 1;
+            this.btnPrint.Text = "In ";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // bangkexuatban
             // 

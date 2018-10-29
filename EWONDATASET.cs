@@ -4,6 +4,10 @@
 
     partial class EWONDATASET
     {
+        partial class E10PHVBTDataTable
+        {
+        }
+
         partial class CTHOADONDataTable
         {
         }

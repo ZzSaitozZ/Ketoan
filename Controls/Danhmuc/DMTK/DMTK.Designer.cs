@@ -29,270 +29,231 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.treeList1 = new DevExpress.XtraTreeList.TreeList();
-            this.colTk = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTen_Tk = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTen_TkE = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTk_Cuoi = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTk_Parent = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTk_Dt = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTk_Sp = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTk_Km = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colSo_Tk_Nh = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTen_Tk_Nh = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTen_Tp_Nh = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colNgay_Begin = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colNgay_End = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colMa_Data = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colCreate_Log = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colLastModify_Log = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colMa_Tte_Goc = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colIdent00 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.colTen_TkC = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.eWONDATASET = new Ketoan.EWONDATASET();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DMTK));
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.e00DMTKBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eWONDATASET = new Ketoan.EWONDATASET();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colTk = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTen_Tk = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTk_Parent = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTk_Sp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTk_Dt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTk_Km = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMa_Tte_Goc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.e00DMTKTableAdapter = new Ketoan.EWONDATASETTableAdapters.E00DMTKTableAdapter();
-            this.editNhomVT1 = new Ketoan.DM.NhomVT.EditNhomVT();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e00DMTKBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // addBtn
             // 
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            this.addBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addBtn.ImageOptions.Image")));
+            this.addBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("addBtn.ImageOptions.LargeImage")));
+            this.addBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addBtn_ItemClick);
             // 
             // editBtn
             // 
-            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
+            this.editBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("editBtn.ImageOptions.Image")));
+            this.editBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("editBtn.ImageOptions.LargeImage")));
+            this.editBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.editBtn_ItemClick);
             // 
-            // delBtn
+            // deleteBtn
             // 
-            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
+            this.deleteBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.ImageOptions.Image")));
+            this.deleteBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("deleteBtn.ImageOptions.LargeImage")));
+            this.deleteBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.deleteBtn_ItemClick);
             // 
-            // panel2
+            // printBtn
             // 
-            this.panel2.Controls.Add(this.editNhomVT1);
-            this.panel2.Controls.Add(this.treeList1);
+            this.printBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("printBtn.ImageOptions.Image")));
+            this.printBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("printBtn.ImageOptions.LargeImage")));
             // 
-            // treeList1
+            // helpBtn
             // 
-            this.treeList1.Columns.AddRange(new DevExpress.XtraTreeList.Columns.TreeListColumn[] {
-            this.colTk,
-            this.colTen_Tk,
-            this.colTen_TkE,
-            this.colTk_Cuoi,
-            this.colTk_Parent,
-            this.colTk_Dt,
-            this.colTk_Sp,
-            this.colTk_Km,
-            this.colSo_Tk_Nh,
-            this.colTen_Tk_Nh,
-            this.colTen_Tp_Nh,
-            this.colNgay_Begin,
-            this.colNgay_End,
-            this.colMa_Data,
-            this.colCreate_Log,
-            this.colLastModify_Log,
-            this.colMa_Tte_Goc,
-            this.colIdent00,
-            this.colTen_TkC});
-            this.treeList1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.treeList1.DataMember = "E00DMTK";
-            this.treeList1.DataSource = this.eWONDATASET;
-            this.treeList1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeList1.KeyFieldName = "Tk";
-            this.treeList1.Location = new System.Drawing.Point(0, 0);
-            this.treeList1.Name = "treeList1";
-            this.treeList1.ParentFieldName = "Tk_Parent";
-            this.treeList1.Size = new System.Drawing.Size(664, 213);
-            this.treeList1.TabIndex = 0;
+            this.helpBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("helpBtn.ImageOptions.Image")));
+            this.helpBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("helpBtn.ImageOptions.LargeImage")));
             // 
-            // colTk
+            // settingBtn
             // 
-            this.colTk.Caption = "Tài khoản";
-            this.colTk.FieldName = "Tk";
-            this.colTk.Name = "colTk";
-            this.colTk.Visible = true;
-            this.colTk.VisibleIndex = 0;
+            this.settingBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.ImageOptions.Image")));
+            this.settingBtn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("settingBtn.ImageOptions.LargeImage")));
             // 
-            // colTen_Tk
+            // panel1
             // 
-            this.colTen_Tk.Caption = "Tên tài khoản";
-            this.colTen_Tk.FieldName = "Ten_Tk";
-            this.colTen_Tk.Name = "colTen_Tk";
-            this.colTen_Tk.Visible = true;
-            this.colTen_Tk.VisibleIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(800, 274);
             // 
-            // colTen_TkE
+            // ribbonControl1
             // 
-            this.colTen_TkE.Caption = "Tên tk tiếng anh";
-            this.colTen_TkE.FieldName = "Ten_TkE";
-            this.colTen_TkE.Name = "colTen_TkE";
-            this.colTen_TkE.Visible = true;
-            this.colTen_TkE.VisibleIndex = 2;
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Size = new System.Drawing.Size(800, 144);
+            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
-            // colTk_Cuoi
+            // gridControl1
             // 
-            this.colTk_Cuoi.FieldName = "Tk_Cuoi";
-            this.colTk_Cuoi.Name = "colTk_Cuoi";
-            // 
-            // colTk_Parent
-            // 
-            this.colTk_Parent.Caption = "Tài khoản cha";
-            this.colTk_Parent.FieldName = "Tk_Parent";
-            this.colTk_Parent.Name = "colTk_Parent";
-            this.colTk_Parent.Visible = true;
-            this.colTk_Parent.VisibleIndex = 3;
-            // 
-            // colTk_Dt
-            // 
-            this.colTk_Dt.Caption = "Tk đối tượng";
-            this.colTk_Dt.FieldName = "Tk_Dt";
-            this.colTk_Dt.Name = "colTk_Dt";
-            this.colTk_Dt.Visible = true;
-            this.colTk_Dt.VisibleIndex = 5;
-            // 
-            // colTk_Sp
-            // 
-            this.colTk_Sp.Caption = "Tk sản phẩm";
-            this.colTk_Sp.FieldName = "Tk_Sp";
-            this.colTk_Sp.Name = "colTk_Sp";
-            this.colTk_Sp.Visible = true;
-            this.colTk_Sp.VisibleIndex = 4;
-            // 
-            // colTk_Km
-            // 
-            this.colTk_Km.Caption = "Tk khoản mục";
-            this.colTk_Km.FieldName = "Tk_Km";
-            this.colTk_Km.Name = "colTk_Km";
-            this.colTk_Km.Visible = true;
-            this.colTk_Km.VisibleIndex = 6;
-            // 
-            // colSo_Tk_Nh
-            // 
-            this.colSo_Tk_Nh.FieldName = "So_Tk_Nh";
-            this.colSo_Tk_Nh.Name = "colSo_Tk_Nh";
-            // 
-            // colTen_Tk_Nh
-            // 
-            this.colTen_Tk_Nh.FieldName = "Ten_Tk_Nh";
-            this.colTen_Tk_Nh.Name = "colTen_Tk_Nh";
-            // 
-            // colTen_Tp_Nh
-            // 
-            this.colTen_Tp_Nh.FieldName = "Ten_Tp_Nh";
-            this.colTen_Tp_Nh.Name = "colTen_Tp_Nh";
-            // 
-            // colNgay_Begin
-            // 
-            this.colNgay_Begin.FieldName = "Ngay_Begin";
-            this.colNgay_Begin.Name = "colNgay_Begin";
-            // 
-            // colNgay_End
-            // 
-            this.colNgay_End.FieldName = "Ngay_End";
-            this.colNgay_End.Name = "colNgay_End";
-            // 
-            // colMa_Data
-            // 
-            this.colMa_Data.Caption = "Mã data";
-            this.colMa_Data.FieldName = "Ma_Data";
-            this.colMa_Data.Name = "colMa_Data";
-            this.colMa_Data.Visible = true;
-            this.colMa_Data.VisibleIndex = 7;
-            // 
-            // colCreate_Log
-            // 
-            this.colCreate_Log.FieldName = "Create_Log";
-            this.colCreate_Log.Name = "colCreate_Log";
-            // 
-            // colLastModify_Log
-            // 
-            this.colLastModify_Log.FieldName = "LastModify_Log";
-            this.colLastModify_Log.Name = "colLastModify_Log";
-            // 
-            // colMa_Tte_Goc
-            // 
-            this.colMa_Tte_Goc.Caption = "Mã tiền tệ gốc";
-            this.colMa_Tte_Goc.FieldName = "Ma_Tte_Goc";
-            this.colMa_Tte_Goc.Name = "colMa_Tte_Goc";
-            this.colMa_Tte_Goc.Visible = true;
-            this.colMa_Tte_Goc.VisibleIndex = 8;
-            // 
-            // colIdent00
-            // 
-            this.colIdent00.FieldName = "Ident00";
-            this.colIdent00.Name = "colIdent00";
-            // 
-            // colTen_TkC
-            // 
-            this.colTen_TkC.FieldName = "Ten_TkC";
-            this.colTen_TkC.Name = "colTen_TkC";
-            // 
-            // eWONDATASET
-            // 
-            this.eWONDATASET.DataSetName = "EWONDATASET";
-            this.eWONDATASET.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.gridControl1.DataSource = this.e00DMTKBindingSource;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 144);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(800, 274);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
             // e00DMTKBindingSource
             // 
             this.e00DMTKBindingSource.DataMember = "E00DMTK";
             this.e00DMTKBindingSource.DataSource = this.eWONDATASET;
             // 
+            // eWONDATASET
+            // 
+            this.eWONDATASET.DataSetName = "EWONDATASET";
+            this.eWONDATASET.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colTk,
+            this.colTen_Tk,
+            this.colTk_Parent,
+            this.colTk_Sp,
+            this.colTk_Dt,
+            this.colTk_Km,
+            this.colMa_Tte_Goc});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
+            this.gridView1.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Save;
+            this.gridView1.OptionsEditForm.EditFormColumnCount = 4;
+            this.gridView1.OptionsEditForm.ShowOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsEditForm.ShowOnEnterKey = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsEditForm.ShowOnF2Key = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsEditForm.ShowUpdateCancelPanel = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.gridView1.EditFormShowing += new DevExpress.XtraGrid.Views.Grid.EditFormShowingEventHandler(this.gridView1_EditFormShowing);
+            this.gridView1.RowUpdated += new DevExpress.XtraGrid.Views.Base.RowObjectEventHandler(this.gridView1_RowUpdated);
+            this.gridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridView1_KeyDown);
+            // 
+            // colTk
+            // 
+            this.colTk.Caption = "Mã tài khoản";
+            this.colTk.FieldName = "Tk";
+            this.colTk.Name = "colTk";
+            this.colTk.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTk.OptionsEditForm.VisibleIndex = 1;
+            this.colTk.Visible = true;
+            this.colTk.VisibleIndex = 0;
+            this.colTk.Width = 41;
+            // 
+            // colTen_Tk
+            // 
+            this.colTen_Tk.Caption = "Tên tài khoản";
+            this.colTen_Tk.FieldName = "Ten_Tk";
+            this.colTen_Tk.Name = "colTen_Tk";
+            this.colTen_Tk.OptionsEditForm.ColumnSpan = 4;
+            this.colTen_Tk.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTen_Tk.OptionsEditForm.VisibleIndex = 3;
+            this.colTen_Tk.Visible = true;
+            this.colTen_Tk.VisibleIndex = 1;
+            this.colTen_Tk.Width = 41;
+            // 
+            // colTk_Parent
+            // 
+            this.colTk_Parent.Caption = "Mã TK parent";
+            this.colTk_Parent.FieldName = "Tk_Parent";
+            this.colTk_Parent.Name = "colTk_Parent";
+            this.colTk_Parent.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTk_Parent.OptionsEditForm.VisibleIndex = 2;
+            this.colTk_Parent.Visible = true;
+            this.colTk_Parent.VisibleIndex = 2;
+            this.colTk_Parent.Width = 39;
+            // 
+            // colTk_Sp
+            // 
+            this.colTk_Sp.Caption = "TK sản phẩm";
+            this.colTk_Sp.FieldName = "Tk_Sp";
+            this.colTk_Sp.Name = "colTk_Sp";
+            this.colTk_Sp.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTk_Sp.OptionsEditForm.VisibleIndex = 4;
+            this.colTk_Sp.Visible = true;
+            this.colTk_Sp.VisibleIndex = 3;
+            this.colTk_Sp.Width = 39;
+            // 
+            // colTk_Dt
+            // 
+            this.colTk_Dt.Caption = "TK đối tượng";
+            this.colTk_Dt.FieldName = "Tk_Dt";
+            this.colTk_Dt.Name = "colTk_Dt";
+            this.colTk_Dt.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTk_Dt.OptionsEditForm.VisibleIndex = 5;
+            this.colTk_Dt.Visible = true;
+            this.colTk_Dt.VisibleIndex = 4;
+            this.colTk_Dt.Width = 39;
+            // 
+            // colTk_Km
+            // 
+            this.colTk_Km.Caption = "TK khoản mục";
+            this.colTk_Km.FieldName = "Tk_Km";
+            this.colTk_Km.Name = "colTk_Km";
+            this.colTk_Km.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTk_Km.OptionsEditForm.VisibleIndex = 6;
+            this.colTk_Km.Visible = true;
+            this.colTk_Km.VisibleIndex = 5;
+            this.colTk_Km.Width = 39;
+            // 
+            // colMa_Tte_Goc
+            // 
+            this.colMa_Tte_Goc.Caption = "Mã tiền tệ gốc";
+            this.colMa_Tte_Goc.FieldName = "Ma_Tte_Goc";
+            this.colMa_Tte_Goc.Name = "colMa_Tte_Goc";
+            this.colMa_Tte_Goc.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colMa_Tte_Goc.OptionsEditForm.VisibleIndex = 7;
+            this.colMa_Tte_Goc.Visible = true;
+            this.colMa_Tte_Goc.VisibleIndex = 6;
+            // 
             // e00DMTKTableAdapter
             // 
             this.e00DMTKTableAdapter.ClearBeforeFill = true;
-            // 
-            // editNhomVT1
-            // 
-            this.editNhomVT1.Location = new System.Drawing.Point(464, 160);
-            this.editNhomVT1.Name = "editNhomVT1";
-            this.editNhomVT1.Size = new System.Drawing.Size(150, 150);
-            this.editNhomVT1.TabIndex = 1;
             // 
             // DMTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 262);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gridControl1);
             this.Name = "DMTK";
             this.Text = "DMTK";
             this.Load += new System.EventHandler(this.DMTK_Load);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).EndInit();
+            this.Controls.SetChildIndex(this.ribbonControl1, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.gridControl1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e00DMTKBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraTreeList.TreeList treeList1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private EWONDATASET eWONDATASET;
         private System.Windows.Forms.BindingSource e00DMTKBindingSource;
         private EWONDATASETTableAdapters.E00DMTKTableAdapter e00DMTKTableAdapter;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTen_Tk;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTen_TkE;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTk_Cuoi;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTk_Sp;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTk_Dt;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTk_Km;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colSo_Tk_Nh;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTen_Tk_Nh;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTen_Tp_Nh;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colNgay_Begin;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colNgay_End;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colMa_Data;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colCreate_Log;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colLastModify_Log;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colMa_Tte_Goc;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colIdent00;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTen_TkC;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTk;
-        private DevExpress.XtraTreeList.Columns.TreeListColumn colTk_Parent;
-        private DM.NhomVT.EditNhomVT editNhomVT1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTk;
+        private DevExpress.XtraGrid.Columns.GridColumn colTen_Tk;
+        private DevExpress.XtraGrid.Columns.GridColumn colTk_Parent;
+        private DevExpress.XtraGrid.Columns.GridColumn colTk_Sp;
+        private DevExpress.XtraGrid.Columns.GridColumn colTk_Dt;
+        private DevExpress.XtraGrid.Columns.GridColumn colTk_Km;
+        private DevExpress.XtraGrid.Columns.GridColumn colMa_Tte_Goc;
     }
 }

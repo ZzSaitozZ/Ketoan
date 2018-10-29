@@ -8,6 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ketoan.Controls.Ketoantonghop;
+using Ketoan.Controls.Danhmuc.DMDT;
+using Ketoan.Controls.Danhmuc.DMBANGGIA;
+using Ketoan.Controls.Danhmuc.DMVTTS;
+using Ketoan.Controls.Danhmuc.DMKHO;
+using Ketoan.Controls.Danhmuc.DMKM;
+using Ketoan.Controls.Danhmuc.DMKV;
+using Ketoan.Controls.Danhmuc.DMNHCCDC;
+using Ketoan.Controls.Danhmuc.DMNHDT;
+using Ketoan.Controls.Danhmuc.DMNHNV;
+using Ketoan.Controls.Danhmuc.DMNHSP;
+using Ketoan.Controls.Danhmuc.DMNHVT;
+using Ketoan.Controls.Danhmuc.DMNV;
+using Ketoan.Controls.Danhmuc.DMNVU;
+using Ketoan.Controls.Danhmuc.DMTK;
+using Ketoan.Controls.Danhmuc.DMVT;
 
 namespace Ketoan.Controls.Menuchinh
 {
@@ -23,189 +38,148 @@ namespace Ketoan.Controls.Menuchinh
             Form frm1 = Application.OpenForms["StartForm"];
             StartForm s = frm1 as StartForm;
             s.k++;
-            #region Menuchinh
-            string Menuchinh = MenuBtn.Substring(5);
-            switch (Menuchinh)
-            {
-                case "btkc":
-                    //statements 
-                    {
-                        FButtoanketchuyen form = new FButtoanketchuyen(Menuchinh);
-                        form.Show();
+            //string Menuchinh = MenuBtn.Substring(5);
+            //switch (Menuchinh)
+            //{
+            //    case "btkc":
+            //        //statements 
+            //        {
+            //            FButtoanketchuyen form = new FButtoanketchuyen(Menuchinh);
+            //            form.Show();
 
-                    }
-                    break;
-                //case valueTwo:
-                //    //statements 
-                //    break;
-                //default:
-                    //optional 
-                    //statements 
-            }
-            #endregion
+            //        }
+            //        break;
+            //    //case valueTwo:
+            //    //    //statements 
+            //    //    break;
+            //    //default:
+            //        //optional 
+            //        //statements 
+            //}
+            //#endregion
+            //#region Danh muc
             #region Danh muc
-
-            if (MenuBtn.Contains("DMBP"))
+            if (MenuBtn.Contains("DMDT"))
             {
-                string a = "DMBP";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục bộ phận";
+                DMDT frm = new DMDT();
+                frm.Text = "Danh mục đối tượng";
                 frm.Show();
                 frm1.Hide();
             }
             else if (MenuBtn.Contains("DMKHO"))
             {
                 //string a = "DMKHO";
-                //Form1 frm = new Form1(a);
-                //frm.Text = "Danh mục kho";
-                //frm.Show();
-                //frm1.Hide();
+                DMKHO frm = new DMKHO();
+                frm.Text = "Danh mục kho";
+                frm.Show();
+                frm1.Hide();
             }
             else if (MenuBtn.Contains("DMKM"))
             {
-                //string a = "DMKM";
-                //Form1 frm = new Form1(a);
-                //frm.Text = "Danh mục khoản mục";
-                //frm.Show();
-                //frm1.Hide();
+                DMKM frm = new DMKM();
+                frm.Text = "Danh mục khoản mục";
+                frm.Show();
+                frm1.Hide();
             }
-            else if (MenuBtn.Contains("DMKTHU"))
-            {
-                //string a = "DMKM";
-                //Form1 frm = new Form1(a);
-                //frm.Text = "Danh mục khoản thu";
-                //frm.Show();
-                //frm1.Hide();
-            }
+
             else if (MenuBtn.Contains("DMKV"))
             {
-                string a = "DMKV";
-                Form1 frm = new Form1(a);
+                DMKV frm = new DMKV();
                 frm.Text = "Danh mục khu vực";
-                frm.Show();
-                frm1.Hide();
-            }
-            else if (MenuBtn.Contains("DMLO"))
-            {
-                string a = "DMLO";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục lô";
-                frm.Show();
-                frm1.Hide();
-            }
-            else if (MenuBtn.Contains("DMNVU"))
-            {
-                string a = "DMNVU";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục nghiệp vụ";
-                frm.Show();
-                frm1.Hide();
-            }
-            else if (MenuBtn.Contains("DMNVON"))
-            {
-                string a = "DMNVON";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục nguồn vốn";
-                frm.Show();
-                frm1.Hide();
-            }
-            else if (MenuBtn.Contains("DMNHTP"))
-            {
-                string a = "DMNHTP";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục nhãn thành phẩm";
                 frm.Show();
                 frm1.Hide();
             }
             else if (MenuBtn.Contains("DMNHCCDC"))
             {
-                string a = "DMNHCCDC";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục nhóm CCDC";
+                DMNHCCDC frm = new DMNHCCDC();
+                frm.Text = "Danh mục nhóm công cụ dụng cụ";
                 frm.Show();
                 frm1.Hide();
+
+
             }
-            else if (MenuBtn.Contains("DMNHDT"))
+            else if (MenuBtn.Contains("DMNDT"))
             {
-                string a = "DMNHDT";
-                Form1 frm = new Form1(a);
+                DMNHDT frm = new DMNHDT();
                 frm.Text = "Danh mục nhóm đối tượng";
                 frm.Show();
                 frm1.Hide();
-            }
-            else if (MenuBtn.Contains("DMNHHD"))
-            {
-                string a = "DMNHHD";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục nhóm hợp đồng";
-                frm.Show();
-                frm1.Hide();
+
             }
             else if (MenuBtn.Contains("DMNHNV"))
             {
-                string a = "DMNHNV";
-                Form1 frm = new Form1(a);
+                DMNHNV frm = new DMNHNV();
                 frm.Text = "Danh mục nhóm nhân viên";
                 frm.Show();
                 frm1.Hide();
+
+
             }
             else if (MenuBtn.Contains("DMNHSP"))
             {
-                string a = "DMNHSP";
-                Form1 frm = new Form1(a);
+                DMNHSP frm = new DMNHSP();
                 frm.Text = "Danh mục nhóm sản phẩm";
                 frm.Show();
                 frm1.Hide();
-            }
-            else if (MenuBtn.Contains("DMNHTS"))
-            {
-                string a = "DMNHTS";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục nhóm tài sản";
-                frm.Show();
-                frm1.Hide();
+
             }
             else if (MenuBtn.Contains("DMNHVT"))
             {
-                string a = "DMNHVT";
-                Form1 frm = new Form1(a);
+
+                DMNHVT frm = new DMNHVT();
                 frm.Text = "Danh mục nhóm vật tư";
                 frm.Show();
                 frm1.Hide();
+
+
             }
-            else if (MenuBtn.Contains("DMPL"))
+            else if (MenuBtn.Contains("DMNV"))
             {
-                string a = "DMPL";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục phân loại";
+                DMNV frm = new DMNV();
+                frm.Text = "Danh mục nhóm vật tư";
                 frm.Show();
                 frm1.Hide();
+
+            }
+            else if (MenuBtn.Contains("DMNVU"))
+            {
+                DMNVU frm = new DMNVU();
+                frm.Text = "Danh mục nghiệp vụ";
+                frm.Show();
+                frm1.Hide();
+
+
             }
             else if (MenuBtn.Contains("DMTK"))
             {
-                string a = "DMTK";
-                Form1 frm = new Form1(a);
+                DMTK frm = new DMTK();
                 frm.Text = "Danh mục tài khoản";
                 frm.Show();
                 frm1.Hide();
+
+
+
             }
-            else if (MenuBtn.Contains("DMTHUE"))
+            else if (MenuBtn.Contains("DMVT"))
             {
-                string a = "DMTHUE";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục thuế";
+                DMVT frm = new DMVT();
+                frm.Text = "Danh mục vật tư";
                 frm.Show();
                 frm1.Hide();
+
+
             }
-            else if (MenuBtn.Contains("DMYTCP"))
+            else if (MenuBtn.Contains("DMVTTS"))
             {
-                string a = "DMYTCP";
-                Form1 frm = new Form1(a);
-                frm.Text = "Danh mục yếu tố chi phí";
+                DMVTTS frm = new DMVTTS();
+                frm.Text = "Danh mục vật tư tài sản";
                 frm.Show();
                 frm1.Hide();
+
+
             }
             #endregion
+
         }
     }
 }

@@ -60,6 +60,7 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem26 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem27 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem28 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem29 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.galleryControl2 = new DevExpress.XtraBars.Ribbon.GalleryControl();
             this.galleryControlClient2 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
@@ -162,9 +163,9 @@
             galleryItem20.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage2")));
             galleryItem20.Tag = "DMTK";
             galleryItem20.Value = 9;
-            galleryItem21.Caption = "Danh mục nhóm đối tượng";
+            galleryItem21.Caption = "Danh mục đối tượng";
             galleryItem21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image17")));
-            galleryItem21.Tag = "DMNHDT";
+            galleryItem21.Tag = "DMDT";
             galleryItem21.Value = 12;
             galleryItem22.Caption = "Danh mục nhóm hợp đồng";
             galleryItem22.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image18")));
@@ -190,6 +191,9 @@
             galleryItem28.Caption = "Danh mục phân loại";
             galleryItem28.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image24")));
             galleryItem28.Tag = "DMPL";
+            galleryItem29.Caption = "Danh mục bảng giá";
+            galleryItem29.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image25")));
+            galleryItem29.Tag = "DMBG";
             galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem19,
             galleryItem20,
@@ -200,7 +204,8 @@
             galleryItem25,
             galleryItem26,
             galleryItem27,
-            galleryItem28});
+            galleryItem28,
+            galleryItem29});
             this.galleryControl2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             galleryItemGroup1,
             galleryItemGroup2,

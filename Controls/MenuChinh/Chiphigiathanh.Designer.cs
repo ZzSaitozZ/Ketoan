@@ -47,6 +47,8 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem14 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem15 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem16 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem17 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.galleryControl2 = new DevExpress.XtraBars.Ribbon.GalleryControl();
             this.galleryControlClient2 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
@@ -138,6 +140,13 @@
             galleryItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             galleryItem15.Tag = "DMYTCP";
             galleryItem15.Value = 16;
+            galleryItem16.Caption = "Danh mục đối tượng";
+            galleryItem16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            galleryItem16.Tag = "DMDT";
+            galleryItem17.Caption = "Danh mục bảng giá";
+            galleryItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
+            galleryItem17.Tag = "DMBG";
+            galleryItem17.Value = "";
             galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem9,
             galleryItem10,
@@ -145,7 +154,9 @@
             galleryItem12,
             galleryItem13,
             galleryItem14,
-            galleryItem15});
+            galleryItem15,
+            galleryItem16,
+            galleryItem17});
             this.galleryControl2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             galleryItemGroup1,
             galleryItemGroup2,
@@ -165,7 +176,7 @@
             // 
             this.galleryControlClient2.GalleryControl = this.galleryControl2;
             this.galleryControlClient2.Location = new System.Drawing.Point(2, 2);
-            this.galleryControlClient2.Size = new System.Drawing.Size(867, 417);
+            this.galleryControlClient2.Size = new System.Drawing.Size(850, 417);
             // 
             // separatorControl1
             // 

@@ -20,9 +20,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
             InitializeComponent();
             LoadTable();
             LoadCategory();
-            txtTien.Text = "VND";
-            txtChonTien.Text = "VND";
-            //txtNgayct.Text=
+            
         }
 
         
@@ -99,13 +97,12 @@ namespace Ketoan.Controls.BanHangPhaiThu
         }
         public class Food
         {
-            public Food(int id,string ma_vt, string name, int idCategory, int giaBan)
+            public Food(int id, string name, int idCategory)
             {
                 this.Id = id;
                 this.Name = name;
                 this.IdCategory = idCategory;
-                this.Ma_vt = ma_vt;
-                this.GiaBan = giaBan;
+                //this.Price = price;
             }
 
             public Food(DataRow row)
@@ -113,21 +110,18 @@ namespace Ketoan.Controls.BanHangPhaiThu
                 this.Id = (int)row["id"];
                 this.Name = row["Ten_Vt"].ToString();
                 this.IdCategory = (int)row["DMMon_id"];
-                this.Ma_vt = row["Ma_vt"].ToString();
-                this.giaBan = Convert.ToInt32(row["Gia"].ToString());
+                //this.Price = Convert.ToInt32(row["price"]);
             }
 
             private int id;
             private string name;
             private int idCategory;
-            private string ma_vt;
-            private int giaBan;
+            //private float price;
 
             public int Id { get => id; set => id = value; }
             public string Name { get => name; set => name = value; }
             public int IdCategory { get => idCategory; set => idCategory = value; }
-            public string Ma_vt { get => ma_vt; set => ma_vt = value; }
-            public int GiaBan { get => giaBan; set => giaBan = value; }
+            //public float Price { get => price; set => price = value; }
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -164,7 +158,6 @@ namespace Ketoan.Controls.BanHangPhaiThu
                 }
                 flpTab.Controls.Add(btn);
             }
-            
         }
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -198,7 +191,6 @@ namespace Ketoan.Controls.BanHangPhaiThu
             private float price;
             private float totalPrice;
             private float giamGia;
-
             public string FoodName { get => foodName; set => foodName = value; }
             public int Count { get => count; set => count = value; }
             public float Price { get => price; set => price = value; }
@@ -208,11 +200,13 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
         public List<ThucDon> GetListMonByTable(int id)
         {
-            string query = "EXEC ESP_GetListMonBan @idBan";
+            string query = "SELECT vt.Ten_Vt,ct.So_Luong,ct.Thanh_Tien_GB,ct.Tien_Giam_Gia,ct.So_Luong*ct.Thanh_Tien_GB AS TT " +
+                "FROM dbo.E02CTHD AS ct,dbo.E00DMVT AS vt,dbo.E02HOADON AS hd " +
+                "WHERE ct.Ma_Vt = vt.Ma_Vt AND ct.Ma_HD = hd.Ma_HD AND hd.status = 0 and hd.Ma_Ban = " + id;
 
             List<ThucDon> listMon = new List<ThucDon>();
 
-            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { id });
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
             {
@@ -222,7 +216,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
             return listMon;
         }
-        private float tongGia = 0;
+
         void ShowBill(int id)
         {
             CultureInfo culture = new CultureInfo("vi-VN");
@@ -237,18 +231,17 @@ namespace Ketoan.Controls.BanHangPhaiThu
                 lsvItem.SubItems.Add(item.Count.ToString());
                 lsvItem.SubItems.Add(item.Price.ToString());
                 lsvItem.SubItems.Add(item.TotalPrice.ToString());
-                lsvItem.SubItems.Add(item.GiamGia.ToString());
                 totalPrice += item.TotalPrice;
 
                 lsvBill.Items.Add(lsvItem);
             }
 
-            
+
 
             //Thread.CurrentThread.CurrentCulture = culture;
 
             txbTotalPrice.Text = totalPrice.ToString("c", culture);
-            tongGia = totalPrice;
+
         }
 
         #region Table
@@ -256,18 +249,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             int tableID = ((sender as Button).Tag as Table).Id;
             lsvBill.Tag = (sender as Button).Tag;
-            
-            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC ESP_BanChuaTT @idBan", new object[] { tableID });
-            if (data.Rows.Count > 0)
-            {
-                txtMaHD.Text = data.Rows[0].ItemArray[1].ToString();
-            }
-            else
-            {
-                txtMaHD.Text = "";
-            }
-            
-            txtMaBan.Text = "Bàn " + Convert.ToString(tableID);
+
             ShowBill(tableID);
         }
         private class Table
@@ -356,13 +338,13 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             Table table = lsvBill.Tag as Table;
 
-            int id_HD = GetUncheckByTableId(table.Id);
+            int idBill = GetUncheckByTableId(table.Id);
 
-            if (id_HD != -1)
+            if (idBill != -1)
             {
                 if (MessageBox.Show("Bạn có chắc thanh toán hóa đơn cho bàn " + table.Name + " ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
                 {
-                    ThanhToan(id_HD);
+                    ThanhToan(idBill);
                     ShowBill(table.Id);
 
                     LoadTable();
@@ -371,8 +353,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
         }
         public void ThanhToan(int id)
         {
-
-            string query = "UPDATE dbo.E02HOADON SET Status=1, Tong_tien="+ tongGia + ",Ngay_TT = GETDATE() WHERE Stt=" + id;
+            string query = "UPDATE dbo.E02HOADON SET Status=1 WHERE Stt=" + id;
             Table table = lsvBill.Tag as Table;
             DataProvider.Instance.ExecuteNoneQuery(query);
             DataProvider.Instance.ExecuteNoneQuery("UPDATE dbo.E00DMBAN SET status=N'Trống' WHERE id=" + table.Id);
@@ -383,11 +364,8 @@ namespace Ketoan.Controls.BanHangPhaiThu
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.E02HOADON WHERE Ma_Ban = " + id + " AND status = 0");
             if (data.Rows.Count > 0)
             {
-                int id_HD = Convert.ToInt32(data.Rows[0].ItemArray[0].ToString()) ;
-                //Bill bill = new Bill(data.Rows[0]);
-                //bill.Id;
-
-                return id_HD;
+                Bill bill = new Bill(data.Rows[0]);
+                return bill.Id;
             }
             return -1;
         }
@@ -426,14 +404,15 @@ namespace Ketoan.Controls.BanHangPhaiThu
             public DateTime? DateCheckOut { get => dateCheckOut; set => dateCheckOut = value; }
             public int Status { get => status; set => status = value; }
         }
-        
-        public int GetMaxHoaDon()
+        public void InsertBillInfo(int idBill, int idfood, int count)
+        {
+            DataProvider.Instance.ExecuteNoneQuery("USP_InsertBillInfo @idBill , @idFood , @count", new object[] { idBill, idfood, count });
+        }
+        public int GetMaxIdBill()
         {
             try
             {
-                DataTable data =  DataProvider.Instance.ExecuteQuery("SELECT MAX(Stt) FROM dbo.E02HOADON");
-                int i = Convert.ToInt32(data.Rows[0].ItemArray[0].ToString())+1;
-                return i;
+                return (int)DataProvider.Instance.ExecuteNoneQuery("SELECT MAX(id) FROM dbo.Bill");
             }
             catch (Exception)
             {
@@ -441,115 +420,33 @@ namespace Ketoan.Controls.BanHangPhaiThu
                 return 1;
             }
         }
-       
+        public void InsertBill(int id)
+        {
+            DataProvider.Instance.ExecuteNoneQuery("exec USP_InsertBill @idTable", new object[] { id });
+        }
         private void btnThemMon_Click(object sender, EventArgs e)
         {
-           
-            string maHoaDon = "HD" + GetMaxHoaDon().ToString().PadLeft(7, '0');
+            //Table table = lsvBill.Tag as Table;
+            //int idBill = GetUncheckByTableId(table.Id);
+            //int foodId = (cbMon.SelectedItem as Food).Id;
+            //int count = (int)soluongNUD.Value;
+            //if (idBill == -1)
+            //{
+            //    InsertBill(table.Id);
+            //    InsertBillInfo(GetMaxIdBill(), foodId, count);
+            //}
+            //else
+            //{
+            //    InsertBillInfo(idBill, foodId, count);
+            //}
 
-            Table table = lsvBill.Tag as Table;
-            int id_HD = 0;
-            if (table == null)
-            {
-                MessageBox.Show("Bạn chưa chọn bàn\nBạn chọn bàn rồi đặt món", "Thông báo");
-                return;
-            }
-            else
-            {
-                
-                id_HD = GetUncheckByTableId(table.Id);
-            }
-            
-            string mon = (cbMon.SelectedItem as Food).Ma_vt;
-            int giaBan = (cbMon.SelectedItem as Food).GiaBan;
-            int giamGia = Convert.ToInt32(txtGiamGia.Text);
-
-
-            int count = (int)soluongNUD.Value;
-            if (id_HD == -1)
-            {
-                txtMaHD.Text = maHoaDon;
-                
-                DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_InsertHOADON @ma_HD , @ma_Ban ", new object[] { maHoaDon, table.Id });
-
-                DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_InsertCTHD @ma_HD , @ma_VT , @soLuong , @idBan , @giaBan , @giamGia", new object[] { maHoaDon, mon, count, table.Id, giaBan, giamGia });
-                LoadTable();
-            }
-            else
-            {
-                DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_InsertCTHD @ma_HD , @ma_VT , @soLuong , @idBan , @giaBan , @giamGia", new object[] { txtMaHD.Text, mon, count, table.Id, giaBan, giamGia });
-                DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.E02CTHD WHERE Ma_HD=N'"+ txtMaHD.Text + "'");
-                if (data.Rows.Count == 1 || data.Rows.Count <= 0)
-                {
-                    LoadTable();
-                }
-            }
-
-            ShowBill(table.Id);
-            
-
-            //string[] row = { cbMon.Text, soluongNUD.Value.ToString(), "90000", (90000 * soluongNUD.Value).ToString(), "" };
-            //ListViewItem newitem = new ListViewItem(row);
-            //lsvBill.Items.Add(newitem);
-
-        }
-
-        private void txtChonTien_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            txtTien.Text = txtChonTien.Text;
-        }
-
-        private void btnGiamGiaMon_Click(object sender, EventArgs e)
-        {
-            Table table = lsvBill.Tag as Table;
-            int giamGia = Convert.ToInt32(txtGiamGia.Text);
-
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT Ma_Vt FROM dbo.E00DMVT WHERE Ten_Vt=N'" + cbMon.Text + "'");
-            string mon = data.Rows[0].ItemArray[0].ToString();
-
-            DataProvider.Instance.ExecuteNoneQuery("EXEC dbo.ESP_UpdateGiamGiaMon @ma_HD , @ma_VT , @giamGia", new object[] { txtMaHD.Text, mon, giamGia });
-
-            ShowBill(table.Id);
+            //ShowBill(table.Id);
             //LoadTable();
-        }
 
-        private void lsvBill_MouseClick(object sender, MouseEventArgs e)
-        {
-            string tenMon = lsvBill.SelectedItems[0].SubItems[0].Text;
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT mon.name FROM dbo.E00DMVT AS vt,dbo.E00DMMON AS mon WHERE vt.DMMon_id = mon.id AND Ten_Vt=N'"+ tenMon + "'");
-            cbDMMon.Text = data.Rows[0].ItemArray[0].ToString();
-            cbMon.Text = tenMon;
-        }
+            string[] row = { cbMon.Text, soluongNUD.Value.ToString(), "90000", (90000 * soluongNUD.Value).ToString(), "" };
+            ListViewItem newitem = new ListViewItem(row);
+            lsvBill.Items.Add(newitem);
 
-        private void FThemHoaDon_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'eWONDATASET1.E00DMDT_NV' table. You can move, or remove it, as needed.
-            this.e00DMDT_NVTableAdapter.FillByNV(this.eWONDATASET1.E00DMDT_NV);
-            // TODO: This line of code loads data into the 'eWONDATASET.E00DMDT' table. You can move, or remove it, as needed.
-            this.e00DMDTTableAdapter.FillByKH(this.eWONDATASET.E00DMDT);
-
-        }
-
-        private void txtMaKH_EditValueChanged(object sender, EventArgs e)
-        {
-            DataRowView s = (DataRowView)txtMaKH.GetSelectedDataRow();
-            if (s != null)
-            {
-                txtTenKH.Text = s["Ten_Dt"].ToString();
-                txtDiaChi.Text = s["Dia_Chi"].ToString();
-                lbTenCT.Text = s["Cong_Ty"].ToString();
-            }
-        }
-
-        private void txtMa_NVien_EditValueChanged(object sender, EventArgs e)
-        {
-            DataRowView s = (DataRowView)txtMa_NVien.GetSelectedDataRow();
-            if (s != null)
-            {
-                lbTenNV.Text = s["Ten_Dt"].ToString();
-                
-            }
         }
     }
 }

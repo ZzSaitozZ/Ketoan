@@ -33,8 +33,8 @@
             this.stt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tk = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tkd = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.value = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dg = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.value = new DevExpress.XtraGrid.Columns.GridColumn();
             this.chucnang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.mabophan = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -51,6 +51,7 @@
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -64,6 +65,8 @@
             this.mabophan});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFilter.AllowAutoFilterConditionChange = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
             this.gridView1.OptionsSelection.MultiSelect = true;
             this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             // 
@@ -88,6 +91,13 @@
             this.tkd.Visible = true;
             this.tkd.VisibleIndex = 3;
             // 
+            // dg
+            // 
+            this.dg.Caption = "Diễn giải";
+            this.dg.Name = "dg";
+            this.dg.Visible = true;
+            this.dg.VisibleIndex = 4;
+            // 
             // value
             // 
             this.value.AppearanceCell.Options.UseTextOptions = true;
@@ -96,13 +106,6 @@
             this.value.Name = "value";
             this.value.Visible = true;
             this.value.VisibleIndex = 6;
-            // 
-            // dg
-            // 
-            this.dg.Caption = "Diễn giải";
-            this.dg.Name = "dg";
-            this.dg.Visible = true;
-            this.dg.VisibleIndex = 4;
             // 
             // chucnang
             // 

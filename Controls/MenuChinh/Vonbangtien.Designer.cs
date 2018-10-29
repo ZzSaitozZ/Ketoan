@@ -50,6 +50,7 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem16 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem17 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem18 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem19 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.galleryControl2 = new DevExpress.XtraBars.Ribbon.GalleryControl();
             this.galleryControlClient2 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,19 +84,19 @@
             galleryItem1.AppearanceCaption.Normal.Options.UseFont = true;
             galleryItem1.Caption = "Phiếu thu";
             galleryItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
-            galleryItem1.Tag = "";
+            galleryItem1.Tag = "PT";
             galleryItem1.Value = 11;
             galleryItem2.Caption = "Phiếu chi";
             galleryItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
-            galleryItem2.Tag = "";
+            galleryItem2.Tag = "PC";
             galleryItem2.Value = 12;
             galleryItem3.Caption = "Báo có ngân hàng";
             galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            galleryItem3.Tag = "";
+            galleryItem3.Tag = "BC";
             galleryItem3.Value = 13;
             galleryItem4.Caption = "Báo nợ ngân hàng";
             galleryItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            galleryItem4.Tag = "";
+            galleryItem4.Tag = "BN";
             galleryItem4.Value = 14;
             galleryItem5.Caption = "Lập kế hoạch thu chi";
             galleryItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
@@ -129,9 +130,9 @@
             galleryItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage2")));
             galleryItem10.Tag = "DMTK";
             galleryItem10.Value = 32;
-            galleryItem11.Caption = "Danh mục nhóm đối tượng";
+            galleryItem11.Caption = "Danh mục đối tượng";
             galleryItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
-            galleryItem11.Tag = "DMNHDT";
+            galleryItem11.Tag = "DMDT";
             galleryItem11.Value = 33;
             galleryItem12.Caption = "Danh mục nhóm hợp đồng";
             galleryItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
@@ -161,6 +162,9 @@
             galleryItem18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
             galleryItem18.Tag = "DMNHSP";
             galleryItem18.Value = 40;
+            galleryItem19.Caption = "Danh mục bảng giá";
+            galleryItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image15")));
+            galleryItem19.Tag = "DMBG";
             galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem9,
             galleryItem10,
@@ -171,7 +175,8 @@
             galleryItem15,
             galleryItem16,
             galleryItem17,
-            galleryItem18});
+            galleryItem18,
+            galleryItem19});
             this.galleryControl2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             galleryItemGroup1,
             galleryItemGroup2,
@@ -186,7 +191,6 @@
             this.galleryControl2.Size = new System.Drawing.Size(911, 477);
             this.galleryControl2.TabIndex = 5;
             this.galleryControl2.Text = "galleryControl2";
-            this.galleryControl2.Click += new System.EventHandler(this.galleryControl2_Click);
             // 
             // galleryControlClient2
             // 

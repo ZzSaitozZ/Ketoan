@@ -18,10 +18,12 @@ namespace Ketoan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            FThemHoaDon s = new FThemHoaDon();
-            s.Tag = 0;
-            Login login = new Login();
-            Application.Run(login);
+            //FThemHoaDon s = new FThemHoaDon();
+            //Ketoan.Controls.Danhmuc.DMDT.DMDT e = new Controls.Danhmuc.DMDT.DMDT();
+            StartForm e = new StartForm();
+            //s.Tag = 0;
+            //Login login = new Login();
+            Application.Run(e);
         }
     }
 }

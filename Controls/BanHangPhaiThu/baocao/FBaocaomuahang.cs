@@ -45,17 +45,25 @@ namespace Ketoan.Controls.BanHangPhaiThu.baocao
             {
                 MessageBox.Show("Vui lòng điền đúng định dạng ngày theo dạng dd/mm/yyyy");
             }
-            switch (txtTieuDe.Text)
+            if (txtTungay.Text == "" || txtDenngay.Text == "")
             {
-                case "Báo cáo doanh thu bán hàng":
-                    {
 
-
-                        FBangkebanhang f = new FBangkebanhang(tungay,denngay,loaibaocao);
-                        f.Show();
-                        break;
-                    }
             }
+            else
+            {
+                switch (txtTieuDe.Text)
+                {
+                    case "Báo cáo doanh thu bán hàng":
+                        {
+
+
+                            FBangkebanhang f = new FBangkebanhang(tungay, denngay, loaibaocao);
+                            f.Show();
+                            break;
+                        }
+                }
+            }
+
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
@@ -65,13 +73,21 @@ namespace Ketoan.Controls.BanHangPhaiThu.baocao
 
         private void FBaocaomuahang_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Form frm1 = Application.OpenForms["StartForm"];
-            StartForm s = frm1 as StartForm;
-            s.k--;
-            if (s.k == 0)
-            {
-                frm1.Show();
-            }
+            //Form frm1 = Application.OpenForms["StartForm"];
+            //StartForm s = frm1 as StartForm;
+            //s.k--;
+            //if (s.k == 0)
+            //{
+            //    frm1.Show();
+            //}
+          
+        }
+
+        private void FBaocaomuahang_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FBaocaomuahang f = new FBaocaomuahang("1");     
+       f.Close();
+
         }
     }
 }

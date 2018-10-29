@@ -16,5 +16,10 @@ namespace Ketoan.Controls.Ketoantonghop
         {
             InitializeComponent();
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

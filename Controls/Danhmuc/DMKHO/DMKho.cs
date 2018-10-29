@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraGrid.Views.Grid;
 
-namespace Ketoan.Controls.Danhmuc.DMKho
+namespace Ketoan.Controls.Danhmuc.DMKHO
 {
-    public partial class DMKho : Frame
+    public partial class DMKHO : Frame
     {
-        public DMKho()
+        public DMKHO()
         {
             InitializeComponent();
         }
@@ -24,32 +26,57 @@ namespace Ketoan.Controls.Danhmuc.DMKho
 
         }
 
-        private void addBtn_Click(object sender, EventArgs e)
+        private void deleteBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
+                              DialogResult.Yes)
+                return;
+            gridView1.DeleteRow(gridView1.FocusedRowHandle);
+            e00DMKHOTableAdapter.Update(eWONDATASET.E00DMKHO);
+        }
+
+        private void editBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            gridView1.ShowEditForm();
+        }
+
+        private void addBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             gridView1.AddNewRow();
-            AddEditDMKho editForm = new AddEditDMKho(gridView1, "Add");
-            editForm.ShowDialog();
-            e00DMKHOTableAdapter.Update(eWONDATASET.E00DMKHO);
-            e00DMKHOTableAdapter.Fill(eWONDATASET.E00DMKHO);
-            gridView1.FocusedRowHandle = gridView1.DataRowCount - 1;
+            gridView1.ShowEditForm();
         }
 
-        private void editBtn_Click(object sender, EventArgs e)
+        private void gridView1_KeyDown(object sender, KeyEventArgs e)
         {
-            int tempfocus = gridView1.FocusedRowHandle;
-            AddEditDMKho editForm = new AddEditDMKho(gridView1, "Edit");
-            editForm.ShowDialog();
-            e00DMKHOTableAdapter.Update(eWONDATASET.E00DMKHO);
-            e00DMKHOTableAdapter.Fill(eWONDATASET.E00DMKHO);
-            gridView1.FocusedRowHandle = tempfocus;
+            if (e.KeyCode == Keys.Delete && e.Modifiers == Keys.Control)
+            {
+                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
+                  DialogResult.Yes)
+                    return;
+                GridView view = sender as GridView;
+                view.DeleteRow(view.FocusedRowHandle);
+            }
         }
 
-        private void delBtn_Click(object sender, EventArgs e)
+        private void gridView1_RowUpdated(object sender, RowObjectEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK) { gridView1.DeleteRow(gridView1.FocusedRowHandle); }
-            e00DMKHOTableAdapter.Update(eWONDATASET.E00DMKHO);
-            e00DMKHOTableAdapter.Fill(eWONDATASET.E00DMKHO);
-            gridView1.FocusedRowHandle = gridView1.DataRowCount - 1;
+            ColumnView view = gridControl1.FocusedView as ColumnView;
+            if (view.UpdateCurrentRow())
+            {
+                e00DMKHOTableAdapter.Update(eWONDATASET.E00DMKHO);
+            }
+        }
+
+        private void gridView1_EditFormShowing(object sender, EditFormShowingEventArgs e)
+        {
+            if (e.RowHandle <= gridView1.RowCount - 1 && e.RowHandle > 0)
+            {
+                gridView1.OptionsEditForm.FormCaptionFormat = "Chỉnh sửa thông tin " + gridView1.GetDataRow(gridView1.FocusedRowHandle)["Ten_Kho"].ToString();
+            }
+            else
+            {
+                gridView1.OptionsEditForm.FormCaptionFormat = "Thêm mới";
+            }
         }
     }
 }

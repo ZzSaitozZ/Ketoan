@@ -16,41 +16,33 @@ namespace Ketoan.Controls.PhanQuyen
         {
             InitializeComponent();
         }
-        
-        private void btnDangNhap_Click(object sender, EventArgs e)
+private void login()
         {
             bool flagUser = false;
-            bool flagPass = false;  
+            bool flagPass = false;
             string User = txtUser.Text;
-         string Password = txtPass.Text;
+            string Password = txtPass.Text;
             DataTable dt = new DataTable();
             dt = e005PHANQUYENTableAdapter1.GetData();
-            for(int i=0;i<dt.Rows.Count;i++)
-            {
-                DataRow dr = dt.Rows[i];
-                string user = dr[1].ToString();
-                if(User==user)
-                {
-                    flagUser = true;
-                    break;
-                }
-                
-
-            }
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 DataRow dr = dt.Rows[i];
-
-                string password = dr[2].ToString();
+                string user = dr[0].ToString();
+                if (User == user)
+                {
+                    flagUser = true;
+                }
+                string password = dr[1].ToString();
 
                 if (Password == password)
                 {
                     flagPass = true;
-                    break;
+
                 }
 
+
             }
-            if (flagUser==true&&flagPass==true)
+            if (flagUser == true && flagPass == true)
             {
                 StartForm s = new StartForm();
                 s.Show();
@@ -59,6 +51,19 @@ namespace Ketoan.Controls.PhanQuyen
             else
             {
                 MessageBox.Show("Tên người sử dụng hoặc mật khẩu sai vui lòng đăng nhập lại");
+            }
+
+        }
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            login();
+        }
+
+        private void Login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar== Convert.ToChar(Keys.Enter))
+            {
+                login();
             }
         }
     }
