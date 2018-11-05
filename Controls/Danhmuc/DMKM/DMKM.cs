@@ -68,7 +68,7 @@ namespace Ketoan.Controls.Danhmuc.DMKM
 
         private void gridView1_EditFormShowing(object sender, EditFormShowingEventArgs e)
         {
-            if (e.RowHandle <= gridView1.RowCount - 1 && e.RowHandle > 0)
+            if (e.RowHandle <= gridView1.RowCount - 1 && e.RowHandle >= 0)
             {
                 gridView1.OptionsEditForm.FormCaptionFormat = "Chỉnh sửa thông tin " + gridView1.GetDataRow(gridView1.FocusedRowHandle)["Ten_Km"].ToString();
             }

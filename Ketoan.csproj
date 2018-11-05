@@ -247,6 +247,12 @@
     <Compile Include="Controls\Danhmuc\DMBANGGIA\DMBANGGIA.Designer.cs">
       <DependentUpon>DMBANGGIA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Danhmuc\DMCT\DMCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMCT\DMCT.Designer.cs">
+      <DependentUpon>DMCT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Danhmuc\DMDT\AddEditDMDT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +300,12 @@
     </Compile>
     <Compile Include="Controls\Danhmuc\DMBP\DMBP.Designer.cs">
       <DependentUpon>DMBP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMTYGIA\DMTYGIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Danhmuc\DMTYGIA\DMTYGIA.Designer.cs">
+      <DependentUpon>DMTYGIA.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Danhmuc\DMVTTS\DMVTTS.cs">
       <SubType>Form</SubType>
@@ -439,17 +451,17 @@
     <Compile Include="Controls\Dungchung\ThemSua\EDCSuaPhieuBuTru.designer.cs">
       <DependentUpon>EDCSuaPhieuBuTru.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Dungchung\ThemSua\MenuBuTruCongNo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\Dungchung\ThemSua\MenuBuTruCongNo.Designer.cs">
-      <DependentUpon>MenuBuTruCongNo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Dungchung\ThemSua\EDCVBTAddEdit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\Dungchung\ThemSua\EDCVBTAddEdit.designer.cs">
       <DependentUpon>EDCVBTAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dungchung\ThemSua\MenuBuTruCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dungchung\ThemSua\MenuBuTruCongNo.Designer.cs">
+      <DependentUpon>MenuBuTruCongNo.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Hangtonkho\Baocao\Bangke\bangkexuatban.cs">
       <SubType>UserControl</SubType>
@@ -547,6 +559,18 @@
     </Compile>
     <Compile Include="Controls\Ketoantonghop\FButtoanketchuyen.Designer.cs">
       <DependentUpon>FButtoanketchuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ketoantonghop\FKetoancontrols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Ketoantonghop\FKetoancontrols.Designer.cs">
+      <DependentUpon>FKetoancontrols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ketoantonghop\FKetoantonghop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Ketoantonghop\FKetoantonghop.Designer.cs">
+      <DependentUpon>FKetoantonghop.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Ketoantonghop\Phieuketoankhac.cs">
       <SubType>UserControl</SubType>
@@ -805,6 +829,9 @@
     <EmbeddedResource Include="Controls\Danhmuc\DMBANGGIA\DMBANGGIA.resx">
       <DependentUpon>DMBANGGIA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\DMCT\DMCT.resx">
+      <DependentUpon>DMCT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Danhmuc\DMDT\AddEditDMDT.resx">
       <DependentUpon>AddEditDMDT.cs</DependentUpon>
     </EmbeddedResource>
@@ -828,6 +855,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Danhmuc\DMBP\DMBP.resx">
       <DependentUpon>DMBP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Danhmuc\DMTYGIA\DMTYGIA.resx">
+      <DependentUpon>DMTYGIA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Danhmuc\DMVTTS\DMVTTS.resx">
       <DependentUpon>DMVTTS.cs</DependentUpon>
@@ -901,11 +931,11 @@
     <EmbeddedResource Include="Controls\Dungchung\ThemSua\EDCSuaPhieuBuTru.resx">
       <DependentUpon>EDCSuaPhieuBuTru.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Dungchung\ThemSua\MenuBuTruCongNo.resx">
-      <DependentUpon>MenuBuTruCongNo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Dungchung\ThemSua\EDCVBTAddEdit.resx">
       <DependentUpon>EDCVBTAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dungchung\ThemSua\MenuBuTruCongNo.resx">
+      <DependentUpon>MenuBuTruCongNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Hangtonkho\Baocao\Bangke\bangkexuatban.resx">
       <DependentUpon>bangkexuatban.cs</DependentUpon>
@@ -955,6 +985,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Ketoantonghop\FButtoanketchuyen.resx">
       <DependentUpon>FButtoanketchuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Ketoantonghop\FKetoancontrols.resx">
+      <DependentUpon>FKetoancontrols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Ketoantonghop\FKetoantonghop.resx">
+      <DependentUpon>FKetoantonghop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Ketoantonghop\Phieuketoankhac.resx">
       <DependentUpon>Phieuketoankhac.cs</DependentUpon>

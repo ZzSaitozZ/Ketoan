@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EDCSuaPhieuBuTru));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EDCVBTAddEdit));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.panelDetails = new System.Windows.Forms.Panel();
             this.panelVat = new System.Windows.Forms.Panel();
@@ -62,9 +62,7 @@
             this.txtManv = new DevExpress.XtraEditors.TextEdit();
             this.txtMahd = new DevExpress.XtraEditors.TextEdit();
             this.txtOngba = new DevExpress.XtraEditors.TextEdit();
-            this.txtDc = new DevExpress.XtraEditors.TextEdit();
-            this.txtNgayct = new DevExpress.XtraEditors.TextEdit();
-            this.txtSoct = new DevExpress.XtraEditors.TextEdit();
+            this.txtDienGiai = new DevExpress.XtraEditors.TextEdit();
             this.txtMatt = new DevExpress.XtraEditors.TextEdit();
             this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
@@ -72,6 +70,8 @@
             this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.txtMadt = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtNgayct = new DevExpress.XtraEditors.DateEdit();
+            this.txtSoct = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -144,15 +144,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtManv.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMahd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOngba.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDc.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNgayct.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSoct.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDienGiai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMadt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgayct.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgayct.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoct.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
@@ -205,9 +206,7 @@
             this.layoutControl1.Controls.Add(this.txtManv);
             this.layoutControl1.Controls.Add(this.txtMahd);
             this.layoutControl1.Controls.Add(this.txtOngba);
-            this.layoutControl1.Controls.Add(this.txtDc);
-            this.layoutControl1.Controls.Add(this.txtNgayct);
-            this.layoutControl1.Controls.Add(this.txtSoct);
+            this.layoutControl1.Controls.Add(this.txtDienGiai);
             this.layoutControl1.Controls.Add(this.txtMatt);
             this.layoutControl1.Controls.Add(this.textEdit11);
             this.layoutControl1.Controls.Add(this.txtDiaChi);
@@ -215,6 +214,8 @@
             this.layoutControl1.Controls.Add(this.checkEdit3);
             this.layoutControl1.Controls.Add(this.simpleButton2);
             this.layoutControl1.Controls.Add(this.txtMadt);
+            this.layoutControl1.Controls.Add(this.txtNgayct);
+            this.layoutControl1.Controls.Add(this.txtSoct);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem17});
@@ -521,29 +522,13 @@
             this.txtOngba.StyleController = this.layoutControl1;
             this.txtOngba.TabIndex = 7;
             // 
-            // txtDc
+            // txtDienGiai
             // 
-            this.txtDc.Location = new System.Drawing.Point(87, 109);
-            this.txtDc.Name = "txtDc";
-            this.txtDc.Size = new System.Drawing.Size(716, 20);
-            this.txtDc.StyleController = this.layoutControl1;
-            this.txtDc.TabIndex = 8;
-            // 
-            // txtNgayct
-            // 
-            this.txtNgayct.Location = new System.Drawing.Point(496, 12);
-            this.txtNgayct.Name = "txtNgayct";
-            this.txtNgayct.Size = new System.Drawing.Size(69, 20);
-            this.txtNgayct.StyleController = this.layoutControl1;
-            this.txtNgayct.TabIndex = 11;
-            // 
-            // txtSoct
-            // 
-            this.txtSoct.Location = new System.Drawing.Point(642, 12);
-            this.txtSoct.Name = "txtSoct";
-            this.txtSoct.Size = new System.Drawing.Size(83, 20);
-            this.txtSoct.StyleController = this.layoutControl1;
-            this.txtSoct.TabIndex = 12;
+            this.txtDienGiai.Location = new System.Drawing.Point(87, 109);
+            this.txtDienGiai.Name = "txtDienGiai";
+            this.txtDienGiai.Size = new System.Drawing.Size(716, 20);
+            this.txtDienGiai.StyleController = this.layoutControl1;
+            this.txtDienGiai.TabIndex = 8;
             // 
             // txtMatt
             // 
@@ -606,6 +591,33 @@
             this.txtMadt.Size = new System.Drawing.Size(173, 20);
             this.txtMadt.StyleController = this.layoutControl1;
             this.txtMadt.TabIndex = 6;
+            // 
+            // txtNgayct
+            // 
+            this.txtNgayct.EditValue = null;
+            this.txtNgayct.Location = new System.Drawing.Point(496, 12);
+            this.txtNgayct.Name = "txtNgayct";
+            this.txtNgayct.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtNgayct.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtNgayct.Properties.DisplayFormat.FormatString = "";
+            this.txtNgayct.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtNgayct.Properties.EditFormat.FormatString = "";
+            this.txtNgayct.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtNgayct.Properties.Mask.EditMask = "";
+            this.txtNgayct.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.txtNgayct.Size = new System.Drawing.Size(69, 20);
+            this.txtNgayct.StyleController = this.layoutControl1;
+            this.txtNgayct.TabIndex = 11;
+            // 
+            // txtSoct
+            // 
+            this.txtSoct.Location = new System.Drawing.Point(642, 12);
+            this.txtSoct.Name = "txtSoct";
+            this.txtSoct.Size = new System.Drawing.Size(83, 20);
+            this.txtSoct.StyleController = this.layoutControl1;
+            this.txtSoct.TabIndex = 12;
             // 
             // layoutControlItem17
             // 
@@ -828,7 +840,7 @@
             // 
             // layoutControlItem5
             // 
-            this.layoutControlItem5.Control = this.txtDc;
+            this.layoutControlItem5.Control = this.txtDienGiai;
             this.layoutControlItem5.CustomizationFormText = "layoutControlItem5";
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 97);
             this.layoutControlItem5.Name = "layoutControlItem5";
@@ -1034,13 +1046,13 @@
             this.emptySpaceItem12.Size = new System.Drawing.Size(793, 24);
             this.emptySpaceItem12.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // EDCSuaPhieuBuTru
+            // EDCVBTAddEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 575);
             this.Controls.Add(this.layoutControl1);
-            this.Name = "EDCSuaPhieuBuTru";
+            this.Name = "EDCVBTAddEdit";
             this.Text = "EDCSửa phiếu bù trừ";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -1072,15 +1084,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtManv.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMahd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOngba.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDc.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNgayct.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSoct.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDienGiai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMadt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgayct.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgayct.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoct.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -1130,7 +1143,6 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.TextEdit txtDiaChi;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
@@ -1178,12 +1190,8 @@
         protected System.Windows.Forms.Panel panelDetails;
         protected System.Windows.Forms.Panel panelVat;
         private DevExpress.XtraLayout.LayoutControl layoutControl2;
-        private DevExpress.XtraEditors.TextEdit txtTienhang;
-        private DevExpress.XtraEditors.TextEdit txtTienVAT;
         private DevExpress.XtraEditors.TextEdit txtHanTT;
         private DevExpress.XtraEditors.TextEdit txtCtuDK;
-        private DevExpress.XtraEditors.TextEdit txtTongTien;
-        private DevExpress.XtraEditors.TextEdit txtTigia;
         private DevExpress.XtraEditors.ComboBoxEdit cbxLuachon;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem8;
@@ -1203,15 +1211,20 @@
         protected DevExpress.XtraEditors.TextEdit txtMahd;
         protected DevExpress.XtraEditors.TextEdit txtManv;
         protected DevExpress.XtraEditors.TextEdit txtOngba;
-        protected DevExpress.XtraEditors.TextEdit txtDc;
-        protected DevExpress.XtraEditors.TextEdit txtNgayct;
-        protected DevExpress.XtraEditors.TextEdit txtSoct;
+        protected DevExpress.XtraEditors.TextEdit txtDienGiai;
         protected DevExpress.XtraEditors.TextEdit textEdit11;
         protected DevExpress.XtraEditors.TextEdit txtMatt;
         protected DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup1;
         protected DevExpress.XtraEditors.LookUpEdit txtMadt;
         protected DevExpress.XtraEditors.SimpleButton btnDongY;
         protected DevExpress.XtraEditors.SimpleButton btnThoat;
-        protected DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem5;
+        private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem5;
+        protected DevExpress.XtraEditors.DateEdit txtNgayct;
+        protected DevExpress.XtraEditors.TextEdit txtSoct;
+        protected DevExpress.XtraEditors.TextEdit txtDiaChi;
+        protected DevExpress.XtraEditors.TextEdit txtTienhang;
+        protected DevExpress.XtraEditors.TextEdit txtTienVAT;
+        protected DevExpress.XtraEditors.TextEdit txtTongTien;
+        protected DevExpress.XtraEditors.TextEdit txtTigia;
     }
 }

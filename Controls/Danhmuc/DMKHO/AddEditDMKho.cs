@@ -22,14 +22,13 @@ namespace Ketoan.Controls.Danhmuc.DMKHO
             Gridview = gridview;
             isAdd = isadd;
             ewErrorProvider1.SetIconAlignment(makhoTE, ErrorIconAlignment.MiddleRight);
-
             //Editvalue
             makhoTE.Tag = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Kho"].ToString();
             this.tenkhoTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_kho"].ToString();
             this.makhoTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Kho"].ToString();
             this.sttTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Stt"].ToString();
         }
-        protected GridView Gridview;
+       
         private void acceptBtn_Click(object sender, EventArgs e)
         {
             Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_kho"] = this.tenkhoTE.Text;

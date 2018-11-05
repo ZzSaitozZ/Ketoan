@@ -173,14 +173,14 @@ namespace Ketoan.Controls
             else if (MenuBtn.Contains("BC"))
             {
                 Ketoan.Controls.VonBangTien.PhieuThuChi.FormPhieuThu frm = new Ketoan.Controls.VonBangTien.PhieuThuChi.FormPhieuThu("BC");
-                frm.Text = "Báo có";
+                frm.Text = "Báo có ngân hàng";
                 frm.Show();
                 frm1.Hide();
             }
             else if (MenuBtn.Contains("BN"))
             {
                 Ketoan.Controls.VonBangTien.PhieuThuChi.FormPhieuThu frm = new Ketoan.Controls.VonBangTien.PhieuThuChi.FormPhieuThu("BN");
-                frm.Text = "Báo nợ";
+                frm.Text = "Báo nợ ngân hàng";
                 frm.Show();
                 frm1.Hide();
             }
