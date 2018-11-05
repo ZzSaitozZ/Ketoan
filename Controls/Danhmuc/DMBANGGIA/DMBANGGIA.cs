@@ -40,7 +40,9 @@ namespace Ketoan.Controls.Danhmuc.DMBANGGIA
 
         private void editBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            gridView1.ShowEditForm();
+            //gridView1.ShowEditForm();
+            AddEditDMBANGGIA add = new AddEditDMBANGGIA(gridView1, true);
+            add.ShowDialog();
         }
 
         private void addBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -72,7 +74,7 @@ namespace Ketoan.Controls.Danhmuc.DMBANGGIA
 
         private void gridView1_EditFormShowing(object sender, EditFormShowingEventArgs e)
         {
-            if (e.RowHandle <= gridView1.RowCount - 1 && e.RowHandle > 0)
+            if (e.RowHandle <= gridView1.RowCount - 1 && e.RowHandle >= 0)
             {
                 gridView1.OptionsEditForm.FormCaptionFormat = "Chỉnh sửa thông tin " + gridView1.GetDataRow(gridView1.FocusedRowHandle)["Ten_Nh_Dt"].ToString();
             }

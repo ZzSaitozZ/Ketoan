@@ -160,6 +160,8 @@
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsDetail.EnableMasterViewMode = false;
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick_1);
+            this.gridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridView1_KeyDown);
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // colMa_Nvu
             // 
@@ -278,6 +280,7 @@
             this.colMa_Hd});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsBehavior.Editable = false;
             this.gridView2.OptionsView.ColumnAutoWidth = false;
             // 
             // colTk_No

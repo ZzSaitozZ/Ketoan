@@ -21,7 +21,7 @@ namespace Ketoan.Controls.VonBangTien.PhieuThuChi
     {
         String stt;
         bool isAdd;
-        GridView Gridview;
+        GridView Gridview = new GridView();
         String Mact;
         public AddEditDeletePhieuThu(GridView gridview, bool isadd, string phieu)
         {
@@ -46,14 +46,17 @@ namespace Ketoan.Controls.VonBangTien.PhieuThuChi
             //gridView1.FocusedRowChanged += GridView1_FocusedRowChanged;
             this.txtMahd.Text = phieu;
             this.txtManv.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"].ToString();
-            //this.txtMadt.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Dt"].ToString();
+            this.txtDiaChi.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Dia_Chi"].ToString();
+            this.txtNgayct.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ngay_Ct"].ToString();
             this.txtOngba.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ong_Ba"].ToString();
-            this.txtDc.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Dien_Giai"].ToString(); 
+            this.txtDienGiai.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Dien_Giai"].ToString();
+        
+
         }
 
         private void gridView1_EditFormShowing(object sender, EditFormShowingEventArgs e)
         {
-            if (e.RowHandle <= gridView1.RowCount - 1 && e.RowHandle > 0)
+            if (e.RowHandle <= gridView1.RowCount - 1 && e.RowHandle >= 0)
             {
                 gridView1.OptionsEditForm.FormCaptionFormat = "Chỉnh sửa thông tin " + gridView1.GetDataRow(gridView1.FocusedRowHandle)["Stt"].ToString();
             }
@@ -74,16 +77,28 @@ namespace Ketoan.Controls.VonBangTien.PhieuThuChi
             if (view.UpdateCurrentRow())
             {
                 E10CTVBTTableAdapter1.Update(ewondataset1.E10CTVBT);
+                txtTienhang.Text = gridView1.Columns["Tien_Nt"].SummaryItem.SummaryValue.ToString();
             }
         }
         private void tabbedControlGroup1_SelectedPageChanged_1(object sender, DevExpress.XtraLayout.LayoutTabPageChangedEventArgs e)
         {
             E10CTVBTTableAdapter1.FillByStt(ewondataset1.E10CTVBT, int.Parse(stt));
             E10CTVBTTableAdapter2.FillByStt(ewondataset2.E10CTVBT, int.Parse(stt));
+            txtTienhang.Text = gridView1.Columns["Tien_Nt"].SummaryItem.SummaryValue.ToString();
         }
 
         private void AddEditDeletePhieuThu_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'ewondataset1.E00DMNHVT' table. You can move, or remove it, as needed.
+            this.e00DMNHVTTableAdapter.Fill(this.ewondataset1.E00DMNHVT);
+            // TODO: This line of code loads data into the 'ewondataset1.E00DMHD' table. You can move, or remove it, as needed.
+            this.e00DMHDTableAdapter.Fill(this.ewondataset1.E00DMHD);
+            // TODO: This line of code loads data into the 'ewondataset1.E00DMNHHD' table. You can move, or remove it, as needed.
+            this.e00DMNHHDTableAdapter.Fill(this.ewondataset1.E00DMNHHD);
+            // TODO: This line of code loads data into the 'ewondataset1.E00DMSP' table. You can move, or remove it, as needed.
+            this.e00DMSPTableAdapter.Fill(this.ewondataset1.E00DMSP);
+            // TODO: This line of code loads data into the 'ewondataset1.E00DMVT' table. You can move, or remove it, as needed.
+            this.e00DMVTTableAdapter.Fill(this.ewondataset1.E00DMVT);
             // TODO: This line of code loads data into the 'ewondataset1.E00DMTHUE' table. You can move, or remove it, as needed.
             this.e00DMTHUETableAdapter.Fill(this.ewondataset1.E00DMTHUE);
             // TODO: This line of code loads data into the 'ewondataset1.E00DMKM' table. You can move, or remove it, as needed.
@@ -102,46 +117,59 @@ namespace Ketoan.Controls.VonBangTien.PhieuThuChi
                 txtMadt.ItemIndex = txtMadt.Properties.GetDataSourceRowIndex("Ma_Dt", Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Dt"].ToString());
             }
             else txtMadt.ItemIndex = 0;
-
+            
             // TODO: This line of code loads data into the 'ewondataset1.E00DMTK' table. You can move, or remove it, as needed.
             this.e00DMTKTableAdapter.Fill(this.ewondataset1.E00DMTK);
+            //this.txtTienhang.Text = gridView1.Columns["Tien_Nt"].SummaryItem.SummaryValue.ToString();
+
 
         }
 
         private void btnDongY_Click(object sender, EventArgs e)
         {
-            //string Stt2 = Stt_increase(this.txtMahd.Text);-
+            //Gridview.DeleteRow(Gridview.FocusedRowHandle);
+            //string Stt2 = Stt_increase(this.txtMahd.Text);
             this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct"] = this.txtMahd.Text;
             this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"] = this.txtManv.Text;
-            this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Dt"] = this.simpleLabelItem5.Text;
             this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ong_Ba"] = this.txtOngba.Text;
-            this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Dien_Giai"] = this.txtDc.Text;
+            this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Dia_Chi"] = this.txtDiaChi.Text;
+            this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ngay_Ct"] = this.txtNgayct.Text;
+            this.Gridview.GetDataRow(Gridview.FocusedRowHandle)["Dien_Giai"] = this.txtDienGiai.Text;
             if (isAdd) Gridview.UpdateCurrentRow();
             this.Close();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            if (isAdd == true)
+            {
+                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK) { gridView1.DeleteRow(gridView1.FocusedRowHandle); }
+                Gridview.DeleteRow(Gridview.FocusedRowHandle);
+            }
+          
             this.Close();
         }
 
         private void txtMadt_EditValueChanged(object sender, EventArgs e)
         {
             DataRowView s = (DataRowView)txtMadt.GetSelectedDataRow();
-           simpleLabelItem5.Text = s["Ma_Dt"].ToString();
+           txtOngba.Text = s["Ten_Dt"].ToString();
+            txtDiaChi.Text = s["Dia_Chi"].ToString();
+
+
         }
-        private String Stt_increase(String stt)
-        {
-            var prefix = Regex.Match(stt, "^\\D+0101").Value;
-            var number = Regex.Replace(stt, "^\\D+0101", "");
-            var i = int.Parse(number) + 1;
-            var newString = prefix + i.ToString(new string('0', number.Length));
-            return newString;
-        }
+        //private String Stt_increase(String stt)
+        //{
+        //    var prefix = Regex.Match(stt, "^\\D+0101").Value;
+        //    var number = Regex.Replace(stt, "^\\D+0101", "");
+        //    var i = int.Parse(number) + 1;
+        //    var newString = prefix + i.ToString(new string('0', number.Length));
+        //    return newString;
+        //}
 
         private void gridView2_EditFormShowing(object sender, EditFormShowingEventArgs e)
         {
-            if (e.RowHandle <= gridView2.RowCount - 1 && e.RowHandle > 0)
+            if (e.RowHandle <= gridView2.RowCount - 1 && e.RowHandle >= 0)
             {
                 gridView2.OptionsEditForm.FormCaptionFormat = "Chỉnh sửa thông tin " + gridView2.GetDataRow(gridView2.FocusedRowHandle)["Stt"].ToString();
             }
@@ -162,6 +190,7 @@ namespace Ketoan.Controls.VonBangTien.PhieuThuChi
             if (view.UpdateCurrentRow())
             {
                 E10CTVBTTableAdapter2.Update(ewondataset2.E10CTVBT);
+                txtTienhang.Text = gridView2.Columns["Tien_Nt"].SummaryItem.SummaryValue.ToString();
             }
         }
 
@@ -175,6 +204,7 @@ namespace Ketoan.Controls.VonBangTien.PhieuThuChi
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }
+
         }
 
         private void gridView2_KeyDown(object sender, KeyEventArgs e)
@@ -187,6 +217,77 @@ namespace Ketoan.Controls.VonBangTien.PhieuThuChi
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }
+        }
+
+
+        private void GLDE_TK_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMTKTableAdapter.Update(eWONDataSet11.E00DMTK);
+        }
+
+        private void GLDE_DT_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMDTTableAdapter.Update(eWONDataSet11.E00DMDT);
+        }
+
+        private void GLDE_BP_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMBPTableAdapter.Update(eWONDataSet11.E00DMBP);
+        }
+
+        private void GLDE_KM_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMKMTableAdapter.Update(eWONDataSet11.E00DMKM);
+        }
+
+        private void GLDE_VT_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMVTTableAdapter.Update(eWONDataSet11.E00DMVT);
+        }
+
+        private void GVLDE_NHDT_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMNHDTTableAdapter.Update(eWONDataSet11.E00DMNHDT);
+        }
+
+        private void GLDE_SP_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMSPTableAdapter.Update(eWONDataSet11.E00DMSP);
+        }
+
+        private void GLDE_DTV2_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMVTTableAdapter.Update(eWONDataSet11.E00DMVT);
+        }
+
+        private void GLDE_Thue_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMTHUETableAdapter.Update(eWONDataSet11.E00DMTHUE);
+        }
+
+        private void GLDE_Hd_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMHDTableAdapter.Update(eWONDataSet11.E00DMHD);
+        }
+
+        private void GLDE_NHHDV2_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMNHHDTableAdapter.Update(eWONDataSet11.E00DMNHHD);
+        }
+
+        private void GLDE_NHV2_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMNHVTTableAdapter.Update(eWONDataSet11.E00DMNHVT);
+        }
+
+        private void GLDE_MHDTV2_RowUpdated(object sender, RowObjectEventArgs e)
+        {
+            e00DMNHDTTableAdapter.Update(eWONDataSet11.E00DMNHDT);
+        }
+
+        private void gridControl1_Load(object sender, EventArgs e)
+        {
+            this.txtTienhang.Text = gridView1.Columns["Tien_Nt"].SummaryItem.SummaryValue.ToString();
         }
     }
 }

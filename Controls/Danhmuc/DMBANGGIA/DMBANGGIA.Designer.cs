@@ -147,11 +147,11 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
             this.gridView1.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Save;
-            this.gridView1.OptionsEditForm.EditFormColumnCount = 1;
             this.gridView1.OptionsEditForm.ShowOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.OptionsEditForm.ShowOnEnterKey = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.OptionsEditForm.ShowOnF2Key = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.OptionsEditForm.ShowUpdateCancelPanel = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
             this.gridView1.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
             this.gridView1.EditFormShowing += new DevExpress.XtraGrid.Views.Grid.EditFormShowingEventHandler(this.gridView1_EditFormShowing);
             this.gridView1.RowUpdated += new DevExpress.XtraGrid.Views.Base.RowObjectEventHandler(this.gridView1_RowUpdated);
@@ -159,9 +159,11 @@
             // 
             // colMa_Vt
             // 
+            this.colMa_Vt.Caption = "Mã vật tư";
             this.colMa_Vt.ColumnEdit = this.repositoryItemGridLookUpEdit1;
             this.colMa_Vt.FieldName = "Ma_Vt";
             this.colMa_Vt.Name = "colMa_Vt";
+            this.colMa_Vt.OptionsEditForm.VisibleIndex = 1;
             this.colMa_Vt.Visible = true;
             this.colMa_Vt.VisibleIndex = 0;
             // 
@@ -252,11 +254,16 @@
             // 
             // colTen_Vt
             // 
+            this.colTen_Vt.Caption = "Tên vật tư";
             this.colTen_Vt.ColumnEdit = this.repositoryItemGridLookUpEdit2;
             this.colTen_Vt.FieldName = "Ten_Vt";
             this.colTen_Vt.Name = "colTen_Vt";
+            this.colTen_Vt.OptionsEditForm.ColumnSpan = 2;
+            this.colTen_Vt.OptionsEditForm.UseEditorColRowSpan = false;
+            this.colTen_Vt.OptionsEditForm.VisibleIndex = 2;
             this.colTen_Vt.Visible = true;
             this.colTen_Vt.VisibleIndex = 1;
+            this.colTen_Vt.Width = 192;
             // 
             // repositoryItemGridLookUpEdit2
             // 
@@ -328,8 +335,11 @@
             // 
             // colGia
             // 
+            this.colGia.Caption = "Giá";
             this.colGia.FieldName = "Gia";
             this.colGia.Name = "colGia";
+            this.colGia.OptionsEditForm.StartNewRow = true;
+            this.colGia.OptionsEditForm.VisibleIndex = 3;
             this.colGia.Visible = true;
             this.colGia.VisibleIndex = 2;
             // 

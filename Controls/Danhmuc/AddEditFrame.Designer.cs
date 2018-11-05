@@ -48,9 +48,9 @@
             this.panel1.Controls.Add(this.acceptBtn);
             this.panel1.Controls.Add(this.denyBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 289);
+            this.panel1.Location = new System.Drawing.Point(0, 298);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(532, 45);
+            this.panel1.Size = new System.Drawing.Size(546, 45);
             this.panel1.TabIndex = 0;
             this.panel1.Click += new System.EventHandler(this.LoseFocusClick);
             // 
@@ -59,7 +59,7 @@
             this.acceptBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.acceptBtn.Image = ((System.Drawing.Image)(resources.GetObject("acceptBtn.Image")));
             this.acceptBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.acceptBtn.Location = new System.Drawing.Point(342, 0);
+            this.acceptBtn.Location = new System.Drawing.Point(356, 0);
             this.acceptBtn.Name = "acceptBtn";
             this.acceptBtn.Size = new System.Drawing.Size(95, 45);
             this.acceptBtn.TabIndex = 1;
@@ -71,7 +71,7 @@
             this.denyBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.denyBtn.Image = ((System.Drawing.Image)(resources.GetObject("denyBtn.Image")));
             this.denyBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.denyBtn.Location = new System.Drawing.Point(437, 0);
+            this.denyBtn.Location = new System.Drawing.Point(451, 0);
             this.denyBtn.Name = "denyBtn";
             this.denyBtn.Size = new System.Drawing.Size(95, 45);
             this.denyBtn.TabIndex = 0;
@@ -82,9 +82,9 @@
             // 
             this.panel2.Controls.Add(this.invisibleLB);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 30);
+            this.panel2.Location = new System.Drawing.Point(0, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(532, 259);
+            this.panel2.Size = new System.Drawing.Size(546, 266);
             this.panel2.TabIndex = 1;
             this.panel2.Click += new System.EventHandler(this.LoseFocusClick);
             // 
@@ -98,10 +98,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 334);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 343);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(532, 32);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(546, 23);
             // 
             // ribbonControl1
             // 
@@ -115,19 +115,19 @@
             this.ribbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(532, 30);
+            this.ribbonControl1.Size = new System.Drawing.Size(546, 32);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2010 Blue";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
             // AddEditFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 366);
+            this.ClientSize = new System.Drawing.Size(546, 366);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ribbonStatusBar1);

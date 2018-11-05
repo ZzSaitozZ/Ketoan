@@ -19,8 +19,8 @@ namespace Ketoan
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //FThemHoaDon s = new FThemHoaDon();
-            //Ketoan.Controls.Danhmuc.DMDT.DMDT e = new Controls.Danhmuc.DMDT.DMDT();
-            StartForm e = new StartForm();
+            Ketoan.Controls.Danhmuc.DMBANGGIA.DMBANGGIA e = new Controls.Danhmuc.DMBANGGIA.DMBANGGIA();
+            //StartForm e = new StartForm();
             //s.Tag = 0;
             //Login login = new Login();
             Application.Run(e);

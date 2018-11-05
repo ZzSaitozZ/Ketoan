@@ -17,7 +17,7 @@ namespace Ketoan.Controls.Danhmuc
         {
             InitializeComponent();
             DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(rbiGallery, true);
-            UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
+            UserLookAndFeel.Default.SetSkinStyle("Office 2013");
         }
        
     }
