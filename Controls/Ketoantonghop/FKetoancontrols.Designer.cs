@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Ketoantonghop
+﻿namespace Ketoan.Controls.KeToanTongHop
 {
-    partial class FKetoancontrols
+    partial class FKeToanControls
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FKetoancontrols));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FKeToanControls));
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,12 +72,12 @@
             this.ribbonControl1.Size = new System.Drawing.Size(912, 147);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
-            // FKetoancontrols
+            // FKeToanControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 506);
-            this.Name = "FKetoancontrols";
+            this.Name = "FKeToanControls";
             this.Text = "Phiếu kế toán khác";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);

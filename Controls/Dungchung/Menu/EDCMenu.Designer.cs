@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Dungchung.Menu
+﻿namespace Ketoan.Controls.DungChung.Menu
 {
     partial class EDCMenu
     {
@@ -450,7 +450,6 @@
             this.Controls.Add(this.barDockControl1);
             this.Name = "EDCMenu";
             this.Size = new System.Drawing.Size(826, 488);
-            this.Load += new System.EventHandler(this.EDCMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit4.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit4)).EndInit();

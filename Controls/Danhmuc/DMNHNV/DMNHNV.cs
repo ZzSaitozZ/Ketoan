@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraGrid.Views.Base;
+﻿using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMNHNV
+namespace Ketoan.Controls.DanhMuc.DMNHNV
 {
     public partial class DMNHNV : Frame
     {
@@ -22,14 +15,16 @@ namespace Ketoan.Controls.Danhmuc.DMNHNV
         private void DMNHNV_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMNHNV' table. You can move, or remove it, as needed.
-            this.e00DMNHNVTableAdapter.Fill(this.eWONDATASET.E00DMNHNV);
+            e00DMNHNVTableAdapter.Fill(eWONDATASET.E00DMNHNV);
 
         }
         private void deleteBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                              DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            {
                 return;
+            }
+
             gridView1.DeleteRow(gridView1.FocusedRowHandle);
             e00DMNHNVTableAdapter.Update(eWONDATASET.E00DMNHNV);
         }
@@ -49,9 +44,11 @@ namespace Ketoan.Controls.Danhmuc.DMNHNV
         {
             if (e.KeyCode == Keys.Delete && e.Modifiers == Keys.Control)
             {
-                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                  DialogResult.Yes)
+                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                {
                     return;
+                }
+
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }
@@ -75,8 +72,8 @@ namespace Ketoan.Controls.Danhmuc.DMNHNV
             else
             {
                 gridView1.OptionsEditForm.FormCaptionFormat = "Thêm mới";
-                
+
             }
-        }      
+        }
     }
 }

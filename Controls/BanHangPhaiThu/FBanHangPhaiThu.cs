@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ketoan.Controls.BanHangPhaiThu
@@ -37,8 +30,10 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            HoaDonBanHang u1 = new HoaDonBanHang();
-            u1.Dock = DockStyle.Fill;
+            HoaDonBanHang u1 = new HoaDonBanHang
+            {
+                Dock = DockStyle.Fill
+            };
             panel1.Controls.Add(u1);
         }
     }

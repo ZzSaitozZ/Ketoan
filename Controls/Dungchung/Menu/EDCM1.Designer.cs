@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Dungchung.Menu
+﻿namespace Ketoan.Controls.DungChung.Menu
 {
     partial class EDCM1
     {
@@ -21,7 +21,6 @@
         }
 
         #region Component Designer generated code
-
         /// <summary> 
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
@@ -451,7 +450,6 @@
             this.Controls.Add(this.barDockControl1);
             this.Name = "EDCM1";
             this.Size = new System.Drawing.Size(942, 482);
-            this.Load += new System.EventHandler(this.EDCM1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit4.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit4)).EndInit();
@@ -469,9 +467,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
-
         #endregion
 
         private DevExpress.XtraBars.BarManager barManager1;

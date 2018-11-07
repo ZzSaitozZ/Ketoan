@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Table
+﻿namespace Ketoan.Controls.CpGiaThanh
 {
     partial class ECPGT
     {
@@ -144,7 +144,6 @@
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(935, 552);
             this.panel.TabIndex = 4;
-            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
             // 
             // gridControl2
             // 

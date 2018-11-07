@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMNHCCDC
+﻿namespace Ketoan.Controls.DanhMuc.DMNHCCDC
 {
     partial class DMNHCCDC
     {

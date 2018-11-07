@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls
+﻿namespace Ketoan.Controls.MenuChinh
 {
-    partial class Vonbangtien
+    partial class VonBangTien
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vonbangtien));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VonBangTien));
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -62,8 +62,8 @@
             // 
             // galleryControl2
             // 
-            this.galleryControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.galleryControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.galleryControl2.Controls.Add(this.galleryControlClient2);
             this.galleryControl2.Cursor = System.Windows.Forms.Cursors.AppStarting;
@@ -217,14 +217,14 @@
             this.separatorControl1.Size = new System.Drawing.Size(400, 15);
             this.separatorControl1.TabIndex = 7;
             // 
-            // Vonbangtien
+            // VonBangTien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.separatorControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.galleryControl2);
-            this.Name = "Vonbangtien";
+            this.Name = "VonBangTien";
             this.Size = new System.Drawing.Size(911, 527);
             ((System.ComponentModel.ISupportInitialize)(this.galleryControl2)).EndInit();
             this.galleryControl2.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMNV
+﻿namespace Ketoan.Controls.DanhMuc.DMNV
 {
     partial class DMNV
     {

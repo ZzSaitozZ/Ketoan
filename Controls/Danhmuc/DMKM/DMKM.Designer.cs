@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMKM
+﻿namespace Ketoan.Controls.DanhMuc.DMKM
 {
     partial class DMKM
     {

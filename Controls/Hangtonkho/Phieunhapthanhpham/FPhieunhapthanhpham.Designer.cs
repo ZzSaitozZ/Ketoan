@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Phieunhapthanhpham
+﻿namespace Ketoan.Controls.HangTonKho.PhieuNhapThanhPham
 {
-    partial class FPhieunhapthanhpham
+    partial class FPhieuNhapThanhPham
     {
         /// <summary>
         /// Required designer variable.
@@ -196,8 +196,8 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
@@ -295,7 +295,7 @@
             this.repositoryItemCheckEdit1.AutoHeight = false;
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
             // 
-            // FPhieunhapthanhpham
+            // FPhieuNhapThanhPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -303,9 +303,9 @@
             this.Controls.Add(this.panelDetails);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FPhieunhapthanhpham";
+            this.Name = "FPhieuNhapThanhPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FPhieunhapthanhpham";
+            this.Text = "FPhieuNhapThanhPham";
             this.panelDetails.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
@@ -313,7 +313,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

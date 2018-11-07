@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Dungchung.FormDungChung
+﻿namespace Ketoan.Controls.DungChung.FormDungChung
 {
     partial class FormGiaoDienChung
     {
@@ -298,7 +298,6 @@
             this.labelControl4.Size = new System.Drawing.Size(38, 13);
             this.labelControl4.TabIndex = 119;
             this.labelControl4.Text = "Tổng SL";
-            this.labelControl4.Click += new System.EventHandler(this.labelControl4_Click);
             // 
             // textBox6
             // 
@@ -306,7 +305,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 118;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // labelControl5
             // 
@@ -315,7 +313,6 @@
             this.labelControl5.Size = new System.Drawing.Size(42, 13);
             this.labelControl5.TabIndex = 117;
             this.labelControl5.Text = "Tiền VAT";
-            this.labelControl5.Click += new System.EventHandler(this.labelControl5_Click);
             // 
             // labelControl6
             // 
@@ -324,7 +321,6 @@
             this.labelControl6.Size = new System.Drawing.Size(48, 13);
             this.labelControl6.TabIndex = 116;
             this.labelControl6.Text = "Tiền Hàng";
-            this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // textBox7
             // 
@@ -332,7 +328,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 115;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox8
             // 
@@ -340,7 +335,6 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 114;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // textBox9
             // 
@@ -348,7 +342,6 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 113;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox10
             // 
@@ -356,7 +349,6 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 112;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // simpleButton7
             // 
@@ -366,7 +358,6 @@
             this.simpleButton7.Size = new System.Drawing.Size(78, 32);
             this.simpleButton7.TabIndex = 111;
             this.simpleButton7.Text = "Thoát";
-            this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
             // simpleButton5
             // 
@@ -376,7 +367,6 @@
             this.simpleButton5.Size = new System.Drawing.Size(78, 32);
             this.simpleButton5.TabIndex = 110;
             this.simpleButton5.Text = "Lọc";
-            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton6
             // 
@@ -386,7 +376,6 @@
             this.simpleButton6.Size = new System.Drawing.Size(78, 32);
             this.simpleButton6.TabIndex = 109;
             this.simpleButton6.Text = "In";
-            this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // simpleButton3
             // 
@@ -396,7 +385,6 @@
             this.simpleButton3.Size = new System.Drawing.Size(78, 32);
             this.simpleButton3.TabIndex = 108;
             this.simpleButton3.Text = "Xem";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton4
             // 
@@ -406,7 +394,6 @@
             this.simpleButton4.Size = new System.Drawing.Size(78, 32);
             this.simpleButton4.TabIndex = 107;
             this.simpleButton4.Text = "Xóa";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton2
             // 
@@ -416,7 +403,6 @@
             this.simpleButton2.Size = new System.Drawing.Size(78, 32);
             this.simpleButton2.TabIndex = 106;
             this.simpleButton2.Text = "Sửa";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // btnThem
             // 
@@ -426,7 +412,6 @@
             this.btnThem.Size = new System.Drawing.Size(78, 32);
             this.btnThem.TabIndex = 105;
             this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // FormGiaoDienChung
             // 

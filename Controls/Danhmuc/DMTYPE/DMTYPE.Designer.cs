@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMTYPE
+﻿namespace Ketoan.Controls.DanhMuc.DMTYPE
 {
     partial class DMTYPE
     {

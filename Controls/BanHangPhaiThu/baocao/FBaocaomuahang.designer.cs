@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.BanHangPhaiThu.baocao
+﻿namespace Ketoan.Controls.BanHangPhaiThu.BaoCao
 {
-    partial class FBaocaomuahang
+    partial class FBaoCaoMuaHang
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBaocaomuahang));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBaoCaoMuaHang));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -116,7 +116,7 @@
             this.txtDenngay.TabIndex = 9;
             this.txtDenngay.ValidatingType = typeof(System.DateTime);
             // 
-            // FBaocaomuahang
+            // FBaoCaoMuaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,11 +129,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FBaocaomuahang";
+            this.Name = "FBaoCaoMuaHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Điều kiện lọc";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FBaocaomuahang_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FBaocaomuahang_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FBaoCaoMuaHang_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FBaoCaoMuaHang_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

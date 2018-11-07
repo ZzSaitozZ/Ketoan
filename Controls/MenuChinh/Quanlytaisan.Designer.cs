@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls
+﻿namespace Ketoan.Controls.MenuChinh
 {
-    partial class Quanlytaisan
+    partial class QuanLyTaiSan
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quanlytaisan));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyTaiSan));
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -59,8 +59,8 @@
             // 
             // rbiGallery
             // 
-            this.rbiGallery.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.rbiGallery.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rbiGallery.Controls.Add(this.galleryControlClient2);
             this.rbiGallery.DesignGalleryGroupIndex = 0;
@@ -197,17 +197,15 @@
             this.separatorControl1.Size = new System.Drawing.Size(400, 15);
             this.separatorControl1.TabIndex = 9;
             // 
-            // Quanlytaisan
+            // QuanLyTaiSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.separatorControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rbiGallery);
-            this.Name = "Quanlytaisan";
+            this.Name = "QuanLyTaiSan";
             this.Size = new System.Drawing.Size(965, 547);
-            this.Load += new System.EventHandler(this.Quanlytaisan_Load);
-            this.Click += new System.EventHandler(this.galleryControl2_Click);
             ((System.ComponentModel.ISupportInitialize)(this.rbiGallery)).EndInit();
             this.rbiGallery.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();

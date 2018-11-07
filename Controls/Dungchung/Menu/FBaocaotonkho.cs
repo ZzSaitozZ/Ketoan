@@ -1,33 +1,26 @@
-﻿using Ketoan.Controls.Hangtonkho.Baocao.Bangke;
+﻿using Ketoan.Controls.HangTonKho.BaoCao.BangKe;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ketoan.Controls.Dungchung.Menu
+namespace Ketoan.Controls.DungChung.Menu
 {
-    public partial class FBaocaotonkho : Form
+    public partial class FBaoCaoTonKho : Form
     {
-        public FBaocaotonkho(string a)
+        public FBaoCaoTonKho(string a)
         {
             InitializeComponent();
             txtTieuDe.Text = a + "";
             loaibaocao = txtTieuDe.Text;
 
         }
-        string tungay;
-        string denngay;
-        string loaibaocao = "";
+
+        private string tungay;
+        private string denngay;
+        private string loaibaocao = "";
         private void btnDongY_Click(object sender, EventArgs e)
         {
-            DateTime Test;
-            if (DateTime.TryParseExact(txtTungay.Text, "dd/mm/yyyy", null, DateTimeStyles.None, out Test) == true)
+            if (DateTime.TryParseExact(txtTungay.Text, "dd/mm/yyyy", null, DateTimeStyles.None, out DateTime Test) == true)
             {
                 tungay = txtTungay.Text;
             }
@@ -40,7 +33,7 @@ namespace Ketoan.Controls.Dungchung.Menu
             {
                 denngay = txtDenngay.Text;
             }
-          
+
             else
             {
                 MessageBox.Show("Vui lòng điền đúng định dạng ngày theo dạng dd/mm/yyyy");
@@ -49,9 +42,7 @@ namespace Ketoan.Controls.Dungchung.Menu
             {
                 case "Bảng kê phiếu xuất":
                     {
-
-
-                        FBangkexuatban f = new FBangkexuatban(tungay,denngay,loaibaocao);
+                        FBangKeXuatBan f = new FBangKeXuatBan(tungay,denngay,loaibaocao);
                         f.Show();
                         break;
                     }
@@ -60,10 +51,10 @@ namespace Ketoan.Controls.Dungchung.Menu
 
         private void btnHuyBo_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
-        private void FBaocaotonkho_FormClosing(object sender, FormClosingEventArgs e)
+        private void FBaoCaoTonKho_FormClosing(object sender, FormClosingEventArgs e)
         {
             Form frm1 = Application.OpenForms["StartForm"];
             StartForm s = frm1 as StartForm;

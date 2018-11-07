@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMNHSP
+﻿namespace Ketoan.Controls.DanhMuc.DMNHSP
 {
     partial class DMNHSP
     {

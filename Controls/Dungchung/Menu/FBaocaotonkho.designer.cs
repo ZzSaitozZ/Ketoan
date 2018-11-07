@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Dungchung.Menu
+﻿namespace Ketoan.Controls.DungChung.Menu
 {
-    partial class FBaocaotonkho
+    partial class FBaoCaoTonKho
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBaocaotonkho));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBaoCaoTonKho));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -116,7 +116,7 @@
             this.txtDenngay.TabIndex = 9;
             this.txtDenngay.ValidatingType = typeof(System.DateTime);
             // 
-            // FBaocaotonkho
+            // FBaoCaoTonKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,10 +129,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FBaocaotonkho";
+            this.Name = "FBaoCaoTonKho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Điều kiện lọc";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FBaocaotonkho_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FBaoCaoTonKho_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

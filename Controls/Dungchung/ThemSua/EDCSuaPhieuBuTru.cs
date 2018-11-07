@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
-namespace Ketoan.Controls.Dungchung.ThemSua
+namespace Ketoan.Controls.DungChung.ThemSua
 {
     public partial class EDCSuaPhieuBuTru : Form
     {
@@ -17,7 +9,6 @@ namespace Ketoan.Controls.Dungchung.ThemSua
             InitializeComponent();
         }
 
-       
         //private void EDCSuaPhieuBuTru_Load(object sender, EventArgs e)
         //{
         //    MenuBuTruCongNo u1 = new MenuBuTruCongNo();

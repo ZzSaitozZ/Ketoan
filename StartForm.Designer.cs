@@ -409,7 +409,6 @@
             this.DetailPanel.Name = "DetailPanel";
             this.DetailPanel.Size = new System.Drawing.Size(739, 489);
             this.DetailPanel.TabIndex = 2;
-            this.DetailPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DetailPanel_Paint);
             // 
             // Minbutton
             // 
@@ -492,7 +491,6 @@
             this.ShowIcon = false;
             this.Text = "StartForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.StartForm_Load);
             this.MenuPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             this.logo.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Table
+﻿namespace Ketoan.Controls.CpGiaThanh
 {
     partial class ETHYT
     {

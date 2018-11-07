@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DevExpress.XtraEditors.DXErrorProvider;
 using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraEditors.DXErrorProvider;
+using System;
 using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMNHVT
+namespace Ketoan.Controls.DanhMuc.DMNHVT
 {
     public partial class AddEditDMNHVT : AddEditFrame
     {
@@ -20,32 +13,41 @@ namespace Ketoan.Controls.Danhmuc.DMNHVT
             InitializeComponent();
             Gridview = gridview;
             isAdd = isadd;
-            if (isAdd) this.Text = "Thêm mới";
-            else this.Text = "Chỉnh sửa";
-
+            if (isAdd)
+            {
+                Text = "Thêm mới";
+            }
+            else
+            {
+                Text = "Chỉnh sửa";
+            }
 
             ewErrorProvider1.SetIconAlignment(manhTE, ErrorIconAlignment.MiddleRight);
 
-            this.manhTE.Tag = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt"].ToString();
-            this.manhTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt"].ToString();
-            this.tennhTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nh_Vt"].ToString();
-            this.nhparentTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt_Parent"].ToString();
-            this.loaiCBE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Loai_Nh_Vt"].ToString();
+            manhTE.Tag = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt"].ToString();
+            manhTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt"].ToString();
+            tennhTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nh_Vt"].ToString();
+            nhparentTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt_Parent"].ToString();
+            loaiCBE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Loai_Nh_Vt"].ToString();
         }
 
         private void acceptBtn_Click(object sender, EventArgs e)
         {
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt"] = this.manhTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nh_Vt"] = this.tennhTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt_Parent"] = this.nhparentTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Loai_Nh_Vt"] = this.loaiCBE.Text;
-            if (isAdd) Gridview.UpdateCurrentRow();
-            this.Close();
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt"] = manhTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nh_Vt"] = tennhTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nh_Vt_Parent"] = nhparentTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Loai_Nh_Vt"] = loaiCBE.Text;
+            if (isAdd)
+            {
+                Gridview.UpdateCurrentRow();
+            }
+
+            Close();
         }
 
         private void denyBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void manhTE_EditValueChanged(object sender, EventArgs e)
@@ -57,11 +59,19 @@ namespace Ketoan.Controls.Danhmuc.DMNHVT
             else
             {
                 if (isAdd)
+                {
                     ewErrorProvider1.SetError(manhTE, "Giá trị này đã có trong Danh Mục Bảng Giá", ErrorType.Information);
+                }
                 else
                 {
-                    if (manhTE.EditValue.ToString() == manhTE.Tag.ToString()) ewErrorProvider1.SetError(manhTE, "", ErrorType.Information);
-                    else ewErrorProvider1.SetError(manhTE, "Giá trị này đã có trong Danh Mục Bảng Giá", ErrorType.Information);
+                    if (manhTE.EditValue.ToString() == manhTE.Tag.ToString())
+                    {
+                        ewErrorProvider1.SetError(manhTE, "", ErrorType.Information);
+                    }
+                    else
+                    {
+                        ewErrorProvider1.SetError(manhTE, "Giá trị này đã có trong Danh Mục Bảng Giá", ErrorType.Information);
+                    }
                 }
             }
         }

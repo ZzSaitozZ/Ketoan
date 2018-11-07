@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraGrid.Views.Base;
+﻿using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMCT
+namespace Ketoan.Controls.DanhMuc.DMCT
 {
     public partial class DMCT : Frame
     {
@@ -22,14 +15,17 @@ namespace Ketoan.Controls.Danhmuc.DMCT
         private void DMCT_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMCT' table. You can move, or remove it, as needed.
-            this.e00DMCTTableAdapter.Fill(this.eWONDATASET.E00DMCT);
+            e00DMCTTableAdapter.Fill(eWONDATASET.E00DMCT);
 
         }
         private void deleteBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
                               DialogResult.Yes)
+            {
                 return;
+            }
+
             gridView1.DeleteRow(gridView1.FocusedRowHandle);
             e00DMCTTableAdapter.Update(eWONDATASET.E00DMCT);
         }
@@ -51,7 +47,10 @@ namespace Ketoan.Controls.Danhmuc.DMCT
             {
                 if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
                   DialogResult.Yes)
+                {
                     return;
+                }
+
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }
@@ -75,8 +74,8 @@ namespace Ketoan.Controls.Danhmuc.DMCT
             else
             {
                 gridView1.OptionsEditForm.FormCaptionFormat = "Thêm mới";
-                
+
             }
-        }      
+        }
     }
 }

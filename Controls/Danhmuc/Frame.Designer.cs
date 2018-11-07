@@ -1,4 +1,5 @@
-﻿namespace Ketoan.Controls.Danhmuc
+﻿using Ketoan.Controls.MenuChinh;
+namespace Ketoan.Controls.DanhMuc
 {   
         partial class Frame
         {
@@ -31,14 +32,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            this.vonbangtien = new Ketoan.Controls.Vonbangtien();
-            this.quanlytaisan = new Ketoan.Controls.Quanlytaisan();
-            this.muahangphaitra = new Ketoan.Controls.Muahangphaitra();
-            this.ketoantonghop = new Ketoan.Controls.Menuchinh.Ketoantonghop();
-            this.hethong = new Ketoan.Controls.Hethong();
-            this.hangtonkho = new Ketoan.Controls.Menuchinh.Hangtonkho();
-            this.chiphigiathanh = new Ketoan.Controls.Chiphigiathanh();
-            this.banhangphaithu = new Ketoan.Controls.Banhangphaithu();
+            this.vonbangtien = new MenuChinh.VonBangTien();
+            this.quanlytaisan = new MenuChinh.QuanLyTaiSan();
+            this.muahangphaitra = new MenuChinh.MuaHangPhaiTra();
+            this.ketoantonghop = new MenuChinh.KeToanTongHop();
+            this.hethong = new MenuChinh.HeThong();
+            this.hangtonkho = new MenuChinh.HangTonKho();
+            this.chiphigiathanh = new MenuChinh.ChiPhiGiaThanh();
+            this.banhangphaithu = new MenuChinh.BanHangPhaiThu();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -498,14 +499,14 @@
             private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem7;
             private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl8;
             private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem8;
-            private Ketoan.Controls.Vonbangtien vonbangtien;
-            private Ketoan.Controls.Quanlytaisan quanlytaisan;
-            private Ketoan.Controls.Muahangphaitra muahangphaitra;
-            private Ketoan.Controls.Menuchinh.Ketoantonghop ketoantonghop;
-            private Ketoan.Controls.Hethong hethong;
-            private Ketoan.Controls.Menuchinh.Hangtonkho hangtonkho;
-            private Ketoan.Controls.Chiphigiathanh chiphigiathanh;
-            private Ketoan.Controls.Banhangphaithu banhangphaithu;
+            private MenuChinh.VonBangTien vonbangtien;
+            private MenuChinh.QuanLyTaiSan quanlytaisan;
+            private MenuChinh.MuaHangPhaiTra muahangphaitra;
+            private MenuChinh.KeToanTongHop ketoantonghop;
+            private MenuChinh.HeThong hethong;
+            private MenuChinh.HangTonKho hangtonkho;
+            private MenuChinh.ChiPhiGiaThanh chiphigiathanh;
+            private MenuChinh.BanHangPhaiThu banhangphaithu;
             private DevExpress.XtraBars.BarButtonItem barButtonItem4;
             private DevExpress.XtraBars.RibbonGalleryBarItem rbiGallery;
         protected DevExpress.XtraBars.BarButtonItem addBtn;

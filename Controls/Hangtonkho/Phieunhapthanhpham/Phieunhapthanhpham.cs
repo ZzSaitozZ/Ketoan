@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ketoan.Controls.Hangtonkho.Phieunhapthanhpham
+namespace Ketoan.Controls.HangTonKho.PhieuNhapThanhPham
 {
-    public partial class Phieunhapthanhpham : UserControl
+    public partial class PhieuNhapThanhPham : UserControl
     {
-        public Phieunhapthanhpham()
+        public PhieuNhapThanhPham()
         {
             InitializeComponent();
-        }
-
-        private void gridControl2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

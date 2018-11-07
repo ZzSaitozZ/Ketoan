@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraGrid.Views.Base;
+﻿using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMVTTS
+namespace Ketoan.Controls.DanhMuc.DMVTTS
 {
     public partial class DMVTTS : Frame
     {
@@ -22,16 +15,18 @@ namespace Ketoan.Controls.Danhmuc.DMVTTS
         private void DMVTTS_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMNHVT' table. You can move, or remove it, as needed.
-            this.e00DMNHVTTableAdapter.Fill(this.eWONDATASET.E00DMNHVT);
+            e00DMNHVTTableAdapter.Fill(eWONDATASET.E00DMNHVT);
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMVTTS' table. You can move, or remove it, as needed.
-            this.e00DMVTTSTableAdapter.Fill(this.eWONDATASET.E00DMVTTS);
+            e00DMVTTSTableAdapter.Fill(eWONDATASET.E00DMVTTS);
 
         }
         private void deleteBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                              DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            {
                 return;
+            }
+
             gridView1.DeleteRow(gridView1.FocusedRowHandle);
             e00DMVTTSTableAdapter.Update(eWONDATASET.E00DMVTTS);
         }
@@ -51,9 +46,11 @@ namespace Ketoan.Controls.Danhmuc.DMVTTS
         {
             if (e.KeyCode == Keys.Delete && e.Modifiers == Keys.Control)
             {
-                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                  DialogResult.Yes)
+                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                {
                     return;
+                }
+
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }
@@ -82,7 +79,7 @@ namespace Ketoan.Controls.Danhmuc.DMVTTS
 
         private void repositoryItemGridLookUpEdit1View_RowUpdated(object sender, RowObjectEventArgs e)
         {
-            this.e00DMNHVTTableAdapter.Update(this.eWONDATASET.E00DMNHVT);
+            e00DMNHVTTableAdapter.Update(eWONDATASET.E00DMNHVT);
 
         }
     }

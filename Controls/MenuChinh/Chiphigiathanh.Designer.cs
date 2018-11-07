@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls
+﻿namespace Ketoan.Controls.MenuChinh
 {
-    partial class Chiphigiathanh
+    partial class ChiPhiGiaThanh
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chiphigiathanh));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiPhiGiaThanh));
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -60,8 +60,8 @@
             // 
             // galleryControl2
             // 
-            this.galleryControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.galleryControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.galleryControl2.Controls.Add(this.galleryControlClient2);
             this.galleryControl2.DesignGalleryGroupIndex = 0;
@@ -170,7 +170,6 @@
             this.galleryControl2.Size = new System.Drawing.Size(871, 421);
             this.galleryControl2.TabIndex = 8;
             this.galleryControl2.Text = "galleryControl2";
-            this.galleryControl2.Click += new System.EventHandler(this.galleryControl2_Click);
             // 
             // galleryControlClient2
             // 
@@ -197,14 +196,14 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "CHI PHÍ GIÁ THÀNH";
             // 
-            // Chiphigiathanh
+            // ChiPhiGiaThanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.separatorControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.galleryControl2);
-            this.Name = "Chiphigiathanh";
+            this.Name = "ChiPhiGiaThanh";
             this.Size = new System.Drawing.Size(871, 471);
             ((System.ComponentModel.ISupportInitialize)(this.galleryControl2)).EndInit();
             this.galleryControl2.ResumeLayout(false);

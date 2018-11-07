@@ -1,26 +1,19 @@
 ﻿
-using Ketoan.Controls.Dungchung.Menu;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Ketoan.Controls.DungChung.Menu;
 using System.Windows.Forms;
 
-namespace Ketoan.Controls.Hangtonkho.Baocao.Bangke
+namespace Ketoan.Controls.BanHangPhaiThu.BaoCao.BangKe
 {
-    public partial class FBangkebanhang : Form
+    public partial class FBangKeBanHang : Form
     {
-        public FBangkebanhang(string tungay,string denngay,string baocao)
+        public FBangKeBanHang(string tungay, string denngay, string baocao)
         {
             InitializeComponent();
-            EDCMenu f = new EDCMenu(tungay, denngay,baocao);
-            f.Dock = DockStyle.Fill;
+            EDCMenu f = new EDCMenu(tungay, denngay, baocao)
+            {
+                Dock = DockStyle.Fill
+            };
             panel1.Controls.Add(f);
-
         }
     }
 }

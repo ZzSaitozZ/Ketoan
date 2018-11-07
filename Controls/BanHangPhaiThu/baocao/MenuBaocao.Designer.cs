@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.BanHangPhaiThu.baocao
+﻿namespace Ketoan.Controls.BanHangPhaiThu.BaoCao
 {
-    partial class MenuBaocao
+    partial class MenuBaoCao
     {
         /// <summary> 
         /// Required designer variable.
@@ -76,12 +76,12 @@
             // 
             this.e004MBHPTTableAdapter1.ClearBeforeFill = true;
             // 
-            // MenuBaocao
+            // MenuBaoCao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.treeList1);
-            this.Name = "MenuBaocao";
+            this.Name = "MenuBaoCao";
             this.Size = new System.Drawing.Size(517, 388);
             ((System.ComponentModel.ISupportInitialize)(this.treeList1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ewondataset1)).EndInit();

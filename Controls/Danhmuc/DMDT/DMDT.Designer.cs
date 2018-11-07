@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMDT
+﻿namespace Ketoan.Controls.DanhMuc.DMDT
 {
     partial class DMDT
     {

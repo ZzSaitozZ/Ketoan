@@ -153,12 +153,10 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "EDMKHO";
             this.Size = new System.Drawing.Size(649, 364);
-            this.Load += new System.EventHandler(this.EDMKHO_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ewondataset1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

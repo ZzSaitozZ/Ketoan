@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DevExpress.XtraGrid.Views.Grid;
-using System.Windows.Forms;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using System;
 
-namespace Ketoan.Controls.Danhmuc.DMTK
+namespace Ketoan.Controls.DanhMuc.DMTK
 {
     public partial class AddEditDMTK : AddEditFrame
     {
@@ -19,8 +11,14 @@ namespace Ketoan.Controls.Danhmuc.DMTK
             InitializeComponent();
             Gridview = gridview;
             isAdd = isadd;
-            if (isAdd) this.Text = "Thêm mới";
-            else this.Text = "Chỉnh sửa";
+            if (isAdd)
+            {
+                Text = "Thêm mới";
+            }
+            else
+            {
+                Text = "Chỉnh sửa";
+            }
 
 
             //ewErrorProvider1.SetIconAlignment(manvuTE, ErrorIconAlignment.MiddleRight);
@@ -46,13 +44,17 @@ namespace Ketoan.Controls.Danhmuc.DMTK
             //Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No_Rule"] = this.tknoruleTE.Text;
             //Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co"] = this.tkcoTE.Text;
             //Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co_Rule"] = this.tkcoruleTE.Text;
-            if (isAdd) Gridview.UpdateCurrentRow();
-            this.Close();
+            if (isAdd)
+            {
+                Gridview.UpdateCurrentRow();
+            }
+
+            Close();
         }
 
         private void denyBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void manvuTE_EditValueChanged(object sender, EventArgs e)

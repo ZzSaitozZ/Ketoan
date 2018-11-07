@@ -1,24 +1,12 @@
-﻿using Ketoan.Controls.Dungchung.FormDungChung;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Ketoan.Controls.DungChung.FormDungChung;
 
-namespace Ketoan.Controls.Hangtonkho.Phieunhapthanhpham
+namespace Ketoan.Controls.HangTonKho.PhieuNhapThanhPham
 {
     public partial class FrPhieuNhapThanhPham : FormGiaoDienChung
-
     {
         public FrPhieuNhapThanhPham()
         {
-            InitializeComponent();
+            InitializeComponentPNTP();
         }
-
-
     }
 }

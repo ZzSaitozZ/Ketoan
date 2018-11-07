@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using DevExpress.XtraGrid.Views.Base;
+﻿using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMNVU
+namespace Ketoan.Controls.DanhMuc.DMNVU
 {
     public partial class DMNVU : Frame
     {
@@ -22,14 +14,16 @@ namespace Ketoan.Controls.Danhmuc.DMNVU
         private void DMNVU_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMNHVT' table. You can move, or remove it, as needed.
-            this.e00DMNVUTableAdapter.Fill(this.eWONDATASET.E00DMNVU);
+            e00DMNVUTableAdapter.Fill(eWONDATASET.E00DMNVU);
 
         }
         private void deleteBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                              DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            {
                 return;
+            }
+
             gridView1.DeleteRow(gridView1.FocusedRowHandle);
             e00DMNVUTableAdapter.Update(eWONDATASET.E00DMNVU);
         }
@@ -49,9 +43,11 @@ namespace Ketoan.Controls.Danhmuc.DMNVU
         {
             if (e.KeyCode == Keys.Delete && e.Modifiers == Keys.Control)
             {
-                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                  DialogResult.Yes)
+                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                {
                     return;
+                }
+
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }

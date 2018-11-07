@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Ketoantonghop
+﻿namespace Ketoan.Controls.KeToanTongHop
 {
-    partial class FButtoanketchuyen
+    partial class FButToanKetChuyen
     {
         /// <summary>
         /// Required designer variable.
@@ -39,20 +39,18 @@
             this.panelDetails.Size = new System.Drawing.Size(800, 450);
             this.panelDetails.TabIndex = 0;
             // 
-            // FButtoanketchuyen
+            // FButToanKetChuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelDetails);
-            this.Name = "FButtoanketchuyen";
+            this.Name = "FButToanKetChuyen";
             this.Text = "Bút toán kết chuyển";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FButtoanketchuyen_FormClosing);
-            this.Load += new System.EventHandler(this.FButtoanketchuyen_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FButToanKetChuyen_FormClosing);
             this.ResumeLayout(false);
 
         }
-
         #endregion
 
         private System.Windows.Forms.Panel panelDetails;

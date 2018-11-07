@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Ketoantonghop
+﻿namespace Ketoan.Controls.KeToanTongHop
 {
-    partial class ChitietthueVAT
+    partial class ChiTietThueVAT
     {
         /// <summary> 
         /// Required designer variable.
@@ -193,12 +193,12 @@
             this.soluong.VisibleIndex = 13;
             this.soluong.Width = 37;
             // 
-            // ChitietthueVAT
+            // ChiTietThueVAT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gridControl1);
-            this.Name = "ChitietthueVAT";
+            this.Name = "ChiTietThueVAT";
             this.Size = new System.Drawing.Size(840, 415);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

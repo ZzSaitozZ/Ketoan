@@ -1,30 +1,21 @@
 ﻿using DevExpress.LookAndFeel;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace Ketoan.Controls.Ketoantonghop
+namespace Ketoan.Controls.KeToanTongHop
 {
-    public partial class FKetoantonghop : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class FKeToanTongHop : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public FKetoantonghop()
+        public FKeToanTongHop()
         {
             InitializeComponent();
             DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(rbiGallery, true);
             UserLookAndFeel.Default.SetSkinStyle("Office 2013");
         }
 
-        private void FKetoantonghop_Load(object sender, EventArgs e)
+        private void FKeToanTongHop_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eWONDATASET.E70PHKT' table. You can move, or remove it, as needed.
-            this.e70PHKTTableAdapter.Fill(this.eWONDATASET.E70PHKT);
-
+            e70PHKTTableAdapter.Fill(eWONDATASET.E70PHKT);
         }
     }
 }

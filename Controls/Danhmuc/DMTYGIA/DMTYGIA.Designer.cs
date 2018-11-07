@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMTYGIA
+﻿namespace Ketoan.Controls.DanhMuc.DMTYGIA
 {
     partial class DMTYGIA
     {

@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Baocao.Bangke
+﻿namespace Ketoan.Controls.HangTonKho.BaoCao.BangKe
 {
-    partial class FBangkexuatban
+    partial class FBangKeXuatBan
     {
         /// <summary>
         /// Required designer variable.
@@ -21,7 +21,6 @@
         }
 
         #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -39,18 +38,16 @@
             this.panel1.Size = new System.Drawing.Size(824, 661);
             this.panel1.TabIndex = 0;
             // 
-            // FBangkexuatban
+            // FBangKeXuatBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 661);
             this.Controls.Add(this.panel1);
-            this.Name = "FBangkexuatban";
-            this.Text = "FBangkexuatban";
+            this.Name = "FBangKeXuatBan";
+            this.Text = "FBangKeXuatBan";
             this.ResumeLayout(false);
-
         }
-
         #endregion
 
         private System.Windows.Forms.Panel panel1;

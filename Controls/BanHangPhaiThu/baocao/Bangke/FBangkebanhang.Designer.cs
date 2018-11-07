@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Baocao.Bangke
+﻿namespace Ketoan.Controls.BanHangPhaiThu.BaoCao.BangKe
 {
-    partial class FBangkebanhang
+    partial class FBangKeBanHang
     {
         /// <summary>
         /// Required designer variable.
@@ -45,8 +45,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 661);
             this.Controls.Add(this.panel1);
-            this.Name = "FBangkebanhang";
-            this.Text = "FBangkebanhang";
+            this.Name = "FBangKeBanHang";
+            this.Text = "FBangKeBanHang";
             this.ResumeLayout(false);
 
         }

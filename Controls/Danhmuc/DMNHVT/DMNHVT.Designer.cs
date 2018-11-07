@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMNHVT
+﻿namespace Ketoan.Controls.DanhMuc.DMNHVT
 {
     partial class DMNHVT
     {

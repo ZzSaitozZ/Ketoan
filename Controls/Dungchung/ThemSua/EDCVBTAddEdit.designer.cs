@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Dungchung.ThemSua
+﻿namespace Ketoan.Controls.DungChung.ThemSua
 {
     partial class EDCVBTAddEdit
     {
@@ -21,7 +21,6 @@
         }
 
         #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.

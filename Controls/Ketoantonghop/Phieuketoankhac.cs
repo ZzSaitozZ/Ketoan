@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ketoan.Controls.Ketoantonghop
+namespace Ketoan.Controls.KeToanTongHop
 {
-    public partial class Phieuketoankhac : UserControl
+    public partial class PhieuKeToanKhac : UserControl
     {
-        public Phieuketoankhac()
+        public PhieuKeToanKhac()
         {
             InitializeComponent();
         }

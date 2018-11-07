@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMVT
+﻿namespace Ketoan.Controls.DanhMuc.DMVT
 {
     partial class AddEditDMVT
     {

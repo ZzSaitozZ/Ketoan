@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraGrid.Views.Base;
+﻿using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMNV
+namespace Ketoan.Controls.DanhMuc.DMNV
 {
     public partial class DMNV : Frame
     {
@@ -22,16 +15,18 @@ namespace Ketoan.Controls.Danhmuc.DMNV
         private void DMNV_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMBP' table. You can move, or remove it, as needed.
-            this.e00DMBPTableAdapter.Fill(this.eWONDATASET.E00DMBP);
+            e00DMBPTableAdapter.Fill(eWONDATASET.E00DMBP);
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMNV' table. You can move, or remove it, as needed.
-            this.e00DMNVTableAdapter.Fill(this.eWONDATASET.E00DMNV);
+            e00DMNVTableAdapter.Fill(eWONDATASET.E00DMNV);
 
         }
         private void deleteBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                              DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            {
                 return;
+            }
+
             gridView1.DeleteRow(gridView1.FocusedRowHandle);
             e00DMNVTableAdapter.Update(eWONDATASET.E00DMNV);
         }
@@ -51,9 +46,11 @@ namespace Ketoan.Controls.Danhmuc.DMNV
         {
             if (e.KeyCode == Keys.Delete && e.Modifiers == Keys.Control)
             {
-                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                  DialogResult.Yes)
+                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                {
                     return;
+                }
+
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }

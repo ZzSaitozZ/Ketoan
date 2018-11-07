@@ -1,44 +1,44 @@
-﻿namespace Ketoan.Controls.Ketoantonghop
-{   
-        partial class FKetoantonghop
+﻿namespace Ketoan.Controls.KeToanTongHop
+{
+    partial class FKeToanTongHop
     {
-            /// <summary>
-            /// Required designer variable.
-            /// </summary>
-            private System.ComponentModel.IContainer components = null;
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-            /// <summary>
-            /// Clean up any resources being used.
-            /// </summary>
-            /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-            protected override void Dispose(bool disposing)
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
             {
-                if (disposing && (components != null))
-                {
-                    components.Dispose();
-                }
-                base.Dispose(disposing);
+                components.Dispose();
             }
+            base.Dispose(disposing);
+        }
 
-            #region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-            /// <summary>
-            /// Required method for Designer support - do not modify
-            /// the contents of this method with the code editor.
-            /// </summary>
-            private void InitializeComponent()
-            {
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FKetoantonghop));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FKeToanTongHop));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup6 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            this.vonbangtien = new Ketoan.Controls.Vonbangtien();
-            this.quanlytaisan = new Ketoan.Controls.Quanlytaisan();
-            this.muahangphaitra = new Ketoan.Controls.Muahangphaitra();
-            this.ketoantonghop = new Ketoan.Controls.Menuchinh.Ketoantonghop();
-            this.hethong = new Ketoan.Controls.Hethong();
-            this.hangtonkho = new Ketoan.Controls.Menuchinh.Hangtonkho();
-            this.chiphigiathanh = new Ketoan.Controls.Chiphigiathanh();
-            this.banhangphaithu = new Ketoan.Controls.Banhangphaithu();
+            this.vonbangtien = new MenuChinh.VonBangTien();
+            this.quanlytaisan = new MenuChinh.QuanLyTaiSan();
+            this.muahangphaitra = new MenuChinh.MuaHangPhaiTra();
+            this.KeToanTongHop = new MenuChinh.KeToanTongHop();
+            this.hethong = new MenuChinh.HeThong();
+            this.hangtonkho = new MenuChinh.HangTonKho();
+            this.chiphigiathanh = new MenuChinh.ChiPhiGiaThanh();
+            this.banhangphaithu = new MenuChinh.BanHangPhaiThu();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -181,13 +181,13 @@
             this.muahangphaitra.Size = new System.Drawing.Size(59, 327);
             this.muahangphaitra.TabIndex = 0;
             // 
-            // ketoantonghop
+            // KeToanTongHop
             // 
-            this.ketoantonghop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ketoantonghop.Location = new System.Drawing.Point(0, 0);
-            this.ketoantonghop.Name = "ketoantonghop";
-            this.ketoantonghop.Size = new System.Drawing.Size(59, 327);
-            this.ketoantonghop.TabIndex = 0;
+            this.KeToanTongHop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.KeToanTongHop.Location = new System.Drawing.Point(0, 0);
+            this.KeToanTongHop.Name = "KeToanTongHop";
+            this.KeToanTongHop.Size = new System.Drawing.Size(59, 327);
+            this.KeToanTongHop.TabIndex = 0;
             // 
             // hethong
             // 
@@ -328,7 +328,7 @@
             // 
             // backstageViewClientControl7
             // 
-            this.backstageViewClientControl7.Controls.Add(this.ketoantonghop);
+            this.backstageViewClientControl7.Controls.Add(this.KeToanTongHop);
             this.backstageViewClientControl7.Location = new System.Drawing.Point(165, 63);
             this.backstageViewClientControl7.Name = "backstageViewClientControl7";
             this.backstageViewClientControl7.Size = new System.Drawing.Size(59, 327);
@@ -1014,7 +1014,7 @@
             this.colDv_Nh.Visible = true;
             this.colDv_Nh.VisibleIndex = 54;
             // 
-            // FKetoantonghop
+            // FKeToanTongHop
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1024,12 +1024,12 @@
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonControl1);
-            this.Name = "FKetoantonghop";
+            this.Name = "FKeToanTongHop";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;
             this.Tag = "Windown1";
             this.Text = "Kế toán tổng hợp";
-            this.Load += new System.EventHandler(this.FKetoantonghop_Load);
+            this.Load += new System.EventHandler(this.FKeToanTongHop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
@@ -1051,39 +1051,39 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-            }
+        }
 
-            #endregion
-            private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
-            private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-            private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl2;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl3;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl4;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl5;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl6;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl7;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem2;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem3;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem4;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem5;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem6;
-            private DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator backstageViewItemSeparator1;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem7;
-            private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl8;
-            private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem8;
-            private Ketoan.Controls.Vonbangtien vonbangtien;
-            private Ketoan.Controls.Quanlytaisan quanlytaisan;
-            private Ketoan.Controls.Muahangphaitra muahangphaitra;
-            private Ketoan.Controls.Menuchinh.Ketoantonghop ketoantonghop;
-            private Ketoan.Controls.Hethong hethong;
-            private Ketoan.Controls.Menuchinh.Hangtonkho hangtonkho;
-            private Ketoan.Controls.Chiphigiathanh chiphigiathanh;
-            private Ketoan.Controls.Banhangphaithu banhangphaithu;
-            private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-            private DevExpress.XtraBars.RibbonGalleryBarItem rbiGallery;
+        #endregion
+        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl3;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl4;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl5;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl6;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl7;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem3;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem4;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem5;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem6;
+        private DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator backstageViewItemSeparator1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem7;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl8;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem8;
+        private MenuChinh.VonBangTien vonbangtien;
+        private MenuChinh.QuanLyTaiSan quanlytaisan;
+        private MenuChinh.MuaHangPhaiTra muahangphaitra;
+        private MenuChinh.KeToanTongHop KeToanTongHop;
+        private MenuChinh.HeThong hethong;
+        private MenuChinh.HangTonKho hangtonkho;
+        private MenuChinh.ChiPhiGiaThanh chiphigiathanh;
+        private MenuChinh.BanHangPhaiThu banhangphaithu;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.RibbonGalleryBarItem rbiGallery;
         protected DevExpress.XtraBars.BarButtonItem addBtn;
         protected DevExpress.XtraBars.BarButtonItem editBtn;
         protected DevExpress.XtraBars.BarButtonItem deleteBtn;
@@ -1161,5 +1161,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPt_Vc;
         private DevExpress.XtraGrid.Columns.GridColumn colDv_Nh;
     }
-    }
+}
 

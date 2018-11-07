@@ -182,7 +182,6 @@
             this.btnThoat.Size = new System.Drawing.Size(78, 32);
             this.btnThoat.TabIndex = 22;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLoc
             // 
@@ -192,7 +191,6 @@
             this.btnLoc.Size = new System.Drawing.Size(78, 32);
             this.btnLoc.TabIndex = 21;
             this.btnLoc.Text = "Lọc";
-            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // btnIn
             // 
@@ -202,7 +200,6 @@
             this.btnIn.Size = new System.Drawing.Size(78, 32);
             this.btnIn.TabIndex = 20;
             this.btnIn.Text = "In";
-            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // btnXem
             // 
@@ -212,7 +209,6 @@
             this.btnXem.Size = new System.Drawing.Size(78, 32);
             this.btnXem.TabIndex = 19;
             this.btnXem.Text = "Xem";
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // btnXoa
             // 
@@ -222,7 +218,6 @@
             this.btnXoa.Size = new System.Drawing.Size(78, 32);
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -232,7 +227,6 @@
             this.btnSua.Size = new System.Drawing.Size(78, 32);
             this.btnSua.TabIndex = 17;
             this.btnSua.Text = "Sửa";
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 

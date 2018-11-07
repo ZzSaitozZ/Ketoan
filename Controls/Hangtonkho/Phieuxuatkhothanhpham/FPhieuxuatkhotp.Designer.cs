@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Phieuxuatkhothanhpham
+﻿namespace Ketoan.Controls.HangTonKho.PhieuXuatKhoThanhPham
 {
-    partial class FPhieuxuatkhotp
+    partial class FPhieuXuatKhoTp
     {
         /// <summary>
         /// Required designer variable.
@@ -43,9 +43,9 @@
             // 
             this.ClientSize = new System.Drawing.Size(1178, 697);
             this.Controls.Add(this.panelDetail);
-            this.Name = "FPhieuxuatkhotp";
-        //    this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FPhieuxuatban_FormClosing);
-        //    this.Load += new System.EventHandler(this.FPhieuxuatkhotp_Load);
+            this.Name = "FPhieuXuatKhoTp";
+            //    this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FPhieuxuatban_FormClosing);
+            //    this.Load += new System.EventHandler(this.FPhieuXuatKhoTp_Load);
             this.ResumeLayout(false);
 
         }

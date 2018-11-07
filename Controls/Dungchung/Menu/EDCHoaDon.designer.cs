@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls
+﻿namespace Ketoan.Controls.DungChung.Menu
 {
     partial class EDCHoaDon
     {

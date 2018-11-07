@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Dungchung.ThemSua
+﻿namespace Ketoan.Controls.DungChung.ThemSua
 {
     partial class EDCSuaPhieuBuTru
     {

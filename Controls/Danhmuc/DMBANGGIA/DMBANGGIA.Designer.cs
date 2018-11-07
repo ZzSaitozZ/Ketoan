@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMBANGGIA
+﻿namespace Ketoan.Controls.DanhMuc.DMBANGGIA
 {
     partial class DMBANGGIA
     {

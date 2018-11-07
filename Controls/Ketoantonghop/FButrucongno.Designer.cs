@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Ketoantonghop
+﻿namespace Ketoan.Controls.KeToanTongHop
 {
-    partial class Fbutrucongno
+    partial class FBuTruCongNo
     {
         /// <summary>
         /// Required designer variable.
@@ -39,13 +39,13 @@
             this.panelDetails.Size = new System.Drawing.Size(984, 661);
             this.panelDetails.TabIndex = 0;
             // 
-            // Fbutrucongno
+            // FBuTruCongNo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.panelDetails);
-            this.Name = "Fbutrucongno";
+            this.Name = "FBuTruCongNo";
             this.Text = "Bút trừ công nợ";
             this.ResumeLayout(false);
 

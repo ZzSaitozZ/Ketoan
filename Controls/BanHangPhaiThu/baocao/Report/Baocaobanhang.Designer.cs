@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.BanHangPhaiThu.baocao.Report
+﻿namespace Ketoan.Controls.BanHangPhaiThu.BaoCao.Report
 {
-    partial class Baocaobanhang
+    partial class BaoCaoBanHang
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery1 = new DevExpress.DataAccess.Sql.StoredProcQuery();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter1 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter2 = new DevExpress.DataAccess.Sql.QueryParameter();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Baocaobanhang));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaoCaoBanHang));
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
@@ -135,7 +135,7 @@
             this.GrandTotalData3 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.GrandTotalBackground3 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.baocaobanhangTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.baocaobanhangTableAdapter();
+            this.BaoCaoBanHangTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.baocaobanhangTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -329,7 +329,7 @@
             // 
             this.sqlDataSource1.ConnectionName = "EWONConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            storedProcQuery1.Name = "baocaobanhang";
+            storedProcQuery1.Name = "BaoCaoBanHang";
             queryParameter1.Name = "@tungay";
             queryParameter1.Type = typeof(System.DateTime);
             queryParameter1.ValueInfo = "1753-01-01";
@@ -338,7 +338,7 @@
             queryParameter2.ValueInfo = "1753-01-01";
             storedProcQuery1.Parameters.Add(queryParameter1);
             storedProcQuery1.Parameters.Add(queryParameter2);
-            storedProcQuery1.StoredProcName = "baocaobanhang";
+            storedProcQuery1.StoredProcName = "BaoCaoBanHang";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             storedProcQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
@@ -1119,11 +1119,11 @@
             this.PageInfo.Name = "PageInfo";
             this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             // 
-            // baocaobanhangTableAdapter1
+            // BaoCaoBanHangTableAdapter1
             // 
-            this.baocaobanhangTableAdapter1.ClearBeforeFill = true;
+            this.BaoCaoBanHangTableAdapter1.ClearBeforeFill = true;
             // 
-            // Baocaobanhang
+            // BaoCaoBanHang
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail,
@@ -1137,8 +1137,8 @@
             this.reportFooterBand1});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1});
-            this.DataAdapter = this.baocaobanhangTableAdapter1;
-            this.DataMember = "baocaobanhang";
+            this.DataAdapter = this.BaoCaoBanHangTableAdapter1;
+            this.DataMember = "BaoCaoBanHang";
             this.DataSource = this.sqlDataSource1;
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
@@ -1253,6 +1253,6 @@
         private DevExpress.XtraReports.UI.XRControlStyle GrandTotalData3;
         private DevExpress.XtraReports.UI.XRControlStyle GrandTotalBackground3;
         private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
-        private EWONDATASETTableAdapters.baocaobanhangTableAdapter baocaobanhangTableAdapter1;
+        private EWONDATASETTableAdapters.baocaobanhangTableAdapter BaoCaoBanHangTableAdapter1;
     }
 }

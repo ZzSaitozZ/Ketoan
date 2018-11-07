@@ -1,19 +1,12 @@
-﻿using System;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using DevExpress.XtraReports.UI;
-
-namespace Ketoan.Controls.Hangtonkho.Baocao.Report
+﻿namespace Ketoan.Controls.HangTonKho.BaoCao.Report
 {
-    public partial class baocaoR : DevExpress.XtraReports.UI.XtraReport
+    public partial class BaoCaoR : DevExpress.XtraReports.UI.XtraReport
     {
-        public baocaoR()
+        public BaoCaoR()
         {
             InitializeComponent();
             sqlDataSource1.Queries[0].Parameters[0].Value = "01/01/2018";
             sqlDataSource1.Queries[0].Parameters[1].Value = "10/01/2018";
         }
-
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Phieuxuatkhothanhpham
+﻿namespace Ketoan.Controls.HangTonKho.PhieuXuatKhoThanhPham
 {
-    partial class Phieuxuatkhotp
+    partial class PhieuXuatKhoTp
     {
         /// <summary> 
         /// Required designer variable.
@@ -42,8 +42,8 @@
             this.Ongba = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tongtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ckDuyet = new DevExpress.XtraGrid.Columns.GridColumn();
- //           this.filterNhapTPTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterNhapTPTableAdapter();
- //           this.filterCTTPTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterCTTPTableAdapter();
+            //           this.filterNhapTPTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterNhapTPTableAdapter();
+            //           this.filterCTTPTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterCTTPTableAdapter();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.Mavattu = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -77,7 +77,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1169, 531);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // gridControl1
             // 
@@ -110,7 +109,6 @@
             this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             this.gridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridView1_KeyDown);
-            this.gridView1.ValidatingEditor += new DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventHandler(this.gridView1_ValidatingEditor);
             // 
             // Stt
             // 
@@ -185,11 +183,11 @@
             // 
             // filterNhapTPTableAdapter1
             // 
-   //         this.filterNhapTPTableAdapter1.ClearBeforeFill = true;
+            //         this.filterNhapTPTableAdapter1.ClearBeforeFill = true;
             // 
             // filterCTTPTableAdapter1
             // 
-  //          this.filterCTTPTableAdapter1.ClearBeforeFill = true;
+            //          this.filterCTTPTableAdapter1.ClearBeforeFill = true;
             // 
             // gridControl2
             // 
@@ -291,12 +289,12 @@
             this.Tien.Visible = true;
             this.Tien.VisibleIndex = 7;
             // 
-            // Phieuxuatkhotp
+            // PhieuXuatKhoTp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "Phieuxuatkhotp";
+            this.Name = "PhieuXuatKhoTp";
             this.Size = new System.Drawing.Size(1169, 531);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -323,8 +321,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn ckDuyet;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraGrid.Columns.GridColumn Stt;
-    //    private EWONDATASETTableAdapters.FilterNhapTPTableAdapter filterNhapTPTableAdapter1;
-    //    private EWONDATASETTableAdapters.FilterCTTPTableAdapter filterCTTPTableAdapter1;
+        //    private EWONDATASETTableAdapters.FilterNhapTPTableAdapter filterNhapTPTableAdapter1;
+        //    private EWONDATASETTableAdapters.FilterCTTPTableAdapter filterCTTPTableAdapter1;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraGrid.Columns.GridColumn Mavattu;

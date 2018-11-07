@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Phieuxuatban
+﻿namespace Ketoan.Controls.HangTonKho.PhieuXuatBan
 {
-    partial class Phieuxuatban
+    partial class PhieuXuatBan
     {
         /// <summary> 
         /// Required designer variable.
@@ -53,8 +53,8 @@
             this.Ongba = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tongtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ckDuyet = new DevExpress.XtraGrid.Columns.GridColumn();
-     //       this.filterPhieuXBTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterPhieuXBTableAdapter();
-     //       this.filterChiTietPhieuXBTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterChiTietPhieuXBTableAdapter();
+            //       this.filterPhieuXBTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterPhieuXBTableAdapter();
+            //       this.filterChiTietPhieuXBTableAdapter1 = new Ketoan.EWONDATASETTableAdapters.FilterChiTietPhieuXBTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -77,7 +77,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1169, 531);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // gridControl2
             // 
@@ -210,7 +209,6 @@
             this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             this.gridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridView1_KeyDown);
-            this.gridView1.ValidatingEditor += new DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventHandler(this.gridView1_ValidatingEditor);
             // 
             // Stt
             // 
@@ -285,18 +283,18 @@
             // 
             // filterPhieuXBTableAdapter1
             // 
-        //    this.filterPhieuXBTableAdapter1.ClearBeforeFill = true;
+            //    this.filterPhieuXBTableAdapter1.ClearBeforeFill = true;
             // 
             // filterChiTietPhieuXBTableAdapter1
             // 
-       //     this.filterChiTietPhieuXBTableAdapter1.ClearBeforeFill = true;
+            //     this.filterChiTietPhieuXBTableAdapter1.ClearBeforeFill = true;
             // 
-            // Phieuxuatban
+            // PhieuXuatBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "Phieuxuatban";
+            this.Name = "PhieuXuatBan";
             this.Size = new System.Drawing.Size(1169, 531);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -333,8 +331,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn ckDuyet;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraGrid.Columns.GridColumn Stt;
-    //    private EWONDATASETTableAdapters.FilterPhieuXBTableAdapter filterPhieuXBTableAdapter1;
+        //    private EWONDATASETTableAdapters.FilterPhieuXBTableAdapter filterPhieuXBTableAdapter1;
         private DevExpress.XtraGrid.Columns.GridColumn Makho;
-    //    private EWONDATASETTableAdapters.FilterChiTietPhieuXBTableAdapter filterChiTietPhieuXBTableAdapter1;
+        //    private EWONDATASETTableAdapters.FilterChiTietPhieuXBTableAdapter filterChiTietPhieuXBTableAdapter1;
     }
 }

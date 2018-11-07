@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMBP
+﻿namespace Ketoan.Controls.DanhMuc.DMBP
 {
     partial class DMBP
     {

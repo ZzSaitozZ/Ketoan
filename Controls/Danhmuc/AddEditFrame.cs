@@ -1,35 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors.DXErrorProvider;
+﻿using DevExpress.XtraEditors.DXErrorProvider;
 using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.ComponentModel;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc
+namespace Ketoan.Controls.DanhMuc
 {
     public partial class AddEditFrame : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         protected GridView Gridview;
-        protected bool isAdd;      
+        protected bool isAdd;
         protected EWONErrorProvider ewErrorProvider1 = new EWONErrorProvider();
         public AddEditFrame()
         {
-            InitializeComponent();     
-            
+            InitializeComponent();
+
             //Bind acceptButton's property to ewErrorProvider1's HasErrors
             Binding buttonToErrorProvider = new Binding("Enabled", ewErrorProvider1, "HasErrors");
             buttonToErrorProvider.Format += SwitchBool;
             buttonToErrorProvider.Parse += SwitchBool;
             acceptBtn.DataBindings.Add(buttonToErrorProvider);
         }
-
-   
-
 
         //Class and method for binding Button's Enabled property to ewErrorProvider'HasError property
         protected void SwitchBool(object sender, ConvertEventArgs e)
@@ -42,7 +33,7 @@ namespace Ketoan.Controls.Danhmuc
 
             protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
             {
-                var handler = PropertyChanged;
+                PropertyChangedEventHandler handler = PropertyChanged;
                 if (handler != null)
                 {
                     handler(this, e);
@@ -55,15 +46,18 @@ namespace Ketoan.Controls.Danhmuc
             }
 
             //New SetError method with updating HasErrors property
-            new public void SetError(Control control, string errorText,ErrorType errorType)
+            public new void SetError(Control control, string errorText, ErrorType errorType)
             {
                 base.SetError(control, errorText, errorType);
-                if (this.HasErrors) ;
+                if (HasErrors)
+                {
+                    MessageBox.Show(errorText);
+                }
             }
 
             //New HasErrors property with OnPropertyChanged notification
             private bool NewHasErrors;
-            new public bool HasErrors
+            public new bool HasErrors
             {
                 get
                 {
@@ -78,7 +72,6 @@ namespace Ketoan.Controls.Danhmuc
             }
 
         }
-
 
         //Lose focus when click on panel
         private void LoseFocusClick(object sender, EventArgs e)

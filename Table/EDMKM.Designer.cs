@@ -57,7 +57,6 @@
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
-            this.gridControl2.Click += new System.EventHandler(this.gridControl2_Click);
             // 
             // gridView2
             // 
@@ -144,7 +143,6 @@
             this.Name = "EDMKM";
             this.Size = new System.Drawing.Size(684, 333);
             this.Tag = "EDMKM";
-            this.Load += new System.EventHandler(this.EDMKM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ewondataset1)).EndInit();

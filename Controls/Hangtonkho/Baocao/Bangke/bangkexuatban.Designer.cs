@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Baocao.Bangke
+﻿namespace Ketoan.Controls.HangTonKho.BaoCao.BangKe
 {
-    partial class bangkexuatban
+    partial class BangKeXuatBan
     {
         /// <summary> 
         /// Required designer variable.
@@ -21,14 +21,13 @@
         }
 
         #region Component Designer generated code
-
         /// <summary> 
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bangkexuatban));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BangKeXuatBan));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colNgay_HD = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -163,18 +162,17 @@
             this.btnPrint.Text = "In ";
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // bangkexuatban
+            // BangKeXuatBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.gridControl1);
-            this.Name = "bangkexuatban";
+            this.Name = "BangKeXuatBan";
             this.Size = new System.Drawing.Size(690, 593);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

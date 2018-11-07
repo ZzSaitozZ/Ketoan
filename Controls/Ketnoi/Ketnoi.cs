@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Ketoan.Controls.Ketnoi
+namespace Ketoan.Controls.KetNoi
 {
-   public class Ketnoi
+    public class KetNoi
     {
-         SqlConnection conn = null;
-            SqlDataReader rdr = null;
+        private SqlConnection conn = null;
+        private SqlDataReader rdr = null;
 
         //     conn = new SqlConnection("Server=.;DataBase=ketoan;Integrated Security=True")"Server=Ha;DataBase=ketoan;User ID=sa;password=123";
-        string ketnoi = "Server =Ha; DataBase = EWON; Integrated Security = True";
-           public SqlConnection connection()
+        private readonly string ketnoi = "Server =Ha; DataBase = EWON; Integrated Security = True";
+        public SqlConnection connection()
         {
             conn = new SqlConnection(ketnoi);
 
@@ -25,8 +21,10 @@ namespace Ketoan.Controls.Ketnoi
         {
             conn = connection();
             conn.Open();
-            SqlCommand cmd = new SqlCommand("InsertUpdateDeleteDMNV", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd = new SqlCommand("InsertUpdateDeleteDMNV", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
             cmd.Parameters.AddWithValue("@manhanvien", SqlDbType.NVarChar).Value = DBNull.Value;
             cmd.Parameters.AddWithValue("@mabophan", SqlDbType.NVarChar).Value = DBNull.Value;
             cmd.Parameters.AddWithValue("@ngaysinh", SqlDbType.NVarChar).Value = DBNull.Value;
@@ -39,7 +37,7 @@ namespace Ketoan.Controls.Ketnoi
 
 
             rdr = cmd.ExecuteReader();
-           // conn.Close();
+            // conn.Close();
 
             return rdr;
         }

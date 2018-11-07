@@ -61,7 +61,6 @@
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click_1);
             // 
             // ewondatasets
             // 
@@ -191,7 +190,7 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private EWONDATASETTableAdapters.E00DMBPTableAdapter E00DMBPTableAdapter;
-        
+
         private EWONDATASET EWONDATASET;
         private DevExpress.XtraGrid.Columns.GridColumn colMa_Bp;
         private DevExpress.XtraGrid.Columns.GridColumn colTen_Bp;

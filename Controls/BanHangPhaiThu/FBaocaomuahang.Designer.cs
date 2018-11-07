@@ -1,6 +1,6 @@
 ﻿namespace Ketoan.Controls.BanHangPhaiThu
 {
-    partial class FBaocaomuahang
+    partial class FBaoCaoMuaHang
     {
         /// <summary>
         /// Required designer variable.
@@ -39,15 +39,15 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 0;
             // 
-            // FBaocaomuahang
+            // FBaoCaoMuaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "FBaocaomuahang";
-            this.Text = "FBaocaomuahang";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FBaocaomuahang_FormClosing);
+            this.Name = "FBaoCaoMuaHang";
+            this.Text = "FBaoCaoMuaHang";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FBaoCaoMuaHang_FormClosing);
             this.ResumeLayout(false);
 
         }

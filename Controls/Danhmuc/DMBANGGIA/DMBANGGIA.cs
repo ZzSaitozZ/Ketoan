@@ -1,39 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraGrid.Views.Base;
+﻿using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraEditors.Controls;
+using System;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMBANGGIA
+namespace Ketoan.Controls.DanhMuc.DMBANGGIA
 {
     public partial class DMBANGGIA : Frame
     {
         public DMBANGGIA()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         private void DMBANGGIA_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMVT' table. You can move, or remove it, as needed.
-            this.e00DMVTTableAdapter.Fill(this.eWONDATASET.E00DMVT);
+            e00DMVTTableAdapter.Fill(eWONDATASET.E00DMVT);
             // TODO: This line of code loads data into the 'eWONDATASET.E00DMBANGGIA' table. You can move, or remove it, as needed.
-            this.e00DMBANGGIATableAdapter.Fill(this.eWONDATASET.E00DMBANGGIA);
+            e00DMBANGGIATableAdapter.Fill(eWONDATASET.E00DMBANGGIA);
 
         }
 
         private void deleteBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                              DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            {
                 return;
+            }
+
             gridView1.DeleteRow(gridView1.FocusedRowHandle);
             e00DMBANGGIATableAdapter.Update(eWONDATASET.E00DMBANGGIA);
         }
@@ -55,9 +49,11 @@ namespace Ketoan.Controls.Danhmuc.DMBANGGIA
         {
             if (e.KeyCode == Keys.Delete && e.Modifiers == Keys.Control)
             {
-                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) !=
-                  DialogResult.Yes)
+                if (MessageBox.Show("Bạn có chắc muốn xóa dự liệu này?", "Thông báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                {
                     return;
+                }
+
                 GridView view = sender as GridView;
                 view.DeleteRow(view.FocusedRowHandle);
             }

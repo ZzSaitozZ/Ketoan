@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMKHO
+﻿namespace Ketoan.Controls.DanhMuc.DMKHO
 {
     partial class DMKHO
     {

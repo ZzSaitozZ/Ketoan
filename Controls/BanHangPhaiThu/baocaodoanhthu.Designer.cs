@@ -1,6 +1,6 @@
 ﻿namespace Ketoan.Controls.BanHangPhaiThu
 {
-    partial class baocaodoanhthu
+    partial class BaoCaoDoanhThu
     {
         /// <summary> 
         /// Required designer variable.
@@ -182,13 +182,13 @@
             this.btnPrint.Text = "Print";
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // baocaodoanhthu
+            // BaoCaoDoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.gridControl1);
-            this.Name = "baocaodoanhthu";
+            this.Name = "BaoCaoDoanhThu";
             this.Size = new System.Drawing.Size(812, 510);
             ((System.ComponentModel.ISupportInitialize)(this.eWONDATASET)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

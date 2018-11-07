@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraGrid.Views.Grid;
+﻿using DevExpress.XtraGrid.Views.Grid;
 using KeToan.DAO;
+using System;
+using System.Windows.Forms;
 
 namespace Ketoan.Controls.BanHangPhaiThu
 {
@@ -24,7 +17,6 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             FThemHoaDon frm = new FThemHoaDon();
             frm.Show();
-
         }
 
         #region Test Insert,Update,Delete
@@ -32,9 +24,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             string query = string.Format("INSERT dbo.table ( name, id, price )VALUES  ( N'{0}', {1}, {2})",
                 name, id, price);
-
             int result = DataProvider.Instance.ExecuteNoneQuery(query);
-
             return result > 0;
         }
 
@@ -43,17 +33,14 @@ namespace Ketoan.Controls.BanHangPhaiThu
             string query = string.Format("UPDATE dbo.table SET name = N'{0}', idCategory = {1}, price = {2} WHERE id = {3}",
                 name, id, price, idFood);
             int result = DataProvider.Instance.ExecuteNoneQuery(query);
-
             return result > 0;
         }
 
         public bool Delete(int id)
         {
             //BillInfoDAO.Instance.DeleteBillInfoByFoodID(idFood);
-
             string query = string.Format("Delete table where id = {0}", id);
             int result = DataProvider.Instance.ExecuteNoneQuery(query);
-
             return result > 0;
         }
         #endregion
@@ -72,53 +59,16 @@ namespace Ketoan.Controls.BanHangPhaiThu
             //gridControl2.DataSource = esP_GetCTCTHDTableAdapter1.GetData(stt);
         }
 
-      
         private void gridView1_RowCellClick(object sender, RowCellClickEventArgs e)
         {
-            
             string stt = gridView1.GetFocusedRowCellValue("Ma_HD").ToString();
-            
             LoadCTHD(stt);
         }
         private void gridView1_RowClick(object sender, RowClickEventArgs e)
         {
-         
             string stt = gridView1.GetFocusedRowCellValue("Ma_HD").ToString();
-            
             LoadCTHD(stt);
         }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnXem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLoc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-     
 
         private void gridView1_KeyPress(object sender, KeyPressEventArgs e)
         {

@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Phieunhapthanhpham
+﻿namespace Ketoan.Controls.HangTonKho.PhieuNhapThanhPham
 {
-    partial class Phieunhapthanhpham
+    partial class PhieuNhapThanhPham
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Phieunhapthanhpham));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhieuNhapThanhPham));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -103,7 +103,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(925, 591);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // labelControl3
             // 
@@ -236,7 +235,6 @@
             this.gridControl2.TabIndex = 7;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
-            this.gridControl2.Click += new System.EventHandler(this.gridControl2_Click);
             // 
             // gridView2
             // 
@@ -449,12 +447,12 @@
             this.DienGiai.Visible = true;
             this.DienGiai.VisibleIndex = 4;
             // 
-            // Phieunhapthanhpham
+            // PhieuNhapThanhPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "Phieunhapthanhpham";
+            this.Name = "PhieuNhapThanhPham";
             this.Size = new System.Drawing.Size(931, 618);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

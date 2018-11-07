@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Phieunhapthanhpham
+﻿namespace Ketoan.Controls.HangTonKho.PhieuNhapThanhPham
 {
     partial class FrPhieuNhapThanhPham
     {
@@ -21,12 +21,11 @@
         }
 
         #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponentPNTP()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrPhieuNhapThanhPham));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();

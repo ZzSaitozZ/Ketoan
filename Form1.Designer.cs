@@ -1,4 +1,5 @@
-﻿namespace Ketoan
+﻿using Ketoan.Controls.MenuChinh;
+namespace Ketoan
 {
     partial class Form1
     {
@@ -30,14 +31,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            this.vonbangtien = new Ketoan.Controls.Vonbangtien();
-            this.quanlytaisan = new Ketoan.Controls.Quanlytaisan();
-            this.muahangphaitra = new Ketoan.Controls.Muahangphaitra();
-            this.ketoantonghop = new Ketoan.Controls.Menuchinh.Ketoantonghop();
-            this.hethong = new Ketoan.Controls.Hethong();
-            this.hangtonkho = new Ketoan.Controls.Menuchinh.Hangtonkho();
-            this.chiphigiathanh = new Ketoan.Controls.Chiphigiathanh();
-            this.banhangphaithu = new Ketoan.Controls.Banhangphaithu();
+            this.vonbangtien = new VonBangTien();
+            this.quanlytaisan = new QuanLyTaiSan();
+            this.muahangphaitra = new MuaHangPhaiTra();
+            this.ketoantonghop = new KeToanTongHop();
+            this.hethong = new HeThong();
+            this.hangtonkho = new HangTonKho();
+            this.chiphigiathanh = new ChiPhiGiaThanh();
+            this.banhangphaithu = new BanHangPhaiThu();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -530,14 +531,14 @@
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem7;
         private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl8;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem8;
-        private Ketoan.Controls.Vonbangtien vonbangtien;
-        private Ketoan.Controls.Quanlytaisan quanlytaisan;
-        private Ketoan.Controls.Muahangphaitra muahangphaitra;
-        private Ketoan.Controls.Menuchinh.Ketoantonghop ketoantonghop;
-        private Ketoan.Controls.Hethong hethong;
-        private Ketoan.Controls.Menuchinh.Hangtonkho hangtonkho;
-        private Ketoan.Controls.Chiphigiathanh chiphigiathanh;
-        private Ketoan.Controls.Banhangphaithu banhangphaithu;
+        private VonBangTien vonbangtien;
+        private QuanLyTaiSan quanlytaisan;
+        private MuaHangPhaiTra muahangphaitra;
+        private KeToanTongHop ketoantonghop;
+        private HeThong hethong;
+        private HangTonKho hangtonkho;
+        private ChiPhiGiaThanh chiphigiathanh;
+        private BanHangPhaiThu banhangphaithu;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;

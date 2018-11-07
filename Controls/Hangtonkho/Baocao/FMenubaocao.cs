@@ -1,49 +1,34 @@
-﻿using Ketoan.Controls.Dungchung.Menu;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Ketoan.Controls.DungChung.Menu;
 using System.Windows.Forms;
 
-namespace Ketoan.Controls.Hangtonkho.Baocao
+namespace Ketoan.Controls.HangTonKho.BaoCao
 {
-    public partial class FMenubaocao : Form
+    public partial class FMenuBaoCao : Form
     {
-        public FMenubaocao(string a)
+        public FMenuBaoCao(string a)
         {
             InitializeComponent();
             load_table(a);
-
         }
 
         private void load_table(string a)
         {
-            
-                  EDCM2 u1 = new EDCM2(a);
-                u1.Dock = DockStyle.Fill;
-                panelDetail.Controls.Add(u1);
-
-            
+            EDCM2 u1 = new EDCM2(a)
+            {
+                Dock = DockStyle.Fill
+            };
+            panelDetail.Controls.Add(u1);
         }
 
-
-        private void FMenubaocao_Load(object sender, FormClosingEventArgs e)
+        private void FMenuBaoCao_Load(object sender, FormClosingEventArgs e)
         {
             Form frm1 = Application.OpenForms["StartForm"];
             StartForm s = frm1 as StartForm;
             s.k--;
             if (s.k == 0)
             {
-
                 frm1.Show();
-              
             }
-          
-
         }
     }
 }

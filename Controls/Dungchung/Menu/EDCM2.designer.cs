@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Dungchung.Menu
+﻿namespace Ketoan.Controls.DungChung.Menu
 {
     partial class EDCM2
     {
@@ -448,7 +448,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 461);
             this.panel1.TabIndex = 66;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // labelControl3
             // 
@@ -603,7 +602,6 @@
             this.Controls.Add(this.barDockControl1);
             this.Name = "EDCM2";
             this.Size = new System.Drawing.Size(1203, 651);
-            this.Load += new System.EventHandler(this.EDCM1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit4.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit4)).EndInit();

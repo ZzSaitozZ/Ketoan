@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc
+﻿namespace Ketoan.Controls.DanhMuc
 {
     partial class AddEditFrame
     {

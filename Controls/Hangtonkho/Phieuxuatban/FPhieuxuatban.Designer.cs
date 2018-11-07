@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Hangtonkho.Phieuxuatban
+﻿namespace Ketoan.Controls.HangTonKho.PhieuXuatBan
 {
-    partial class FPhieuxuatban
+    partial class FPhieuXuatBan
     {
         /// <summary>
         /// Required designer variable.
@@ -21,7 +21,6 @@
         }
 
         #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -39,20 +38,15 @@
             this.panelDetail.Size = new System.Drawing.Size(1178, 697);
             this.panelDetail.TabIndex = 0;
             // 
-            // FPhieuxuatban
+            // FPhieuXuatBan
             // 
             this.ClientSize = new System.Drawing.Size(1178, 697);
             this.Controls.Add(this.panelDetail);
-            this.Name = "FPhieuxuatban";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FPhieuxuatban_FormClosing);
-            this.Load += new System.EventHandler(this.FPhieuxuatban_Load);
+            this.Name = "FPhieuXuatBan";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FPhieuXuatBan_FormClosing);
             this.ResumeLayout(false);
-
         }
-
         #endregion
-
-     
         private System.Windows.Forms.Panel panelDetail;
     }
 }

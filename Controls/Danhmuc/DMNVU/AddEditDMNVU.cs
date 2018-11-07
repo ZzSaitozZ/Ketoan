@@ -1,58 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using DevExpress.XtraEditors.DXErrorProvider;
 using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraEditors.DXErrorProvider;
+using System;
+using System.Windows.Forms;
 
-namespace Ketoan.Controls.Danhmuc.DMNVU
+namespace Ketoan.Controls.DanhMuc.DMNVU
 {
     public partial class AddEditDMNVU : AddEditFrame
     {
-        public AddEditDMNVU (GridView gridview, bool isadd)
+        public AddEditDMNVU(GridView gridview, bool isadd)
         {
             InitializeComponent();
             Gridview = gridview;
             isAdd = isadd;
-            if (isAdd) this.Text = "Thêm mới";
-            else this.Text = "Chỉnh sửa";
-
+            if (isAdd)
+            {
+                Text = "Thêm mới";
+            }
+            else
+            {
+                Text = "Chỉnh sửa";
+            }
 
             ewErrorProvider1.SetIconAlignment(manvuTE, ErrorIconAlignment.MiddleRight);
 
-            this.manvuTE.Tag = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"].ToString();
-            this.manvuTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"].ToString();
-            this.tennvuTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nvu"].ToString();
-            this.mactTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct"].ToString();
-            this.mactruleTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct_Rule"].ToString();
-            this.tknoTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No"].ToString();
-            this.tknoruleTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No_Rule"].ToString();
-            this.tkcoTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co"].ToString();
-            this.tkcoruleTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co_Rule"].ToString();
+            manvuTE.Tag = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"].ToString();
+            manvuTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"].ToString();
+            tennvuTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nvu"].ToString();
+            mactTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct"].ToString();
+            mactruleTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct_Rule"].ToString();
+            tknoTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No"].ToString();
+            tknoruleTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No_Rule"].ToString();
+            tkcoTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co"].ToString();
+            tkcoruleTE.Text = Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co_Rule"].ToString();
         }
 
         private void acceptBtn_Click(object sender, EventArgs e)
         {
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"] = this.manvuTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nvu"] = this.tennvuTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct"] = this.mactTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct_Rule"] = this.mactruleTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No"] = this.tknoTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No_Rule"] = this.tknoruleTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co"] = this.tkcoTE.Text;
-            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co_Rule"] = this.tkcoruleTE.Text;
-            if (isAdd) Gridview.UpdateCurrentRow();
-            this.Close();
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Nvu"] = manvuTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ten_Nvu"] = tennvuTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct"] = mactTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Ma_Ct_Rule"] = mactruleTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No"] = tknoTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_No_Rule"] = tknoruleTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co"] = tkcoTE.Text;
+            Gridview.GetDataRow(Gridview.FocusedRowHandle)["Tk_Co_Rule"] = tkcoruleTE.Text;
+            if (isAdd)
+            {
+                Gridview.UpdateCurrentRow();
+            }
+
+            Close();
         }
 
         private void denyBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void manvuTE_EditValueChanged(object sender, EventArgs e)
@@ -64,11 +66,19 @@ namespace Ketoan.Controls.Danhmuc.DMNVU
             else
             {
                 if (isAdd)
+                {
                     ewErrorProvider1.SetError(manvuTE, "Giá trị này đã có trong Danh Mục Bảng Giá", ErrorType.Information);
+                }
                 else
                 {
-                    if (manvuTE.EditValue.ToString() == manvuTE.Tag.ToString()) ewErrorProvider1.SetError(manvuTE, "", ErrorType.Information);
-                    else ewErrorProvider1.SetError(manvuTE, "Giá trị này đã có trong Danh Mục Bảng Giá", ErrorType.Information);
+                    if (manvuTE.EditValue.ToString() == manvuTE.Tag.ToString())
+                    {
+                        ewErrorProvider1.SetError(manvuTE, "", ErrorType.Information);
+                    }
+                    else
+                    {
+                        ewErrorProvider1.SetError(manvuTE, "Giá trị này đã có trong Danh Mục Bảng Giá", ErrorType.Information);
+                    }
                 }
             }
         }

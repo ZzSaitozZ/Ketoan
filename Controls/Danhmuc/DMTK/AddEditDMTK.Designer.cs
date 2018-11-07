@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Danhmuc.DMTK
+﻿namespace Ketoan.Controls.DanhMuc.DMTK
 {
     partial class AddEditDMTK
     {

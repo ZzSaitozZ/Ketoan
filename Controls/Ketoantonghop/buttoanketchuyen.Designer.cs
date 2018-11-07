@@ -1,6 +1,6 @@
-﻿namespace Ketoan.Controls.Ketoantonghop
+﻿namespace Ketoan.Controls.KeToanTongHop
 {
-    partial class buttoanketchuyen
+    partial class ButToanKetChuyen
     {
         /// <summary> 
         /// Required designer variable.
@@ -123,12 +123,12 @@
             this.mabophan.Visible = true;
             this.mabophan.VisibleIndex = 7;
             // 
-            // buttoanketchuyen
+            // ButToanKetChuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gridControl1);
-            this.Name = "buttoanketchuyen";
+            this.Name = "ButToanKetChuyen";
             this.Size = new System.Drawing.Size(647, 522);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

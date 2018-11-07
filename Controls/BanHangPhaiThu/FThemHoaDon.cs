@@ -2,13 +2,9 @@
 using KeToan.DAO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ketoan.Controls.BanHangPhaiThu
@@ -20,24 +16,16 @@ namespace Ketoan.Controls.BanHangPhaiThu
             InitializeComponent();
             LoadTable();
             LoadCategory();
-            
         }
 
-        
-
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        void LoadCategory()
+        private void LoadCategory()
         {
             List<Category> listCategory = GetListCategory();
             cbDMMon.DataSource = listCategory;
             cbDMMon.DisplayMember = "name";
         }
 
-        void LoadFoodListByCategoryId(int id)
+        private void LoadFoodListByCategoryId(int id)
         {
             List<Food> listFood = GetFoodByCategoryId(id);
             cbMon.DataSource = listFood;
@@ -48,14 +36,14 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             public Category(int id, string name)
             {
-                this.Id = id;
-                this.Name = name;
+                Id = id;
+                Name = name;
             }
 
             public Category(DataRow row)
             {
-                this.Id = (int)row["id"];
-                this.Name = row["name"].ToString();
+                Id = (int)row["id"];
+                Name = row["name"].ToString();
             }
 
             private int id;
@@ -79,7 +67,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
             }
 
             return list;
-            
+
         }
         public List<Food> GetFoodByCategoryId(int id)
         {
@@ -99,17 +87,17 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             public Food(int id, string name, int idCategory)
             {
-                this.Id = id;
-                this.Name = name;
-                this.IdCategory = idCategory;
+                Id = id;
+                Name = name;
+                IdCategory = idCategory;
                 //this.Price = price;
             }
 
             public Food(DataRow row)
             {
-                this.Id = (int)row["id"];
-                this.Name = row["Ten_Vt"].ToString();
-                this.IdCategory = (int)row["DMMon_id"];
+                Id = (int)row["id"];
+                Name = row["Ten_Vt"].ToString();
+                IdCategory = (int)row["DMMon_id"];
                 //this.Price = Convert.ToInt32(row["price"]);
             }
 
@@ -126,11 +114,14 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            EDCChiTietNghiepVu u1 = new EDCChiTietNghiepVu();
-            u1.Dock = DockStyle.Fill;
+            EDCChiTietNghiepVu u1 = new EDCChiTietNghiepVu
+            {
+                Dock = DockStyle.Fill
+            };
             panel3.Controls.Add(u1);
         }
-        void LoadTable()
+
+        private void LoadTable()
         {
             flpTab.Controls.Clear();
 
@@ -161,29 +152,31 @@ namespace Ketoan.Controls.BanHangPhaiThu
         }
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-            EDCChiTietNghiepVu u1 = new EDCChiTietNghiepVu();
-            u1.Dock = DockStyle.Fill;
+            EDCChiTietNghiepVu u1 = new EDCChiTietNghiepVu
+            {
+                Dock = DockStyle.Fill
+            };
             panel4.Controls.Add(u1);
         }
 
         public class ThucDon
         {
-            public ThucDon(string tenMon, int soLuong, float donGia,float giamGia, float totalPrice = 0)
+            public ThucDon(string tenMon, int soLuong, float donGia, float giamGia, float totalPrice = 0)
             {
-                this.Count = soLuong;
-                this.FoodName = tenMon;
-                this.GiamGia = giamGia;
-                this.Price = donGia;
-                this.TotalPrice = totalPrice;
+                Count = soLuong;
+                FoodName = tenMon;
+                GiamGia = giamGia;
+                Price = donGia;
+                TotalPrice = totalPrice;
             }
 
             public ThucDon(DataRow row)
             {
-                this.FoodName = row["Ten_Vt"].ToString();
-                this.Count = (int)row["So_Luong"];
-                this.Price = Convert.ToInt32(row["Thanh_Tien_GB"]);
-                this.GiamGia = Convert.ToInt32(row["Tien_Giam_Gia"]);
-                this.TotalPrice = Convert.ToInt32(row["TT"]);
+                FoodName = row["Ten_Vt"].ToString();
+                Count = (int)row["So_Luong"];
+                Price = Convert.ToInt32(row["Thanh_Tien_GB"]);
+                GiamGia = Convert.ToInt32(row["Tien_Giam_Gia"]);
+                TotalPrice = Convert.ToInt32(row["TT"]);
             }
 
             private string foodName;
@@ -217,7 +210,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
             return listMon;
         }
 
-        void ShowBill(int id)
+        private void ShowBill(int id)
         {
             CultureInfo culture = new CultureInfo("vi-VN");
             lsvBill.Items.Clear();
@@ -235,13 +228,8 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
                 lsvBill.Items.Add(lsvItem);
             }
-
-
-
             //Thread.CurrentThread.CurrentCulture = culture;
-
             txbTotalPrice.Text = totalPrice.ToString("c", culture);
-
         }
 
         #region Table
@@ -256,16 +244,16 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             public Table(int id, string name, string status)
             {
-                this.Id = id;
-                this.Name = name;
-                this.Status = status;
+                Id = id;
+                Name = name;
+                Status = status;
             }
 
             public Table(DataRow row)
             {
-                this.Id = (int)row["id"];
-                this.Name = row["name"].ToString();
-                this.Status = row["status"].ToString();
+                Id = (int)row["id"];
+                Name = row["name"].ToString();
+                Status = row["status"].ToString();
             }
 
             private int id;
@@ -279,7 +267,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
 
         private class TableDao
         {
-            
+
             private static TableDao instance;
 
             public static TableDao Instance
@@ -357,7 +345,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
             Table table = lsvBill.Tag as Table;
             DataProvider.Instance.ExecuteNoneQuery(query);
             DataProvider.Instance.ExecuteNoneQuery("UPDATE dbo.E00DMBAN SET status=N'Trống' WHERE id=" + table.Id);
-            
+
         }
         public int GetUncheckByTableId(int id)
         {
@@ -374,31 +362,30 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             public Bill(int id, DateTime? dateCheckIn, DateTime? dateCheckOut, int status)
             {
-                this.Id = id;
-                this.DateCheckIn = dateCheckIn;
-                this.DateCheckOut = dateCheckIn;
-                this.Status = status;
+                Id = id;
+                DateCheckIn = dateCheckIn;
+                DateCheckOut = dateCheckIn;
+                Status = status;
             }
 
             public Bill(DataRow row)
             {
-                this.Id = (int)row["stt"];
-                this.DateCheckIn = (DateTime)row["Ngay_HD"];
+                Id = (int)row["stt"];
+                DateCheckIn = (DateTime)row["Ngay_HD"];
 
-                var dataCheckOutTemp = row["Ngay_TT"];
+                object dataCheckOutTemp = row["Ngay_TT"];
                 if (dataCheckOutTemp.ToString() != "")
                 {
-                    this.DateCheckOut = (DateTime)dataCheckOutTemp;
+                    DateCheckOut = (DateTime)dataCheckOutTemp;
                 }
 
-                this.Status = (int)row["status"];
+                Status = (int)row["status"];
             }
 
             private int id;
             private DateTime? dateCheckIn;
             private DateTime? dateCheckOut;
             private int status;
-
             public int Id { get => id; set => id = value; }
             public DateTime? DateCheckIn { get => dateCheckIn; set => dateCheckIn = value; }
             public DateTime? DateCheckOut { get => dateCheckOut; set => dateCheckOut = value; }
@@ -412,7 +399,7 @@ namespace Ketoan.Controls.BanHangPhaiThu
         {
             try
             {
-                return (int)DataProvider.Instance.ExecuteNoneQuery("SELECT MAX(id) FROM dbo.Bill");
+                return DataProvider.Instance.ExecuteNoneQuery("SELECT MAX(id) FROM dbo.Bill");
             }
             catch (Exception)
             {

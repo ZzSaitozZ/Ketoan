@@ -1,4 +1,4 @@
-﻿namespace Ketoan.Controls.Dungchung.TCMenuMain
+﻿namespace Ketoan.Controls.DungChung.TCMenuMain
 {
     partial class TCMenuMain
     {

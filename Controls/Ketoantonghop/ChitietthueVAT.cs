@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
-namespace Ketoan.Controls.Ketoantonghop
+namespace Ketoan.Controls.KeToanTongHop
 {
-    public partial class ChitietthueVAT : UserControl
+    public partial class ChiTietThueVAT : UserControl
     {
-        public ChitietthueVAT()
+        public ChiTietThueVAT()
         {
             InitializeComponent();
         }
